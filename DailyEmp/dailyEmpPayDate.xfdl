@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="dailyEmpPayDate" width="1280" height="720" titletext="New Form" onload="dailyEmpPayDate_onload">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <Static id="Static00" taborder="0" text="일용직급여지급일자등록" left="23" top="21" width="132" height="14"/>
+        <Div id="div_searchCondition" taborder="1" text="Div00" left="20" top="50" width="1240" height="65" background="#D9E5FF">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="귀속연월" left="42" top="10" width="50" height="14"/>
+              <Static id="Static01" taborder="1" text="지급일" left="356" top="10" width="50" height="14" onclick="div_searchCondition_Static01_onclick"/>
+              <Button id="btn_searchPaydate" taborder="2" left="458" top="7" width="20" height="20" text="" onclick="div_searchCondition_btn_searchDept_onclick"/>
+              <Static id="Static02" taborder="3" text="출결기간" left="670" top="10" width="50" height="14"/>
+              <Static id="Static03" taborder="4" text="프로젝트" left="42" top="40" width="50" height="14"/>
+              <Button id="btn_searchProject" taborder="5" left="216" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
+              <Static id="Static04" taborder="6" text="사업장" left="356" top="40" width="50" height="14"/>
+              <Edit id="edt_paytype" taborder="7" left="1012" top="7" width="116" height="20" readonly="true" onchanged="div_searchCondition_edt_paytype_onchanged"/>
+              <Static id="Static05" taborder="8" text="부서" left="692" top="40" width="50" height="14"/>
+              <Calendar id="calen_startdate" taborder="9" left="720" top="7" width="148" height="20" readonly="true" editformat="yyyy-MM-dd ddd"/>
+              <Calendar id="calen_enddate" taborder="10" left="870" top="7" width="140" height="20" readonly="true" editformat="yyyy-MM-dd ddd"/>
+              <Static id="Static06" taborder="11" text="~" left="836" top="-26" width="32" height="23"/>
+              <Calendar id="calen_date" taborder="12" left="94" top="7" width="116" height="20" background="#FFFFC5" dateformat="yyyy-MM" editformat="yyyy-MM" onchanged="div_searchCondition_calen_date_onchanged"/>
+              <Edit id="edit_paycode" taborder="13" left="407" top="7" width="41" height="20" background="#FFFFC5"/>
+              <Button id="btn_searchWorkplace" taborder="14" left="590" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
+              <Button id="btn_searchDept" taborder="15" left="844" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
+              <Static id="Static05_00" taborder="16" text="급여형태" left="894" top="39" width="50" height="14"/>
+              <Button id="btn_searchSalarytype" taborder="17" left="1067" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
+              <Button id="btn_search" taborder="18" text="조회" left="1133" top="10" width="94" height="41" onclick="div_searchCondition_btn_search_onclick"/>
+              <Calendar id="calen_paydate" taborder="19" left="480" top="7" width="130" height="20" readonly="true" editformat="yyyy-MM-dd ddd"/>
+              <Edit id="edit_project" taborder="20" left="94" top="37" width="116" height="20"/>
+              <Edit id="edit_workplace" taborder="21" left="407" top="37" width="178" height="20"/>
+              <Edit id="edit_dept" taborder="22" left="720" top="37" width="116" height="20"/>
+              <Edit id="edit_salarytype" taborder="23" left="946" top="37" width="116" height="20"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Grid id="grd_DEmpPayDateList" taborder="2" left="20" top="127" width="535" height="587" binddataset="ds_dayPayList" oncellclick="grd_DEmpPayDateList_oncellclick" selecttype="multirow">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="48"/>
+                <Column size="96"/>
+                <Column size="143"/>
+                <Column size="166"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="NO"/>
+                <Cell col="1" colspan="4" text="일용직사원리스트"/>
+                <Cell row="1"/>
+                <Cell row="1" col="1" displaytype="checkboxcontrol" edittype="checkbox"/>
+                <Cell row="1" col="2" text="사원코드"/>
+                <Cell row="1" col="3" text="사원명"/>
+                <Cell row="1" col="4" text="입사일"/>
+              </Band>
+              <Band id="body">
+                <Cell text="expr:currow + 1" textAlign="center"/>
+                <Cell col="1" textAlign="center" displaytype="checkboxcontrol" edittype="checkbox" text="bind:CHECKED" checkboxtruevalue="1" checkboxfalsevalue="0"/>
+                <Cell col="2" text="bind:DEMP_CODE" textAlign="center"/>
+                <Cell col="3" text="bind:DEMP_NAME" textAlign="center"/>
+                <Cell col="4" calendardateformat="yyyy-MM-dd" text="bind:JOIN_DATE" displaytype="date" textAlign="center"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Div id="div_divide" taborder="3" text="Div01" left="580" top="127" width="120" height="587" background="#D9E5FF">
+          <Layouts>
+            <Layout>
+              <Button id="btn_add" taborder="0" text="추가" left="25" top="193" width="70" height="50" onclick="div_divide_btn_add_onclick"/>
+              <Button id="btn_delete" taborder="1" text="삭제" left="25" top="268" width="70" height="50" onclick="div_divide_btn_delete_onclick"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Grid id="grd_DEmpPayTarget" taborder="4" left="723" top="127" width="537" height="587" binddataset="ds_dayPayTarget" selecttype="multirow">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="47"/>
+                <Column size="107"/>
+                <Column size="129"/>
+                <Column size="172"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="NO" verticalAlign="middle" textAlign="center"/>
+                <Cell col="1" colspan="4" text="일용직급여대상자" verticalAlign="middle" textAlign="center"/>
+                <Cell row="1" verticalAlign="middle" textAlign="center"/>
+                <Cell row="1" col="1" displaytype="checkboxcontrol" edittype="checkbox" verticalAlign="middle" textAlign="center"/>
+                <Cell row="1" col="2" text="사원코드" verticalAlign="middle" textAlign="center"/>
+                <Cell row="1" col="3" text="사원명" verticalAlign="middle" textAlign="center"/>
+                <Cell row="1" col="4" text="입사일" verticalAlign="middle" textAlign="center"/>
+              </Band>
+              <Band id="body">
+                <Cell verticalAlign="middle" textAlign="center"/>
+                <Cell col="1" displaytype="checkboxcontrol" edittype="checkbox" verticalAlign="middle" textAlign="center" text="bind:CHECKED"/>
+                <Cell col="2" verticalAlign="middle" textAlign="center" text="bind:DEMP_CODE"/>
+                <Cell col="3" verticalAlign="middle" textAlign="center" text="bind:DEMP_NAME"/>
+                <Cell col="4" verticalAlign="middle" textAlign="center" text="bind:JOIN_DATE" displaytype="date" calendardateformat="yyyy-MM-dd"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Edit id="edit_hidden_workplacecode" taborder="5" left="11" top="-71" width="105" height="31"/>
+        <Edit id="edit_hidden_dept" taborder="6" left="149" top="-69" width="105" height="31"/>
+        <Edit id="edit_hidden_salarytype" taborder="7" left="269" top="-69" width="105" height="31"/>
+        <Button id="Button00" taborder="8" text="Button00" left="295" top="39" width="34" height="37" onclick="Button00_onclick"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[include "Lib::commonOpen.xjs"; // 모달창 라이브러리
+var updateEdit;
+var codes = {};
+var modalUrl = "Base::dailyEmpPayDateModal.xfdl";
+var modalEvent = "fn_popupCallback";
+var page = this.div_searchCondition.form;
+
+this.dailyEmpPayDate_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+// 	trace("test1");
+	this.transaction(
+		"selectList",
+		"svcDailyEmpDate::selectList",
+		"",
+		"ds_dayPayList=in_out_dailyEmp",
+		"",
+		"fn_callback"	
+	);
+	this.transaction(
+		"selectTargetList",
+		"svcDailyEmpDate::selectTargetList",
+		"",
+		"ds_dayPayTarget=in_out_dailyEmp",
+		"",
+		"fn_callback"	
+	);
+};
+
+this.div_searchCondition_btn_search_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.comp = this.div_searchCondition.form.components;
+	trace("테스트용" + this.div_searchCondition.form.calen_date.value);
+	this.values = [];
+	for(var i=0; i<this.comp.length; i++){
+		if(this.comp[i] == "[object Combo]" || this.comp[i] == "[object Edit]" ||this.comp[i] == "[object Calendar]"){
+			trace(this.comp[i].id);
+			trace(this.comp[i].text);
+			trace(this.comp[i].value);
+			this.values.push(this.comp[i].value);
+		}
+	}
+	trace(this.edit_hidden_workplacecode.value);
+	this.transaction(
+		"selectDailyEmpPayDateList",
+		"svcDailyEmpDate::searchpayemplist",
+		"",
+		"ds_dayPayList=in_out_dailyEmp",
+		"date="+this.values[3]
+		+" project="+this.values[6]
+		+" workplaceCode="+this.edit_hidden_workplacecode.value
+		+" dept="+this.edit_hidden_dept.value
+		+" salarytype="+this.edit_hidden_salarytype.value,
+		"fn_callback"		
+	);
+		this.transaction(
+		"selectTargetDataList",
+		"svcDailyEmpDate::selectTargetDataList",
+		"",
+		"ds_dayPayTarget=in_out_dailyEmp",
+		"date="+this.values[3]
+		+" project="+this.values[6]
+		+" workplaceCode="+this.edit_hidden_workplacecode.value
+		+" dept="+this.edit_hidden_dept.value
+		+" salarytype="+this.edit_hidden_salarytype.value,
+		"fn_callback"	
+	);
+};
+
+this.fn_callback =function(trID ,ErrorCode ,ErrorMsg){
+	if(trID=="selectDailyEmpPayDateList"){
+		if(ErrorCode!=0){
+			alert("일용직사원리스트 조회 실패 : "+ErrorMsg);
+		}
+	};
+	if (trID=="saveDailyPayDateList")
+	{
+		//this.reload();
+	}
+	if (trID=="saveDailyPayDateTarget")
+	{	
+		//this.reload();
+	}
+};
+
+this.div_searchCondition_btn_searchDept_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	updateEdit = obj;
+	this.gfnOpen("지급일설정", modalUrl, modalEvent, null);
+};
+
+this.fn_popupCallback = function(mdId, data)
+{
+
+	switch(mdId){
+	case "지급일설정" : 
+		page.edit_paycode.set_value(data.split("/")[0]);
+		page.calen_paydate.set_value(data.split("/")[1]);
+		page.calen_startdate.set_value(data.split("/")[2]);
+		page.calen_enddate.set_value(data.split("/")[3]);
+		if(data.split("/")[4]==0){
+			page.edt_paytype.set_value("매일지급")
+		}else{
+			page.edt_paytype.set_value("일정기간지급")
+		};
+		break;
+	case "workplace" :
+		page.edit_workplace.set_value(data.split(":")[0]);
+		this.edit_hidden_workplacecode.set_value(data.split(":")[1]);//Move(손모양)으로 form 이동시 위에 숨겨진 코드창 볼 수 있음
+		break;
+	case "dept" :
+		page.edit_dept.set_value(data.split(":")[0]);
+		this.edit_hidden_dept.set_value(data.split(":")[1]);//Move(손모양)으로 form 이동시 위에 숨겨진 코드창 볼 수 있음
+		break;
+	case "salarytype" :
+		page.edit_salarytype.set_value(data.split(":")[0]);
+		this.edit_hidden_salarytype.set_value(data.split(":")[1]);//Move(손모양)으로 form 이동시 위에 숨겨진 코드창 볼 수 있음
+		break;
+	}	
+};
+
+this.div_searchCondition_btn_searchWith_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var modalId = obj.id.substr(obj.id.indexOf("btn_search")+10).toLowerCase();
+	trace(modalId);
+	this.code = null;
+	switch(modalId){
+	case "workplace" : this.code = "CO-26"; break;
+	case "dept" : this.code = "CO-07"; break;
+	case "salarytype" : this.code = "CO-25"; break;
+	}
+	
+	var modalUrl = "Base::Modal.xfdl";
+	var modalEvent = "fn_popupCallback";
+	if(this.code != null){
+		this.gfnOpen(
+			modalId,
+			modalUrl, modalEvent,
+			{code:this.code}
+		);
+	}else{alert("테이블에 데이터 없음")}
+};
+
+
+this.div_divide_btn_add_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	if(page.edit_paycode.value != null){
+	for(var i = 0; i<this.ds_dayPayList.rowcount; i++){
+		var list = this.ds_dayPayList.getColumn(i,"CHECKED")
+		if(list == 1){
+			var row = this.ds_dayPayTarget.addRow();
+			this.ds_dayPayTarget.copyRow(row, this.ds_dayPayList, i);
+		}		
+	}
+	var cnt = this.ds_dayPayList.getRowCount();
+	for(var i=cnt-1;i>=0;i--){
+		var chk = this.ds_dayPayList.getColumn(i,"CHECKED");
+		if(chk == 1) {this.ds_dayPayList.deleteRow(i);}
+	}
+	for(var i = 0; i<this.ds_dayPayTarget.rowcount; i++){
+		this.ds_dayPayTarget.setColumn(i, "PAY_CODE", page.edit_paycode.value);
+		this.ds_dayPayTarget.setColumn(i, "PAY_DATE", page.calen_paydate.value);
+		this.ds_dayPayTarget.setColumn(i, "PAY_STARTDATE", page.calen_startdate.value);
+		this.ds_dayPayTarget.setColumn(i, "PAY_ENDDATE", page.calen_enddate.value);
+		this.ds_dayPayTarget.setColumn(i, "PAY_TYPE", page.edit_paycode.value);
+		this.ds_dayPayTarget.setColumn(i, "PAY_DESCRIPTION", 1);
+	}
+		this.transaction(
+		"saveDailyPayDateTarget",
+		"svcDailyEmpDate::savelist",
+		"in_out_dailyEmp=ds_dayPayTarget:U",
+		"",
+		"",
+		"fn_callback"		
+	);
+	}else{
+		alert("지급일을 먼저 설정해주십시오");
+	}
+};
+
+
+this.div_divide_btn_delete_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	for(var i = 0; i<this.ds_dayPayTarget.rowcount; i++){
+		var list = this.ds_dayPayTarget.getColumn(i,"CHECKED")
+		if(list == 1){
+			var row = this.ds_dayPayList.addRow();
+			this.ds_dayPayList.copyRow(row, this.ds_dayPayTarget, i);
+		}		
+	}
+	var cnt = this.ds_dayPayTarget.getRowCount();
+	for(var i=cnt-1;i>=0;i--){
+		var chk = this.ds_dayPayTarget.getColumn(i,"CHECKED");
+		if(chk == 1) {this.ds_dayPayTarget.deleteRow(i);}
+	}
+	for(var i = 0; i<this.ds_dayPayList.rowcount; i++){
+		this.ds_dayPayList.setColumn(i, "PAY_CODE", null);
+		this.ds_dayPayList.setColumn(i, "PAY_DATE", null);
+		this.ds_dayPayList.setColumn(i, "PAY_STARTDATE", null);
+		this.ds_dayPayList.setColumn(i, "PAY_ENDDATE", null);
+		this.ds_dayPayList.setColumn(i, "PAY_TYPE", null);
+		this.ds_dayPayList.setColumn(i, "PAY_DESCRIPTION", null);
+	}
+		this.transaction(
+		"saveDailyPayDateList",
+		"svcDailyEmpDate::savelist",
+		"in_out_dailyEmp=ds_dayPayList:U",
+		"",
+		"",
+		"fn_callback"		
+	);
+};
+
+
+
+
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+    <Objects>
+      <Dataset id="ds_dayPayList">
+        <ColumnInfo>
+          <Column id="WORKPLACE_CODE" type="STRING" size="256"/>
+          <Column id="DEMP_CODE" type="STRING" size="256"/>
+          <Column id="DEMP_NAME" type="STRING" size="256"/>
+          <Column id="JOIN_DATE" type="STRING" size="256"/>
+          <Column id="IS_FOREIGN" type="STRING" size="256"/>
+          <Column id="JUMIN_NO" type="STRING" size="256"/>
+          <Column id="FOREIGN_NO" type="STRING" size="256"/>
+          <Column id="ZIP_CODE" type="STRING" size="256"/>
+          <Column id="ADDR" type="STRING" size="256"/>
+          <Column id="ADDR_DETAIL" type="STRING" size="256"/>
+          <Column id="EMAIL" type="STRING" size="256"/>
+          <Column id="TEL" type="STRING" size="256"/>
+          <Column id="PHONE" type="STRING" size="256"/>
+          <Column id="DEPT_CODE" type="STRING" size="256"/>
+          <Column id="PJT_CODE" type="STRING" size="256"/>
+          <Column id="POS_CODE" type="STRING" size="256"/>
+          <Column id="EMP_STAT_CODE" type="STRING" size="256"/>
+          <Column id="JOB_CODE" type="STRING" size="256"/>
+          <Column id="PAY_STAT_CODE" type="STRING" size="256"/>
+          <Column id="TRANS_AC_CODE" type="STRING" size="256"/>
+          <Column id="ACCOUNT_NO" type="STRING" size="256"/>
+          <Column id="DEPOSITOR" type="STRING" size="256"/>
+          <Column id="SALARY" type="STRING" size="256"/>
+          <Column id="HOUR_PRICE" type="STRING" size="256"/>
+          <Column id="RETIRE_DATE" type="STRING" size="256"/>
+          <Column id="IS_TAXFREE" type="STRING" size="256"/>
+          <Column id="IS_EMPINSURANCE" type="STRING" size="256"/>
+          <Column id="IS_NATIONALANNUITY" type="STRING" size="256"/>
+          <Column id="IS_HEALTHINSURANCE" type="STRING" size="256"/>
+          <Column id="NATIONALLITY_CODE" type="STRING" size="256"/>
+          <Column id="STAY_STAT" type="STRING" size="256"/>
+          <Column id="EMPINSURANCE_STAT_CODE" type="STRING" size="256"/>
+          <Column id="CH_JOB_CODE" type="STRING" size="256"/>
+          <Column id="MEMO" type="STRING" size="256"/>
+          <Column id="INS_IMPOSE" type="STRING" size="256"/>
+          <Column id="INS_IMPOSE_REASON" type="STRING" size="256"/>
+          <Column id="IS_STABLE_FUND" type="STRING" size="256"/>
+          <Column id="CHECKED" type="STRING" size="256"/>
+          <Column id="PAY_CODE" type="STRING" size="256"/>
+          <Column id="PAY_DATE" type="STRING" size="256"/>
+          <Column id="PAY_STARTDATE" type="STRING" size="256"/>
+          <Column id="PAY_ENDDATE" type="STRING" size="256"/>
+          <Column id="PAY_TYPE" type="STRING" size="256"/>
+          <Column id="PAY_DESCRIPTION" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_dayPayTarget">
+        <ColumnInfo>
+          <Column id="WORKPLACE_CODE" type="STRING" size="256"/>
+          <Column id="DEMP_CODE" type="STRING" size="256"/>
+          <Column id="DEMP_NAME" type="STRING" size="256"/>
+          <Column id="JOIN_DATE" type="STRING" size="256"/>
+          <Column id="IS_FOREIGN" type="STRING" size="256"/>
+          <Column id="JUMIN_NO" type="STRING" size="256"/>
+          <Column id="FOREIGN_NO" type="STRING" size="256"/>
+          <Column id="ZIP_CODE" type="STRING" size="256"/>
+          <Column id="ADDR" type="STRING" size="256"/>
+          <Column id="ADDR_DETAIL" type="STRING" size="256"/>
+          <Column id="EMAIL" type="STRING" size="256"/>
+          <Column id="TEL" type="STRING" size="256"/>
+          <Column id="PHONE" type="STRING" size="256"/>
+          <Column id="DEPT_CODE" type="STRING" size="256"/>
+          <Column id="PJT_CODE" type="STRING" size="256"/>
+          <Column id="POS_CODE" type="STRING" size="256"/>
+          <Column id="EMP_STAT_CODE" type="STRING" size="256"/>
+          <Column id="JOB_CODE" type="STRING" size="256"/>
+          <Column id="PAY_STAT_CODE" type="STRING" size="256"/>
+          <Column id="TRANS_AC_CODE" type="STRING" size="256"/>
+          <Column id="ACCOUNT_NO" type="STRING" size="256"/>
+          <Column id="DEPOSITOR" type="STRING" size="256"/>
+          <Column id="SALARY" type="STRING" size="256"/>
+          <Column id="HOUR_PRICE" type="STRING" size="256"/>
+          <Column id="RETIRE_DATE" type="STRING" size="256"/>
+          <Column id="IS_TAXFREE" type="STRING" size="256"/>
+          <Column id="IS_EMPINSURANCE" type="STRING" size="256"/>
+          <Column id="IS_NATIONALANNUITY" type="STRING" size="256"/>
+          <Column id="IS_HEALTHINSURANCE" type="STRING" size="256"/>
+          <Column id="NATIONALLITY_CODE" type="STRING" size="256"/>
+          <Column id="STAY_STAT" type="STRING" size="256"/>
+          <Column id="EMPINSURANCE_STAT_CODE" type="STRING" size="256"/>
+          <Column id="CH_JOB_CODE" type="STRING" size="256"/>
+          <Column id="MEMO" type="STRING" size="256"/>
+          <Column id="INS_IMPOSE" type="STRING" size="256"/>
+          <Column id="INS_IMPOSE_REASON" type="STRING" size="256"/>
+          <Column id="IS_STABLE_FUND" type="STRING" size="256"/>
+          <Column id="CHECKED" type="STRING" size="256"/>
+          <Column id="PAY_CODE" type="STRING" size="256"/>
+          <Column id="PAY_DATE" type="STRING" size="256"/>
+          <Column id="PAY_STARTDATE" type="STRING" size="256"/>
+          <Column id="PAY_ENDDATE" type="STRING" size="256"/>
+          <Column id="PAY_TYPE" type="STRING" size="256"/>
+          <Column id="PAY_DESCRIPTION" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

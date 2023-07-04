@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="rr_retReceiptApply" width="1200" height="650" titletext="New Form" onload="rr_retReceiptApply_onload">
+    <Layouts>
+      <Layout height="650" width="1200">
+        <Static id="Static00" taborder="0" text="퇴직금영수증 신청" left="477" top="90" width="247" height="66" textAlign="center"/>
+        <Static id="Static01" taborder="1" text="사원명" left="234" top="238" width="104" height="40"/>
+        <Static id="Static01_00" taborder="2" text="신청일" left="234" top="310" width="104" height="40"/>
+        <Static id="Static01_01" taborder="3" text="부서" left="670" top="238" width="104" height="40"/>
+        <Static id="Static01_02" taborder="4" text="사업장" left="670" top="310" width="104" height="40"/>
+        <Edit id="edit_empName" taborder="5" left="343" top="238" width="210" height="40" readonly="true"/>
+        <Calendar id="calen_applyDate" taborder="6" left="343" top="310" width="210" height="40"/>
+        <Edit id="edit_dept" taborder="7" left="764" top="238" width="210" height="40" readonly="true"/>
+        <Edit id="edit_workplace" taborder="8" left="764" top="310" width="210" height="40" readonly="true" onchanged="edit_workplace_onchanged"/>
+        <Button id="btn_retApply" taborder="9" text="퇴사 신청" left="464" top="452" width="92" height="45" onclick="btn_retApply_onclick"/>
+        <Button id="btn_retReceApply" taborder="10" text="퇴직금영수증 신청" left="588" top="452" width="171" height="45" onclick="btn_retReceApply_onclick"/>
+      </Layout>
+    </Layouts>
+    <Bind>
+      <BindItem id="item0" compid="edit_empName" propid="value" datasetid="gds_emp" columnid="EMP_NAME"/>
+      <BindItem id="item1" compid="edit_dept" propid="value" datasetid="gds_emp" columnid="DEPT_NAME"/>
+      <BindItem id="item2" compid="edit_workplace" propid="value" datasetid="gds_emp" columnid="WORKPLACE_CODE"/>
+    </Bind>
+    <Script type="xscript5.1"><![CDATA[
+this.rr_retReceiptApply_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	/*this.alert(nexa.gds_emp.getColumn(0,"EMP_CODE"));*/
+	var currDate = new Date();
+    var year = currDate.getFullYear().toString().padLeft(4, "0");
+    var month = (currDate.getMonth()+1).toString().padLeft(2, "0");
+    var day = currDate.getDate().toString().padLeft(2, "0");
+
+    this.calen_applyDate.set_value(year+month+day);
+};
+
+this.btn_retReceApply_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.transaction("registerRetirementReceipt",
+					 "svcRetirement::registerRetirementReceipt",
+					 "",
+					 "",
+					 "empCode='"+nexa.gds_emp.getColumn(0,"EMP_CODE")+"'",
+					 "fn_callback");
+};
+
+this.errorCode = null;
+this.errorMsg = null;
+
+this.fn_callback = function(svcId, ErrorCode ,ErrorMsg)
+{
+	trace(svcId);
+	trace(ErrorCode);
+	trace(ErrorMsg);
+	
+	if(ErrorCode < 0){
+			alert(ErrorCode + " : " + ErrorMsg); return;
+	}else if(this.errorCode < 0){
+		alert(this.errorCode + " : " + this.errorMsg);
+		this.errorCode = null;
+		this.errorMsg = null;
+		return;
+	}
+	
+	if(svcId == "registerRetirementReceipt"){
+		this.alert("신청 완료");
+		return;
+	}
+	if(svcId == "modifyRetirementApply"){
+		this.alert("신청 완료");
+		return;
+	}
+
+}
+
+this.btn_retApply_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	trace(this.calen_applyDate.value);
+	this.transaction("modifyRetirementApply",
+					 "svcRetirement::modifyRetirementApply",
+					 "",
+					 "",
+					 "empCode='"+nexa.gds_emp.getColumn(0,"EMP_CODE")+"' retirementDate='"+this.calen_applyDate.value+"'",
+					 "fn_callback");
+};
+]]></Script>
+  </Form>
+</FDL>
