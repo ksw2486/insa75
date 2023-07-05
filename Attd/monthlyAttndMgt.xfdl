@@ -3,15 +3,15 @@
   <Form id="monthlyAttndMgt" width="1150" height="620" titletext="New Form" onload="monthlyAttndMgt_onload">
     <Layouts>
       <Layout height="620" width="1150">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="30" width="1105" height="560" background="#D9E5FF">
+        <Div id="Div00_00" taborder="0" text="" left="20" top="30" width="1105" height="560">
           <Layouts>
             <Layout>
-              <Static id="title" taborder="2" text="◼월근태관리" left="8" top="0" width="214" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Static id="inquiry" taborder="0" text="조회월" left="288" top="45" width="114" height="45" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Button id="deadlineBtn" taborder="3" text="전체마감하기" left="377" top="100" width="170" height="45" onclick="Div00_00_deadlineBtn_onclick"/>
-              <Button id="deadlineCancellationBtn" taborder="4" text="전체마감취소" left="562" top="100" width="170" height="45" onclick="Div00_00_deadlineCancellationBtn_onclick"/>
-              <Button id="inquiryBtn" taborder="5" text="조회하기" left="647" top="45" width="170" height="45" onclick="Div00_00_inquiryBtn_onclick"/>
-              <Grid id="Grid00" taborder="6" left="23" top="160" width="1062" height="370" binddataset="ds_monthAttenMng">
+              <Static id="title" taborder="1" text="◼월근태관리" left="8" top="0" width="214" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
+              <Static id="inquiry" taborder="0" text="조회월" left="80" top="55" width="114" height="45" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
+              <Button id="deadlineBtn" taborder="2" text="전체마감하기" left="560" top="54" width="170" height="45" onclick="Div00_00_deadlineBtn_onclick"/>
+              <Button id="deadlineCancellationBtn" taborder="3" text="전체마감취소" left="750" top="54" width="170" height="45" onclick="Div00_00_deadlineCancellationBtn_onclick"/>
+              <Button id="inquiryBtn" taborder="4" text="조회하기" left="360" top="54" width="170" height="45" onclick="Div00_00_inquiryBtn_onclick"/>
+              <Grid id="Grid00" taborder="5" left="28" top="125" width="1062" height="370" binddataset="ds_monthAttenMng">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -72,64 +72,8 @@
                   </Format>
                 </Formats>
               </Grid>
-              <Combo id="Combo00" taborder="1" text="" left="425" top="45" width="195" height="45" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" codecolumn="codecolumn" datacolumn="datacolumn" index="0" readonly="false" innerdataset="innerdataset" value="00">
-                <Dataset id="innerdataset">
-                  <ColumnInfo>
-                    <Column id="codecolumn" size="256"/>
-                    <Column id="datacolumn" size="256"/>
-                  </ColumnInfo>
-                  <Rows>
-                    <Row>
-                      <Col id="codecolumn">2022-1</Col>
-                      <Col id="datacolumn">2022년 1월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-2</Col>
-                      <Col id="datacolumn">2022년 2월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-3</Col>
-                      <Col id="datacolumn">2022년 3월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-4</Col>
-                      <Col id="datacolumn">2022년 4월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-5</Col>
-                      <Col id="datacolumn">2022년 5월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-6</Col>
-                      <Col id="datacolumn">2022년 6월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-7</Col>
-                      <Col id="datacolumn">2022년 7월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-8</Col>
-                      <Col id="datacolumn">2022년 8월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-9</Col>
-                      <Col id="datacolumn">2022년 9월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-10</Col>
-                      <Col id="datacolumn">2022년 10월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-11</Col>
-                      <Col id="datacolumn">2022년 11월</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022-12</Col>
-                      <Col id="datacolumn">2022년 12월</Col>
-                    </Row>
-                  </Rows>
-                </Dataset>
-              </Combo>
+              <Calendar id="Calendar00" taborder="6" left="197" top="49" width="133" height="55" editformat="yyyy-MM" dateformat="yyyy-MM"/>
+              <Button id="Button00" taborder="7" text="저장" left="940" top="57" width="124" height="43" onclick="Div00_00_Button00_onclick"/>
             </Layout>
           </Layouts>
         </Div>
@@ -138,17 +82,26 @@
     <Script type="xscript5.1"><![CDATA[include"Lib::commDate.xjs";
 include"Lib::commString.xjs";
 
+nexa = nexacro.getApplication();
+
 // 조회하기
 this.Div00_00_inquiryBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	trace(this.Div00_00.form.Combo00.value)
+	//trace(this.Div00_00.form.Calendar00.value.substring(0,6))
+	
+	var applyYearMonth = this.Div00_00.form.Calendar00.value.substring(0,6)
+	
+	var workplaceCode = nexa.g_workplaceCode
+	
 
 	this.transaction("monthSearchID",
 					"svcAttdappvl::month-attnd",
 					"",
 					"ds_monthAttenMng=ds_monthAttenMng",
-					"applyYearMonth='"+this.Div00_00.form.Combo00.value+"'",
+					"applyYearMonth=" + applyYearMonth +
+					" workplaceCode=" + workplaceCode,
 					"fn_callback");
+					
 };
 
 //전체마감
@@ -159,12 +112,13 @@ this.Div00_00_deadlineBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickE
 		this.ds_monthAttenMng.setColumn(i,"FINALIZE_STATUS", "Y");
 	}
 	
-	this.transaction("finalizeID",
-					"svcAttdappvl::month-attndPut",
-					"ds_monthAttenMng=ds_monthAttenMng",
-					"",
-					"",
-					"fn_callback");
+// 	this.transaction("finalizeID",
+// 					"svcAttdappvl::month-attndPut",
+// 					"ds_monthAttenMng=ds_monthAttenMng",
+// 					"",
+// 					"",
+// 					"fn_callback");
+
 };
 
 //마감취소
@@ -176,17 +130,25 @@ this.Div00_00_deadlineCancellationBtn_onclick = function(obj:nexacro.Button,e:ne
 		this.ds_monthAttenMng.setColumn(i,"FINALIZE_STATUS", "N");
 	}
 	
-	this.transaction("finalizeID",
+// 	this.transaction("finalizeID",
+// 					 "svcAttdappvl::month-attndPut",
+// 					 "ds_monthAttenMng=ds_monthAttenMng",
+// 					 "",
+// 					 "",
+// 					 "fn_callback");
+
+};
+
+
+this.Div00_00_Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+		this.transaction("finalizeID",
 					 "svcAttdappvl::month-attndPut",
-					 "ds_monthAttenMng=ds_monthAttenMng",
+					 "ds_monthAttenMng=ds_monthAttenMng:u",
 					 "",
 					 "",
 					 "fn_callback");
-};
-
-this.Div00_00_Calendar00_onchanged = function(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo)
-{
-	
+					 
 };
 ]]></Script>
     <Objects>

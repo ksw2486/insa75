@@ -3,7 +3,7 @@
   <Form id="anuualLeaveMgt" width="1060" height="620" titletext="New Form">
     <Layouts>
       <Layout height="620" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="30" width="1010" height="560">
+        <Div id="Div00_00" taborder="0" text="" left="25" top="30" width="1010" height="560" background="#D9E5FF">
           <Layouts>
             <Layout>
               <Static id="Static00_01_00_00_00_00" taborder="0" text="조회연월" left="210" top="55" width="100" height="40" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
@@ -128,7 +128,6 @@
                   </Rows>
                 </Dataset>
               </Combo>
-              <Static id="Static01" taborder="8" text="깃 test 입니다" left="115" top="97" width="308" height="78" onclick="Div00_00_Static01_onclick" font="normal 30pt/normal &quot;Arial&quot;"/>
             </Layout>
           </Layouts>
         </Div>
@@ -217,11 +216,6 @@ this.annualLeaveUpdate = function()
 					"",
 					""
 					);
-}
-this.Div00_00_Static01_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
-{
-	
-};
-]]></Script>
+}]]></Script>
   </Form>
 </FDL>

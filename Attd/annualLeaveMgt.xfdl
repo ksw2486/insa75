@@ -3,14 +3,13 @@
   <Form id="anuualLeaveMgt" width="1060" height="620" titletext="New Form">
     <Layouts>
       <Layout height="620" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="30" width="1010" height="560" background="#D9E5FF">
+        <Div id="Div00_00" taborder="0" text="" left="25" top="30" width="1010" height="560">
           <Layouts>
             <Layout>
-              <Static id="Static00_01_00_00_00_00" taborder="0" text="조회연월" left="210" top="55" width="100" height="40" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Button id="btn_search" taborder="1" text="조회하기" left="640" top="55" width="150" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_search_onclick"/>
-              <Button id="btn_finalize" taborder="2" text="마감처리" left="365" top="120" height="40" width="100" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_finalize_onclick"/>
-              <Button id="btn_cancel" taborder="3" text="마감취소" left="535" top="120" height="40" width="100" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_cancel_onclick"/>
-              <Grid id="Grid00" taborder="4" left="125" top="185" width="761" height="345" binddataset="ds_vacation">
+              <Button id="btn_search" taborder="0" text="조회하기" left="325" top="128" width="150" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_search_onclick"/>
+              <Button id="btn_finalize" taborder="1" text="전체마감하기" left="505" top="128" height="40" width="140" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_finalize_onclick"/>
+              <Button id="btn_cancel" taborder="2" text="전체마감취소" left="655" top="128" height="40" width="140" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_cancel_onclick"/>
+              <Grid id="Grid00" taborder="3" left="125" top="185" width="761" height="345" binddataset="ds_vacation">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -47,87 +46,9 @@
                   </Format>
                 </Formats>
               </Grid>
-              <Static id="Static00" taborder="5" text="◼연차관리" left="8" top="0" width="188" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Combo id="searchYear" taborder="6" text="Combo00" left="320" top="55" width="150" height="40" font="16px/normal &quot;나눔고딕&quot;" onitemchanged="Div00_00_searchYear_onitemchanged" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
-                <Dataset id="innerdataset">
-                  <ColumnInfo>
-                    <Column id="codecolumn" size="256"/>
-                    <Column id="datacolumn" size="256"/>
-                  </ColumnInfo>
-                  <Rows>
-                    <Row>
-                      <Col id="codecolumn">2020</Col>
-                      <Col id="datacolumn">2020</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2021</Col>
-                      <Col id="datacolumn">2021</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">2022</Col>
-                      <Col id="datacolumn">2022</Col>
-                    </Row>
-                  </Rows>
-                </Dataset>
-              </Combo>
-              <Combo id="searchMonth" taborder="7" text="Combo01" left="480" top="55" width="150" height="40" font="16px/normal &quot;나눔고딕&quot;" onitemchanged="Div00_00_searchMonth_onitemchanged" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
-                <Dataset id="innerdataset">
-                  <ColumnInfo>
-                    <Column id="codecolumn" size="256"/>
-                    <Column id="datacolumn" size="256"/>
-                  </ColumnInfo>
-                  <Rows>
-                    <Row>
-                      <Col id="codecolumn">01</Col>
-                      <Col id="datacolumn">01</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">02</Col>
-                      <Col id="datacolumn">02</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">03</Col>
-                      <Col id="datacolumn">03</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">04</Col>
-                      <Col id="datacolumn">04</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">05</Col>
-                      <Col id="datacolumn">05</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">06</Col>
-                      <Col id="datacolumn">06</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">07</Col>
-                      <Col id="datacolumn">07</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">08</Col>
-                      <Col id="datacolumn">08</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">09</Col>
-                      <Col id="datacolumn">09</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">10</Col>
-                      <Col id="datacolumn">10</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">11</Col>
-                      <Col id="datacolumn">11</Col>
-                    </Row>
-                    <Row>
-                      <Col id="codecolumn">12</Col>
-                      <Col id="datacolumn">12</Col>
-                    </Row>
-                  </Rows>
-                </Dataset>
-              </Combo>
+              <Static id="Static00" taborder="4" text="◼연차관리" left="8" top="0" width="188" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
+              <Calendar id="Calendar00" taborder="5" left="125" top="128" width="159" height="40" dateformat="yyyy-MM" editformat="yyyy-MM"/>
+              <Button id="Button00" taborder="6" text="저장" left="807" top="130" width="107" height="36" onclick="Div00_00_Button00_onclick"/>
             </Layout>
           </Layouts>
         </Div>
@@ -152,12 +73,13 @@ nexa = nexacro.getApplication();
 //조회하기
 this.Div00_00_btn_search_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	var year=this.Div00_00.form.searchYear.text;
-	var month=this.Div00_00.form.searchMonth.text;
-	var date=year+month;
-	trace(date);
+
+	var date= this.Div00_00.form.Calendar00.value.substring(0,6)
 	
 	var workplaceCode = nexa.g_workplaceCode
+	
+	trace(date)
+	trace(workplaceCode)
 	
 	this.transaction(
 					"searchAnnual",
@@ -180,7 +102,7 @@ this.Div00_00_btn_finalize_onclick= function(obj:nexacro.Button,e:nexacro.ClickE
 		this.ds_vacation.setColumn(i,"FINALIZE_STATUS","Y");
 	}
 	
-	this.annualLeaveUpdate();
+//	this.annualLeaveUpdate();
 };
 
 //마감취소
@@ -192,7 +114,7 @@ this.Div00_00_btn_cancel_onclick = function(obj:nexacro.Button,e:nexacro.ClickEv
 		this.ds_vacation.setColumn(i,"FINALIZE_STATUS","N");
 	}
 	
-	this.annualLeaveUpdate();
+//	this.annualLeaveUpdate();
 };
 
 //Y,N 
@@ -208,14 +130,21 @@ this.fn_callback = function(trID,ErrorCode,ErrorMsg){
 
 this.annualLeaveUpdate = function()
 {
-	this.transaction(
+
+}
+
+
+this.Div00_00_Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+		this.transaction(
 					"searchAnnual",
 					"svcAttdappvl::annual-leaveMgt/1",
-					"ds_vacation=ds_vacation", 
+					"ds_vacation=ds_vacation:u", 
 					"", 
 					"",
 					""
 					);
-}]]></Script>
+};
+]]></Script>
   </Form>
 </FDL>
