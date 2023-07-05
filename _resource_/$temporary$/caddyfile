@@ -1,0 +1,8 @@
+﻿{
+admin off
+}
+:4098
+{
+root "C:/Users/dabin/Documents/TOBESOFT/Nexacro N/outputs/insa"
+file_server
+}
