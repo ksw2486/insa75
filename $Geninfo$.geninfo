@@ -9,6 +9,12 @@
       <Script rule_version="1.02"/>
       <GeneratorInfo rule_version="1.2"/>
     </Rule>
+
+    <Info project="C:\Users\dabin\Desktop\복사본\insa75\" generated="C:\Users\dabin\Documents\TOBESOFT\Nexacro N\outputs\insa\">
+      <File url="environment.xml" checksum="20230705155026" errormsg=""/>
+      <File url="typedefinition.xml" checksum="20230705155026" errormsg=""/>
+      <File url="appvariables.xml" checksum="20230705171922" errormsg=""/>
+      <File url="_resource_\_theme_\default\theme.xcss" checksum="20230705155026" errormsg=""/>
     <Info project="C:\Users\CoDae\Desktop\2차프로젝트\insa75\" generated="C:\Users\CoDae\Documents\TOBESOFT\Nexacro N\outputs\insa\">
       <File url="environment.xml" checksum="20230704204309" errormsg=""/>
       <File url="typedefinition.xml" checksum="20230704204309" errormsg=""/>
