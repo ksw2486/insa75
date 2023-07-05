@@ -1,119 +1,241 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FDL version="2.1">
-  <Form id="sociallns" width="1060" height="610" titletext="New Form" onload="sociallns_onload">
+  <Form id="sociallns" width="1920" height="1080" titletext="New Form" onload="sociallns_onload">
     <Layouts>
-      <Layout height="610" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560" background="#D9E5FF">
+      <Layout height="1080" width="1920">
+        <Div id="Div00" taborder="1" text="Div00" left="32" top="2" width="1248" height="48" border="0px none, 0px none, 2px solid black">
           <Layouts>
             <Layout>
-              <Static id="Static00" taborder="1" text="◼사회보험환경등록" left="8" top="0" width="214" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Div id="Div00" taborder="0" left="27" top="53" width="946" height="72" background="#ffffff">
-                <Layouts>
-                  <Layout>
-                    <Static id="Static00" taborder="0" text="귀속연도" left="43" top="3" width="120" height="60" font="24px/normal &quot;나눔고딕&quot;" textAlign="center"/>
-                    <Static id="Static00_00" taborder="1" text="년" left="343" top="3" width="120" height="60" font="24px/normal &quot;나눔고딕&quot;"/>
-                    <Combo id="year" taborder="2" left="165" top="6" width="162" height="58" font="20px/normal &quot;나눔고딕&quot;" onitemchanged="Div00_00_Div00_Combo00_onitemchanged"/>
-                  </Layout>
-                </Layouts>
-              </Div>
-              <Tab id="Tab00" taborder="2" tabindex="0" left="40" top="135" width="923" height="390" onchanged="Div00_00_Tab00_onchanged">
-                <Tabpages>
-                  <Tabpage id="Tabpage1" text="건강보험">
-                    <Layouts>
-                      <Layout>
-                        <Static id="Static00" taborder="0" text="✔건강보험" left="65" top="21" width="220" height="60" font="36px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01" taborder="1" text="건강보험부담율" left="105" top="98" width="210" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01_00" taborder="2" text="장기요양보험율" left="105" top="171" width="210" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Edit id="Edit00" taborder="3" left="325" top="101" width="102" height="60" font="20px/normal &quot;나눔고딕&quot;" textAlign="center"/>
-                        <Edit id="Edit00_00" taborder="4" left="325" top="171" width="102" height="60" font="20px/normal &quot;나눔고딕&quot;" textAlign="center" enable="true"/>
-                        <Static id="Static01_01" taborder="5" text="%" left="435" top="98" width="210" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01_01_00" taborder="6" text="%" left="437" top="168" width="210" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Button id="Button00" taborder="7" text="갱신" left="563" top="318" width="130" height="40" font="28px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage3_Button00_onclick"/>
-                        <Button id="Button00_00" taborder="8" text="삭제" left="723" top="318" width="130" height="40" font="28px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage4_Button00_00_onclick"/>
-                      </Layout>
-                    </Layouts>
-                  </Tabpage>
-                  <Tabpage id="Tabpage2" text="국민연금">
-                    <Layouts>
-                      <Layout>
-                        <Static id="Static00" taborder="0" text="✔국민연금" left="65" top="21" width="220" height="60" font="36px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01" taborder="1" text="국민연금 개인부담율" left="105" top="98" width="290" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Edit id="Edit00" taborder="2" left="415" top="101" width="102" height="60"/>
-                        <Static id="Static01_01" taborder="3" text="%" left="525" top="98" width="210" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01_00" taborder="4" text="국민연금 사업자부담율" left="105" top="171" width="290" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Edit id="Edit00_00" taborder="5" left="415" top="171" width="102" height="60"/>
-                        <Static id="Static01_01_00" taborder="6" text="%" left="527" top="168" width="210" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Button id="Button00" taborder="7" text="갱신" left="563" top="318" width="130" height="40" font="28px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage3_Button00_onclick"/>
-                        <Button id="Button00_00" taborder="8" text="삭제" left="723" top="318" width="130" height="40" font="28px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage4_Button00_00_onclick"/>
-                      </Layout>
-                    </Layouts>
-                  </Tabpage>
-                  <Tabpage id="Tabpage3" text="고용보험">
-                    <Layouts>
-                      <Layout>
-                        <Static id="Static00" taborder="0" text="✔고용보험" left="65" top="21" width="220" height="60" font="36px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01" taborder="1" text="고용안전사업 사업자부담분율" left="15" top="215" width="431" height="40" font="26px/normal &quot;나눔고딕&quot;" textAlign="right"/>
-                        <Edit id="Edit00" taborder="2" left="456" top="218" width="102" height="40"/>
-                        <Static id="Static01_01" taborder="3" text="%" left="566" top="215" width="210" height="40" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01_00" taborder="4" text="직업능력개발사업 사업자부담분율" left="15" top="260" width="431" height="40" font="26px/normal &quot;나눔고딕&quot;" textAlign="right"/>
-                        <Edit id="Edit00_00" taborder="5" left="456" top="263" width="102" height="40"/>
-                        <Static id="Static01_01_00" taborder="6" text="%" left="568" top="260" width="210" height="40" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Button id="Button00" taborder="7" text="갱신" left="563" top="318" width="130" height="40" font="28px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage3_Button00_onclick"/>
-                        <Button id="Button00_00" taborder="8" text="삭제" left="723" top="318" width="130" height="40" font="28px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage4_Button00_00_onclick"/>
-                        <Static id="Static01_02" taborder="9" text="고용보험율" left="15" top="126" width="431" height="40" font="26px/normal &quot;나눔고딕&quot;" textAlign="right"/>
-                        <Edit id="Edit00_01" taborder="10" left="456" top="128" width="102" height="40"/>
-                        <Static id="Static01_01_01" taborder="11" text="%" left="566" top="126" width="210" height="40" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01_00_00" taborder="12" text="실업급여 사업자부담분율" left="15" top="170" width="431" height="40" font="26px/normal &quot;나눔고딕&quot;" textAlign="right"/>
-                        <Edit id="Edit00_00_00" taborder="13" left="456" top="173" width="102" height="40"/>
-                        <Static id="Static01_01_00_00" taborder="14" text="%" left="568" top="170" width="210" height="40" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01_02_00" taborder="15" text="고용보험 공제방식" left="120" top="78" width="226" height="40" font="26px/normal &quot;나눔고딕&quot;" textAlign="right"/>
-                        <Combo id="Combo00" taborder="16" left="356" top="78" width="150" height="40" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
-                          <Dataset id="innerdataset">
-                            <ColumnInfo>
-                              <Column id="codecolumn" size="256"/>
-                              <Column id="datacolumn" size="256"/>
-                            </ColumnInfo>
-                            <Rows>
-                              <Row>
-                                <Col id="codecolumn">1.임금총액방식</Col>
-                                <Col id="datacolumn">1.임금총액방식</Col>
-                              </Row>
-                              <Row>
-                                <Col id="codecolumn">2.보수총액방식</Col>
-                                <Col id="datacolumn">2.보수총액방식</Col>
-                              </Row>
-                              <Row>
-                                <Col id="codecolumn">3.과세총액방식</Col>
-                                <Col id="datacolumn">3.과세총액방식</Col>
-                              </Row>
-                            </Rows>
-                          </Dataset>
-                        </Combo>
-                        <Static id="Static01_02_00_00" taborder="17" text="공제구분" left="516" top="79" width="108" height="40" font="26px/normal &quot;나눔고딕&quot;" textAlign="right"/>
-                        <Combo id="Combo00_00" taborder="18" left="634" top="79" width="150" height="40"/>
-                      </Layout>
-                    </Layouts>
-                  </Tabpage>
-                  <Tabpage id="Tabpage4" text="산재보험">
-                    <Layouts>
-                      <Layout>
-                        <Static id="Static00" taborder="0" text="✔산재보험" left="65" top="21" width="220" height="60" font="36px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01" taborder="1" text="산재보험율" left="105" top="98" width="220" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Edit id="Edit00" taborder="2" left="315" top="101" width="102" height="60"/>
-                        <Static id="Static01_01" taborder="3" text="%" left="425" top="98" width="210" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static01_00" taborder="4" text="출퇴근재해요율" left="105" top="171" width="220" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Edit id="Edit00_00" taborder="5" left="315" top="171" width="102" height="60"/>
-                        <Static id="Static01_01_00" taborder="6" text="%" left="427" top="168" width="210" height="60" font="28px/normal &quot;나눔고딕&quot;"/>
-                        <Button id="Button00" taborder="7" text="갱신" left="563" top="318" width="130" height="40" font="28px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage3_Button00_onclick"/>
-                        <Button id="Button00_00" taborder="8" text="삭제" left="723" top="318" width="130" height="40" font="28px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage4_Button00_00_onclick"/>
-                      </Layout>
-                    </Layouts>
-                  </Tabpage>
-                </Tabpages>
-              </Tab>
+              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick"/>
+              <Static id="Static00" taborder="1" text="사회보험환경등록" left="11" top="10" width="155" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;Gulim&quot;"/>
             </Layout>
           </Layouts>
         </Div>
+        <Tab id="Tab00" taborder="0" tabindex="0" left="32" top="60" width="1003" height="530" onchanged="Tab00_onchanged">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="건강보험">
+              <Layouts>
+                <Layout>
+                  <Div id="Div03" taborder="0" text="Div03" left="1" top="13" width="1177" height="598" border="2px solid skyblue">
+                    <Layouts>
+                      <Layout>
+                        <Grid id="Grid00" taborder="0" left="5" top="55" width="460" height="441" binddataset="ds_health_insurance" oncellclick="Tab00_Tabpage1_Div03_Grid00_oncellclick">
+                          <Formats>
+                            <Format id="default">
+                              <Columns>
+                                <Column size="150"/>
+                                <Column size="150"/>
+                                <Column size="150"/>
+                              </Columns>
+                              <Rows>
+                                <Row size="24" band="head"/>
+                                <Row size="24"/>
+                              </Rows>
+                              <Band id="head">
+                                <Cell text="적용기간"/>
+                                <Cell col="1" text="건강보험료율(%)"/>
+                                <Cell col="2" text="장기요양보험료율(%)"/>
+                              </Band>
+                              <Band id="body">
+                                <Cell text="bind:ATTRIBUTION_YEAR" textAlign="center"/>
+                                <Cell col="1" text="bind:HEALTH_INSURANCE_RATIO" displaytype="mask" edittype="mask" maskedittype="number" maskeditformat="0.00%" textAlign="center"/>
+                                <Cell col="2" text="bind:LONG_TERM_CARE_INSURANCE" displaytype="mask" edittype="mask" maskeditformat="0.00%" maskedittype="number" textAlign="center"/>
+                              </Band>
+                            </Format>
+                          </Formats>
+                        </Grid>
+                        <Grid id="Grid01" taborder="1" left="484" top="56" width="502" height="187">
+                          <Formats>
+                            <Format id="default">
+                              <Columns>
+                                <Column size="80"/>
+                                <Column size="48"/>
+                                <Column size="123"/>
+                                <Column size="123"/>
+                                <Column size="123"/>
+                              </Columns>
+                              <Rows>
+                                <Row size="24" band="head"/>
+                                <Row size="24"/>
+                                <Row size="24"/>
+                                <Row size="24"/>
+                              </Rows>
+                              <Band id="head">
+                                <Cell text="구분"/>
+                                <Cell col="1" text="계"/>
+                                <Cell col="2" text="가입자부담"/>
+                                <Cell col="3" text="사용자부담"/>
+                                <Cell col="4" text="국가부담"/>
+                              </Band>
+                              <Band id="body">
+                                <Cell text="근로자" textAlign="center"/>
+                                <Cell col="1" text="expr: ds_sociallns.parent.health_insurance" suppressalign="middle" expr="health_insurance ==null ? &quot;&quot; : health_insurance"/>
+                                <Cell col="2" text="dd" expr="health_insurance == undefined ? &quot;&quot; : health_insurance/2"/>
+                                <Cell col="3" text="dd" expr="health_insurance == undefined ? &quot;&quot; : health_insurance/2"/>
+                                <Cell col="4" expr="health_insurance == undefined ? &quot;&quot; : &quot;-&quot;"/>
+                                <Cell row="1" text="공무원" textAlign="center"/>
+                                <Cell row="1" col="1" expr="health_insurance ==null ? &quot;&quot; : health_insurance" text="dd"/>
+                                <Cell row="1" col="2" expr="health_insurance == undefined ? &quot;&quot; : health_insurance/2" text="dd"/>
+                                <Cell row="1" col="3" expr="health_insurance == undefined ? &quot;&quot; : &quot;-&quot;" text="dd"/>
+                                <Cell row="1" col="4" expr="health_insurance == undefined ? &quot;&quot; : health_insurance/2" text="dd"/>
+                                <Cell row="2" text="사립학교교원" textAlign="center"/>
+                                <Cell row="2" col="1" expr="health_insurance ==null ? &quot;&quot; : health_insurance" text="dd"/>
+                                <Cell row="2" col="2" expr="health_insurance == undefined ? &quot;&quot; : health_insurance/2" text="dd"/>
+                                <Cell row="2" col="3" expr="health_insurance ==null ? &quot;&quot; :  nexacro.round(health_insurance*3/10,4)" text="dd" maskeditformat="#.##"/>
+                                <Cell row="2" col="4" expr="health_insurance ==null ? &quot;&quot; :  nexacro.round(health_insurance*2/10,4)" text="dd"/>
+                              </Band>
+                            </Format>
+                          </Formats>
+                        </Grid>
+                        <Static id="Static00" taborder="2" text="&lt;연도별 보험료율&gt;" left="17" top="16" width="160" height="32" onclick="Tab00_Tabpage1_Div03_Static00_onclick" font="bold 20px/normal &quot;한컴 고딕&quot;"/>
+                        <Static id="Static00_00" taborder="3" text="&lt;보험료 부담비율&gt;" left="484" top="16" width="160" height="32" onclick="Tab00_Tabpage1_Div03_Static00_onclick" font="bold 20px/normal &quot;한컴 고딕&quot;"/>
+                      </Layout>
+                    </Layouts>
+                    <InitValue>
+                      <Grid id="Grid01" binddataset="Dataset00"/>
+                    </InitValue>
+                  </Div>
+                </Layout>
+              </Layouts>
+            </Tabpage>
+            <Tabpage id="Tabpage2" text="국민연금">
+              <Layouts>
+                <Layout>
+                  <Div id="Div03" taborder="0" text="Div03" left="1" top="13" width="1000" height="463" border="2px solid skyblue">
+                    <Layouts>
+                      <Layout>
+                        <Grid id="Grid01" taborder="0" left="17" top="53" width="518" height="187" binddataset="ds_national_pension">
+                          <Formats>
+                            <Format id="default">
+                              <Columns>
+                                <Column size="90"/>
+                                <Column size="123"/>
+                                <Column size="123"/>
+                                <Column size="123"/>
+                              </Columns>
+                              <Rows>
+                                <Row size="24" band="head"/>
+                                <Row size="24"/>
+                              </Rows>
+                              <Band id="head">
+                                <Cell/>
+                                <Cell col="1" text="연금보험료(전체)"/>
+                                <Cell col="2" text="근로자"/>
+                                <Cell col="3" text="사업주"/>
+                              </Band>
+                              <Band id="body">
+                                <Cell textAlign="center" text="기준 소득월액" font="bold 12px/normal &quot;Gulim&quot;"/>
+                                <Cell col="1" text="9%" displaytype="normal" edittype="none" textAlign="center"/>
+                                <Cell col="2" text="4.5%" textAlign="center"/>
+                                <Cell col="3" text="4.5%" textAlign="center"/>
+                              </Band>
+                            </Format>
+                          </Formats>
+                        </Grid>
+                        <Static id="Static00" taborder="1" text="&lt;연도별 보험료율&gt;" left="17" top="16" width="160" height="32" onclick="Tab00_Tabpage1_Div03_Static00_onclick" font="bold 20px/normal &quot;한컴 고딕&quot;"/>
+                      </Layout>
+                    </Layouts>
+                    <InitValue>
+                      <Grid id="Grid01" binddataset="ds_national_pension"/>
+                    </InitValue>
+                  </Div>
+                </Layout>
+              </Layouts>
+            </Tabpage>
+            <Tabpage id="Tabpage3" text="고용보험">
+              <Layouts>
+                <Layout>
+                  <Div id="Div03" taborder="0" text="Div03" left="1" top="13" width="1000" height="463" border="2px solid skyblue">
+                    <Layouts>
+                      <Layout>
+                        <Grid id="Grid04" taborder="0" left="17" top="53" width="590" height="150" oncellclick="Tab00_Tabpage3_Div03_Grid04_oncellclick" binddataset="ds_employment_insurance">
+                          <Formats>
+                            <Format id="default">
+                              <Columns>
+                                <Column size="90"/>
+                                <Column size="250"/>
+                                <Column size="123"/>
+                                <Column size="123"/>
+                              </Columns>
+                              <Rows>
+                                <Row size="24" band="head"/>
+                                <Row size="24"/>
+                                <Row size="24"/>
+                                <Row size="24"/>
+                                <Row size="24"/>
+                                <Row size="24"/>
+                              </Rows>
+                              <Band id="head">
+                                <Cell colspan="2" text="구분"/>
+                                <Cell col="2" text="근로자"/>
+                                <Cell col="3" text="사업주"/>
+                              </Band>
+                              <Band id="body">
+                                <Cell colspan="2" text="실업급여" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell col="2" textAlign="center" expr="employment_insurance == &quot;0.9%&quot; ? &quot;0.8%&quot; : &quot;0.9%&quot;"/>
+                                <Cell col="3" textAlign="center" expr="employment_insurance == &quot;0.9%&quot; ? &quot;0.8%&quot; : &quot;0.9%&quot;"/>
+                                <Cell row="1" rowspan="4" text=" 고용안전,&#13;&#10;직업능력&#13;&#10;개발사업" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="1" col="1" text="150인 미만기업" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="1" col="2" textAlign="center" text="-"/>
+                                <Cell row="1" col="3" text="0.25%" textAlign="center"/>
+                                <Cell row="2" col="1" text="150인 이상(우선지원대상기업)" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="2" col="2" text="-" textAlign="center"/>
+                                <Cell row="2" col="3" text="0.45%" textAlign="center"/>
+                                <Cell row="3" col="1" text="150인 이상 1,000인 미만 기업" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="3" col="2" text="-" textAlign="center"/>
+                                <Cell row="3" col="3" text="0.65%" textAlign="center"/>
+                                <Cell row="4" col="1" text="1,000인 이상기업, 국가 지방자치단체" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="4" col="2" text="-" textAlign="center"/>
+                                <Cell row="4" col="3" text="0.85%" textAlign="center"/>
+                              </Band>
+                            </Format>
+                          </Formats>
+                        </Grid>
+                        <Combo id="Combo00" taborder="1" text="Combo00" left="17" top="14" width="120" height="29" onitemchanged="Tab00_Tabpage3_Div03_Combo00_onitemchanged" innerdataset="ds_employment_year" codecolumn="YEAR" datacolumn="YEAR"/>
+                      </Layout>
+                    </Layouts>
+                    <InitValue>
+                      <Grid id="Grid04" binddataset="ds_national_pension"/>
+                    </InitValue>
+                  </Div>
+                </Layout>
+              </Layouts>
+              <InitValue/>
+            </Tabpage>
+            <Tabpage id="Tabpage4" text="산재보험">
+              <Layouts>
+                <Layout>
+                  <Grid id="Grid01" taborder="0" left="17" top="53" width="470" height="187" binddataset="ds_national_pension">
+                    <Formats>
+                      <Format id="default">
+                        <Columns>
+                          <Column size="90"/>
+                          <Column size="250"/>
+                          <Column size="123"/>
+                        </Columns>
+                        <Rows>
+                          <Row size="24" band="head"/>
+                          <Row size="24"/>
+                        </Rows>
+                        <Band id="head">
+                          <Cell colspan="2" text="구분"/>
+                          <Cell col="2" text="사업주"/>
+                        </Band>
+                        <Band id="body">
+                          <Cell colspan="2" text="시설관리 및 사업지원 서비스업" textAlign="center"/>
+                          <Cell col="2" text="0.8%"/>
+                        </Band>
+                      </Format>
+                    </Formats>
+                  </Grid>
+                </Layout>
+              </Layouts>
+              <InitValue>
+                <Grid id="Grid01" binddataset="ds_national_pension"/>
+              </InitValue>
+            </Tabpage>
+          </Tabpages>
+        </Tab>
       </Layout>
     </Layouts>
     <Objects>
@@ -144,35 +266,102 @@
           </Row>
         </Rows>
       </Dataset>
+      <Dataset id="ds_health_insurance">
+        <ColumnInfo>
+          <Column id="ATTRIBUTION_YEAR" type="STRING" size="256"/>
+          <Column id="HEALTH_INSURANCE_RATIO" type="STRING" size="256"/>
+          <Column id="LONG_TERM_CARE_INSURANCE" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="ATTRIBUTION_YEAR">2019</Col>
+            <Col id="HEALTH_INSURANCE_RATIO">6.46</Col>
+            <Col id="LONG_TERM_CARE_INSURANCE">8.51</Col>
+          </Row>
+          <Row>
+            <Col id="ATTRIBUTION_YEAR">2020</Col>
+            <Col id="HEALTH_INSURANCE_RATIO">6.67</Col>
+            <Col id="LONG_TERM_CARE_INSURANCE">10.25</Col>
+          </Row>
+          <Row>
+            <Col id="ATTRIBUTION_YEAR">2021</Col>
+            <Col id="HEALTH_INSURANCE_RATIO">6.86</Col>
+            <Col id="LONG_TERM_CARE_INSURANCE">11.52</Col>
+          </Row>
+          <Row>
+            <Col id="ATTRIBUTION_YEAR">2022</Col>
+            <Col id="HEALTH_INSURANCE_RATIO">6.99</Col>
+            <Col id="LONG_TERM_CARE_INSURANCE">12.27</Col>
+          </Row>
+          <Row>
+            <Col id="ATTRIBUTION_YEAR">2023</Col>
+            <Col id="HEALTH_INSURANCE_RATIO">7.09</Col>
+            <Col id="LONG_TERM_CARE_INSURANCE">0.0982</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="Dataset00">
+        <ColumnInfo>
+          <Column id="ATTRIBUTION_YEAR" type="FLOAT" size="256"/>
+          <Column id="HEALTH_INSURANCE_RATIO" type="FLOAT" size="256"/>
+          <Column id="LONG_TERM_CARE_INSURANCE" type="FLOAT" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="ATTRIBUTION_YEAR">1</Col>
+            <Col id="HEALTH_INSURANCE_RATIO">1</Col>
+            <Col id="LONG_TERM_CARE_INSURANCE">1</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_national_pension">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column1">9%</Col>
+            <Col id="Column2">4.5%</Col>
+            <Col id="Column3">4.5%</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_employment_year">
+        <ColumnInfo>
+          <Column id="YEAR" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="YEAR">2022-7-1전</Col>
+          </Row>
+          <Row>
+            <Col id="YEAR">2022-7-1후</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_industrial_insurance"/>
+      <Dataset id="ds_employment_insurance">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column3">0.9%</Col>
+            <Col id="Column2">0.9%</Col>
+          </Row>
+        </Rows>
+      </Dataset>
     </Objects>
-    <Bind>
-      <BindItem id="item0" compid="Div00_00.form.Tab00.Tabpage1.form.Edit00" propid="value" datasetid="ds_socialIns" columnid="HEALTH_INSURE_RATES"/>
-      <BindItem id="item1" compid="Div00_00.form.Tab00.Tabpage1.form.Edit00_00" propid="value" datasetid="ds_socialIns" columnid="LONG_TERM_CARE_RATE"/>
-      <BindItem id="item2" compid="Div00_00.form.Tab00.Tabpage2.form.Edit00" propid="value" datasetid="ds_socialIns" columnid="NATION_PENISION_RATES"/>
-      <BindItem id="item3" compid="Div00_00.form.Tab00.Tabpage2.form.Edit00_00" propid="value" datasetid="ds_socialIns" columnid="NATION_PENISION_RATES"/>
-      <BindItem id="item4" compid="Div00_00.form.Tab00.Tabpage3.form.Edit00_01" propid="value" datasetid="ds_socialIns" columnid="EMP_INSURE_RATES"/>
-      <BindItem id="item5" compid="Div00_00.form.Tab00.Tabpage3.form.Edit00_00_00" propid="value" datasetid="ds_socialIns" columnid="WRK_INSURE_RATES"/>
-      <BindItem id="item6" compid="Div00_00.form.Tab00.Tabpage3.form.Edit00" propid="value" datasetid="ds_socialIns" columnid="JOBSTABIL_RATES"/>
-      <BindItem id="item7" compid="Div00_00.form.Tab00.Tabpage3.form.Edit00_00" propid="value" datasetid="ds_socialIns" columnid="VOCA_COMPETENCY_RATES"/>
-      <BindItem id="item8" compid="Div00_00.form.Tab00.Tabpage4.form.Edit00" propid="value" datasetid="ds_socialIns" columnid="INDUST_INSURE_RATES"/>
-      <BindItem id="item9" compid="Div00_00.form.Tab00.Tabpage4.form.Edit00_00" propid="value" datasetid="ds_socialIns" columnid="INDUST_INSURE_CHAR_RATES"/>
-    </Bind>
-    <Script type="xscript5.1"><![CDATA[var year
+    <Script type="xscript5.1"><![CDATA[var year;
+this.health_insurance=0;
+this.employment_insurance="0.8%";
  
-this.sociallns_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
-{
-
-	var currDate = new Date();
-    year = currDate.getFullYear().toString().padLeft(4, "0");
-	this.Div00_00.form.Div00.form.year.set_text(year);
-	this.transaction("getAppointmentInfolist",
-					 "svcSalarystdinfomgmt::social1",
-					 "",
-					 "ds_socialIns=gds_socialIns",
-					 "year="+year,
-					 "fn_callback");
-};
-
 this.Div00_00_Tab00_Tabpage3_Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
 		this.transaction("getAppointmentInfolist",
@@ -191,6 +380,49 @@ this.Div00_00_Tab00_Tabpage4_Button00_00_onclick = function(obj:nexacro.Button,e
 							"",
 							"year="+year,
 							"fn_callback");	
+};
+
+this.Combo00_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	
+};
+
+this.Tab00_Tabpage1_Div03_Grid00_oncellclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventInfo)
+{
+
+	this.Dataset00.set_updatecontrol(false)
+	health_insurance = obj.getCellValue(e.row,1)
+	this.Dataset00.setColumn("0","HEALTH_INSURANCE_RATIO",health_insurance)
+	trace(this.Dataset00.getColumn("0","HEALTH_INSURANCE_RATIO"))
+	trace(health_insurance);
+	trace(obj.parent);
+	this.Dataset00.set_updatecontrol(true)
+	
+};
+
+
+
+
+
+this.Tab00_Tabpage3_Div03_Combo00_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	if(obj.value == "2022-7-1전"){
+	this.ds_employment_insurance.set_updatecontrol(false)
+	this.ds_employment_insurance.setColumn("0","Column2","0.8")
+	employment_insurance = "0.8%"
+	trace(employment_insurance)
+	trace(this.ds_employment_insurance.getColumn("0","Column2"))
+	this.ds_employment_insurance.set_updatecontrol(true)
+	}
+	else{
+		this.ds_employment_insurance.set_updatecontrol(false)
+	this.ds_employment_insurance.setColumn("0","Column2","0.9")
+	employment_insurance = "0.9%"
+	trace(employment_insurance)
+	trace(this.ds_employment_insurance.getColumn("0","Column2"))
+	this.ds_employment_insurance.set_updatecontrol(true)
+	}
+	
 };
 ]]></Script>
   </Form>
