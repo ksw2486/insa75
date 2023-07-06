@@ -1,13 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FDL version="2.1">
-  <Form id="baseExtSalMgt" width="1060" height="610" titletext="New Form" onload="baseExtSalMgt_onload">
+  <Form id="baseExtSalMgt" width="1920" height="1080" titletext="New Form" onload="baseExtSalMgt_onload">
     <Layouts>
-      <Layout height="610" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560" background="#D9E5FF">
+      <Layout height="1080" width="1920">
+        <Div id="Div00" taborder="0" text="Div00" left="32" top="2" width="1248" height="48" border="0px none, 0px none, 2px solid black">
           <Layouts>
             <Layout>
-              <Static id="Static00" taborder="1" text=" ◼초과수당관리" left="8" top="0" width="214" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Grid id="Grid00" taborder="1" left="203" top="145" width="605" height="380" binddataset="ds_baseExtSalMgt">
+              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick"/>
+              <Static id="Static00" taborder="1" text="초과수당관리" left="11" top="10" width="142" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;Gulim&quot;"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div03" taborder="1" text="Div03" left="32" top="59" width="1000" height="623" border="2px solid skyblue">
+          <Layouts>
+            <Layout>
+              <Grid id="Grid00" taborder="0" left="6" top="9" width="605" height="380" binddataset="ds_baseExtSalMgt">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -20,9 +27,9 @@
                       <Row size="32"/>
                     </Rows>
                     <Band id="head">
-                      <Cell text="초과수당코드" font="20px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="1" text="초과수당명" font="20px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="2" text="배율" font="20px/normal &quot;나눔고딕&quot;"/>
+                      <Cell text="초과수당코드" font="normal 700 12px/normal &quot;Gulim&quot;"/>
+                      <Cell col="1" text="초과수당명" font="normal 700 12px/normal &quot;Gulim&quot;"/>
+                      <Cell col="2" text="배율" font="normal 700 12px/normal &quot;Gulim&quot;"/>
                     </Band>
                     <Band id="body">
                       <Cell text="bind:EXT_SAL_CODE" font="18px/normal &quot;나눔고딕&quot;" textAlign="center" edittype="text"/>
@@ -32,7 +39,6 @@
                   </Format>
                 </Formats>
               </Grid>
-              <Button id="Button00" taborder="2" text="변경확정" left="380" top="75" width="230" height="60" font="24px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Button00_onclick"/>
             </Layout>
           </Layouts>
         </Div>
@@ -50,9 +56,9 @@ this.baseExtSalMgt_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
 }
 
 //변경확정
-this.Div00_00_Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+this.Div00_Button01_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	this.transaction("overtimeAllowanceCreateID",
+		this.transaction("overtimeAllowanceCreateID",
 					 "svcSalarystdinfomgmt::over-sal-create",
 					 "ds_baseExtSal=ds_baseExtSalMgt",
 					 "",
