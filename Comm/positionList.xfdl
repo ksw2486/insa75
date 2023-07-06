@@ -3,44 +3,44 @@
   <Form id="positionList" width="1060" height="620" titletext="New Form" onload="positionList_onload">
     <Layouts>
       <Layout height="620" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560" background="#D9E5FF">
+        <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560">
           <Layouts>
             <Layout>
-              <Static id="Static00" taborder="1" text="◼직급관리목록" left="8" top="0" width="214" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Grid id="Grid00" taborder="0" left="203" top="155" width="605" height="370" binddataset="ds_positionList">
+              <Static id="Static00" taborder="1" text="   ◼ 직급정보관리" left="-15" top="-14" width="214" height="49" textAlign="left" font="bold 18px/normal &quot;나눔고딕&quot;"/>
+              <Grid id="Grid00" taborder="0" left="45" top="115" width="930" height="410" binddataset="ds_positionList">
                 <Formats>
                   <Format id="default">
                     <Columns>
-                      <Column size="80"/>
-                      <Column size="80"/>
-                      <Column size="80"/>
-                      <Column size="80"/>
-                      <Column size="80"/>
+                      <Column size="179"/>
+                      <Column size="176"/>
+                      <Column size="189"/>
+                      <Column size="187"/>
+                      <Column size="197"/>
                     </Columns>
                     <Rows>
-                      <Row size="24" band="head"/>
-                      <Row size="24"/>
+                      <Row size="31" band="head"/>
+                      <Row size="32"/>
                     </Rows>
                     <Band id="head">
-                      <Cell text="POSITION_CODE"/>
-                      <Cell col="1" text="POSITION"/>
-                      <Cell col="2" text="BASE_SALARY"/>
-                      <Cell col="3" text="HOBONG_RATIO"/>
-                      <Cell col="4" text="ALLOWANCE"/>
+                      <Cell text="직급코드"/>
+                      <Cell col="1" text="직급명"/>
+                      <Cell col="2" text="기본급"/>
+                      <Cell col="3" text="호봉급여인상율"/>
+                      <Cell col="4" text="상여금"/>
                     </Band>
                     <Band id="body">
                       <Cell text="bind:POSITION_CODE" displaytype="text" edittype="text"/>
                       <Cell col="1" text="bind:POSITION" displaytype="text" edittype="text"/>
-                      <Cell col="2" text="bind:BASE_SALARY" displaytype="text" edittype="text"/>
+                      <Cell col="2" text="bind:BASE_SALARY" displaytype="number" edittype="mask" maskeditformat="#,###" textAlign="center"/>
                       <Cell col="3" text="bind:HOBONG_RATIO" displaytype="text" edittype="text"/>
-                      <Cell col="4" text="bind:ALLOWANCE" displaytype="text" edittype="text"/>
+                      <Cell col="4" text="bind:ALLOWANCE" displaytype="number" edittype="mask" maskeditformat="#,###" textAlign="center"/>
                     </Band>
                   </Format>
                 </Formats>
               </Grid>
-              <Button id="btn_del" taborder="2" text="삭제" left="430" top="75" width="150" height="60" font="24px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_del_onclick"/>
-              <Button id="btn_save" taborder="3" text="저장" left="595" top="75" width="150" height="60" font="24px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_save_onclick"/>
-              <Button id="btn_add" taborder="4" text="추가" left="265" top="75" width="150" height="60" font="24px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_add_onclick"/>
+              <Button id="btn_del" taborder="2" text="삭제" left="855" top="65" width="55" height="30" onclick="Div00_00_btn_del_onclick"/>
+              <Button id="btn_save" taborder="3" text="저장" left="920" top="65" width="55" height="30" onclick="Div00_00_btn_save_onclick"/>
+              <Button id="btn_add" taborder="4" text="추가" left="790" top="65" width="55" height="30" onclick="Div00_00_btn_add_onclick"/>
             </Layout>
           </Layouts>
         </Div>
@@ -61,10 +61,10 @@
 this.positionList_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
 {
 this.transaction(
-				"PositionListID",
-				 "svcFoudinfomgmt::positionlist",
+				"PositionListID",  // 서비스id
+				 "svcFoudinfomgmt::positionlist",  //호출할url
 				 "",
-				 "ds_positionList=ds_positionList",
+				 "ds_positionList=ds_positionList",  //조회 변수=저장할값
 			   	 "",
 				 "fn_callback");
 		
@@ -72,8 +72,9 @@ this.transaction(
 
 //추가
 this.Div00_00_btn_add_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
-{
+{	
 	this.ds_positionList.addRow();
+	this.ds_positionList.setColumn(this.ds_positionList.rowposition,"POSITION_CODE","POS___");
 	this.ds_positionList.setColumn(this.ds_positionList.rowposition,"STATUS","insert");
 
 };

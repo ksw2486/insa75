@@ -9,7 +9,6 @@
       <Script rule_version="1.02"/>
       <GeneratorInfo rule_version="1.2"/>
     </Rule>
-
     <Info project="C:\Users\dabin\Desktop\복사본\insa75\" generated="C:\Users\dabin\Documents\TOBESOFT\Nexacro N\outputs\insa\">
       <File url="environment.xml" checksum="20230705155026" errormsg=""/>
       <File url="typedefinition.xml" checksum="20230705155026" errormsg=""/>
