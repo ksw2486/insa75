@@ -128,6 +128,7 @@
                   </Rows>
                 </Dataset>
               </Combo>
+              <Static id="Static01" taborder="8" text="깃 test 입니다" left="115" top="97" width="308" height="78" onclick="Div00_00_Static01_onclick" font="normal 30pt/normal &quot;Arial&quot;"/>
             </Layout>
           </Layouts>
         </Div>
@@ -216,6 +217,11 @@ this.annualLeaveUpdate = function()
 					"",
 					""
 					);
-}]]></Script>
+}
+this.Div00_00_Static01_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
   </Form>
 </FDL>
