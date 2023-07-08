@@ -3,15 +3,15 @@
   <Form id="retirementMgt" width="1280" height="720" titletext="New Form" onload="retirementMgt_onload">
     <Layouts>
       <Layout height="720" width="1280">
-        <Div id="retireSetDiv" taborder="4" left="137" top="75" width="1007" height="570" background="#D9E5FF" borderRadius="50px" opacity="1">
+        <Div id="retireSetDiv" taborder="4" left="30" top="36" width="610" height="380" borderRadius="5px" opacity="1" border="1px solid #b2b2b2">
           <Layouts>
             <Layout>
-              <Static id="retPaySet" taborder="0" text="퇴직금 설정" left="443" top="45" width="120" height="60"/>
-              <Static id="moelStandardOpt" taborder="1" text="고용노동부기준" left="233" top="140" width="120" height="60"/>
-              <Static id="retDateRangeOpt" taborder="2" text="퇴직범위설정" left="233" top="198" width="120" height="60"/>
-              <Static id="payCalcWayOpt" taborder="3" text="급여계산방식" left="233" top="256" width="120" height="60"/>
-              <Static id="retDateIncludeStatusOpt" taborder="4" text="퇴사일포함여부" left="233" top="314" width="120" height="60"/>
-              <Radio id="moelStandard" taborder="5" left="413" top="140" width="217" height="50" text="안함" index="0" columncount="2" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" onitemchanged="retireSetDiv_radio_onitemchanged" value="CHK001">
+              <Static id="retPaySet" taborder="0" text="[ 퇴직금 설정 ]" left="65" top="38" width="119" height="30" font="16px/normal &quot;나눔고딕&quot;"/>
+              <Static id="moelStandardOpt" taborder="1" text="고용노동부기준" left="76" top="79" width="120" height="60" font="14px/normal &quot;나눔고딕&quot;"/>
+              <Static id="retDateRangeOpt" taborder="2" text="퇴직범위설정" left="76" top="124" width="120" height="60" font="14px/normal &quot;나눔고딕&quot;"/>
+              <Static id="payCalcWayOpt" taborder="3" text="급여계산방식" left="76" top="169" width="120" height="60" font="14px/normal &quot;나눔고딕&quot;"/>
+              <Static id="retDateIncludeStatusOpt" taborder="4" text="퇴사일포함여부" left="76" top="214" width="120" height="60" font="14px/normal &quot;나눔고딕&quot;"/>
+              <Radio id="moelStandard" taborder="5" left="256" top="94" width="217" height="30" text="안함" index="0" columncount="2" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" onitemchanged="retireSetDiv_radio_onitemchanged" value="CHK001" font="14px/normal &quot;나눔고딕&quot;">
                 <Dataset id="innerdataset">
                   <ColumnInfo>
                     <Column id="codecolumn" size="256"/>
@@ -29,7 +29,7 @@
                   </Rows>
                 </Dataset>
               </Radio>
-              <Radio id="retDateRange" taborder="6" left="413" top="201" width="320" height="50" columncount="3" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" value="RAG002" text="전월기준" index="2" onitemchanged="retireSetDiv_radio_onitemchanged">
+              <Radio id="retDateRange" taborder="6" left="256" top="139" width="320" height="30" columncount="3" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" value="RAG002" text="전월기준" index="2" onitemchanged="retireSetDiv_radio_onitemchanged" font="14px/normal &quot;나눔고딕&quot;">
                 <Dataset id="innerdataset">
                   <ColumnInfo>
                     <Column id="codecolumn" size="256"/>
@@ -51,7 +51,7 @@
                   </Rows>
                 </Dataset>
               </Radio>
-              <Radio id="payCalcWay" taborder="7" left="413" top="262" width="217" height="50" columncount="2" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" value="MDC000" text="일할계산" index="0" onitemchanged="retireSetDiv_radio_onitemchanged">
+              <Radio id="payCalcWay" taborder="7" left="256" top="184" width="217" height="30" columncount="2" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" value="MDC000" text="일할계산" index="0" onitemchanged="retireSetDiv_radio_onitemchanged" font="14px/normal &quot;나눔고딕&quot;">
                 <Dataset id="innerdataset">
                   <ColumnInfo>
                     <Column id="codecolumn" size="256"/>
@@ -69,7 +69,7 @@
                   </Rows>
                 </Dataset>
               </Radio>
-              <Radio id="retDateIncludeStatus" taborder="8" left="413" top="323" width="217" height="50" columncount="2" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" value="CHK001" text="안함" index="0" onitemchanged="retireSetDiv_radio_onitemchanged">
+              <Radio id="retDateIncludeStatus" taborder="8" left="256" top="229" width="217" height="30" columncount="2" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" value="CHK001" text="안함" index="0" onitemchanged="retireSetDiv_radio_onitemchanged" font="14px/normal &quot;나눔고딕&quot;">
                 <Dataset id="innerdataset">
                   <ColumnInfo>
                     <Column id="codecolumn" size="256"/>
@@ -87,7 +87,7 @@
                   </Rows>
                 </Dataset>
               </Radio>
-              <Button id="btn_retSetSave" taborder="9" text="퇴직금 설정 저장" left="399" top="445" width="208" height="59" onclick="retireSetDiv_btn_retSetSave_onclick"/>
+              <Button id="btn_retSetSave" taborder="9" text="저장" left="469" top="274" width="80" height="35" onclick="retireSetDiv_btn_retSetSave_onclick" borderRadius="5px" background="#6092ff" color="white" font="12px/normal &quot;나눔고딕 ExtraBold&quot;"/>
             </Layout>
           </Layouts>
         </Div>
