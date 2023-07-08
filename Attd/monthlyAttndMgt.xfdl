@@ -87,7 +87,7 @@ nexa = nexacro.getApplication();
 // 조회하기
 this.Div00_00_inquiryBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	//trace(this.Div00_00.form.Calendar00.value.substring(0,6))
+	trace(this.Div00_00.form.Calendar00.value.substring(0,6))
 	
 	var applyYearMonth = this.Div00_00.form.Calendar00.value.substring(0,6)
 	

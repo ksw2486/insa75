@@ -32,7 +32,7 @@
               <Static id="finalAcademic" taborder="15" text="최종학력" left="458" top="260" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
               <Edit id="finalAcademicEdit" taborder="30" left="564" top="257" width="406" height="50" oneditclick="finalAcademicEdit_oneditclick" font="18pt &quot;나눔고딕&quot;" onchanged="Div_finalAcademicEdit_onchanged"/>
               <Static id="hobong" taborder="16" text="호봉" left="460" top="318" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="hobongEdit" taborder="31" left="564" top="315" width="406" height="50" oneditclick="hobongEdit_oneditclick" font="18pt &quot;나눔고딕&quot;"/>
+              <Edit id="hobongEdit" taborder="31" left="564" top="315" width="406" height="50" oneditclick="hobongEdit_oneditclick" font="18pt &quot;나눔고딕&quot;" onchanged="Div_hobongEdit_onchanged"/>
               <Static id="workType" taborder="17" text="근무형태" left="458" top="376" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
               <Edit id="workTypeEdit" taborder="32" left="564" top="373" width="406" height="50" oneditclick="workTypeEdit_oneditclick" font="18pt &quot;나눔고딕&quot;" onchanged="Div_workTypeEdit_onchanged"/>
               <Static id="employmentType" taborder="18" text="고용형태" left="458" top="434" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
@@ -269,6 +269,11 @@ this.FileDialog_onclose = function(obj:nexacro.FileDialog,e:nexacro.FileDialogEv
 		this.Div.form.ImageViewer.set_stretch("fit");
 };
 
+
+this.Div_hobongEdit_onchanged = function(obj:nexacro.Edit,e:nexacro.ChangeEventInfo)
+{
+	
+};
 ]]></Script>
   </Form>
 </FDL>

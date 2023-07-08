@@ -126,12 +126,14 @@ this.fn_callback = function(trID,ErrorCode,ErrorMsg){
 		alert("처리되었습니다.");
 	}
   }
+  
+  if(trID == "searchAnnual"){
+	
+	//this.reload();
+  }
 }
 
-this.annualLeaveUpdate = function()
-{
 
-}
 
 
 this.Div00_00_Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
