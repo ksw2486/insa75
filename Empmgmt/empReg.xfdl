@@ -19,7 +19,7 @@
               <Static id="PostalCode" taborder="9" text="우편번호" left="37" top="482" width="109" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
               <Edit id="PostalCodeEdit" taborder="3" left="156" top="484" width="283" height="53" font="18px/normal &quot;나눔고딕&quot;"/>
               <Static id="PhoneNumber" taborder="10" text="전화번호" left="37" top="543" width="109" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <MaskEdit id="PhoneNumberEdit" taborder="7" left="156" top="545" width="283" height="53" format="###-####-####" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" type="string"/>
+              <MaskEdit id="PhoneNumberEdit" taborder="7" left="156" top="545" width="283" height="53" format="###-####-####" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" type="string" onchanged="Div_PhoneNumberEdit_onchanged"/>
               <Static id="empNumber" taborder="21" text="사원번호" left="459" top="28" width="108" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
               <Edit id="empNumberEdit" taborder="22" left="564" top="25" width="202" height="50" font="18px/normal &quot;나눔고딕&quot;" readonly="true"/>
               <Button id="empNumberBtn" taborder="23" text="사원번호생성" left="773" top="25" width="196" height="50" font="18px/normal &quot;나눔고딕&quot;" onclick="Div_empNumberBtn_onclick"/>
@@ -269,6 +269,11 @@ this.FileDialog_onclose = function(obj:nexacro.FileDialog,e:nexacro.FileDialogEv
 		this.Div.form.ImageViewer.set_stretch("fit");
 };
 
+
+this.Div_PhoneNumberEdit_onchanged = function(obj:nexacro.MaskEdit,e:nexacro.ChangeEventInfo)
+{
+	
+};
 ]]></Script>
   </Form>
 </FDL>
