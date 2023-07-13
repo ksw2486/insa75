@@ -3,11 +3,11 @@
   <Form id="baseWorkTime" width="1060" height="620" titletext="New Form" onload="baseWorkTime_onload">
     <Layouts>
       <Layout height="620" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560" background="#D9E5FF">
+        <Div id="Div00_00" taborder="0" text="" left="20" top="20" width="1010" height="560">
           <Layouts>
             <Layout>
-              <Static id="Static00" taborder="1" text="◼기준근무시간관리" left="8" top="0" width="214" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Grid id="Grid00" taborder="0" left="45" top="160" width="930" height="370" binddataset="ds_baseWorkTime" autofittype="col">
+              <Static id="Static00" taborder="1" text="   ◼ 기준근무시간관리" left="-15" top="-15" width="214" height="50" textAlign="left" font="bold 18px/normal &quot;나눔고딕&quot;"/>
+              <Grid id="Grid00" taborder="0" left="45" top="115" width="930" height="415" binddataset="ds_baseWorkTime" autofittype="col">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -28,7 +28,7 @@
                     </Rows>
                     <Band id="head">
                       <Cell text="적용년도"/>
-                      <Cell col="1" text="업무시작시간"/>
+                      <Cell col="1" text="업무시작시간" maskedittype="number"/>
                       <Cell col="2" text="업무종료시간"/>
                       <Cell col="3" text="점심시간시작"/>
                       <Cell col="4" text="점심시간종료"/>
@@ -40,22 +40,22 @@
                     </Band>
                     <Band id="body">
                       <Cell text="bind:APPLY_YEAR" edittype="text" textAlign="center"/>
-                      <Cell col="1" edittype="normal" displaytype="normal" text="bind:ATTEND_TIME" calendardateformat="HH:MM" calendareditformat="HH:MM" textAlign="center"/>
-                      <Cell col="2" text="bind:QUIT_TIME" edittype="text" textAlign="center"/>
-                      <Cell col="3" text="bind:LUNCH_START_TIME" edittype="text" textAlign="center"/>
-                      <Cell col="4" text="bind:LUNCH_END_TIME" edittype="text" textAlign="center"/>
-                      <Cell col="5" text="bind:DINNER_START_TIME" edittype="text" textAlign="center"/>
-                      <Cell col="6" text="bind:DINNER_END_TIME" edittype="text" textAlign="center"/>
-                      <Cell col="7" text="bind:OVER_END_TIME" edittype="text" textAlign="center"/>
-                      <Cell col="8" text="bind:NIGHT_END_TIME" edittype="text" textAlign="center"/>
+                      <Cell col="1" edittype="mask" displaytype="mask" text="bind:ATTEND_TIME" calendardateformat="HH:MM" calendareditformat="HH:MM" textAlign="center" maskedittype="string" maskeditformat="#:##"/>
+                      <Cell col="2" text="bind:QUIT_TIME" edittype="mask" textAlign="center" displaytype="mask" maskeditformat="##:##" maskedittype="string"/>
+                      <Cell col="3" text="bind:LUNCH_START_TIME" edittype="mask" textAlign="center" maskeditformat="##:##" maskedittype="string" displaytype="mask"/>
+                      <Cell col="4" text="bind:LUNCH_END_TIME" edittype="text" textAlign="center" maskedittype="string" maskeditformat="##:##" displaytype="mask"/>
+                      <Cell col="5" text="bind:DINNER_START_TIME" edittype="text" textAlign="center" maskedittype="string" maskeditformat="##:##" displaytype="mask"/>
+                      <Cell col="6" text="bind:DINNER_END_TIME" edittype="text" textAlign="center" maskeditformat="##:##" maskedittype="string" displaytype="mask"/>
+                      <Cell col="7" text="bind:OVER_END_TIME" edittype="text" textAlign="center" maskeditformat="##:##" maskedittype="string" displaytype="mask"/>
+                      <Cell col="8" text="bind:NIGHT_END_TIME" edittype="text" textAlign="center" maskeditformat="##:##" maskedittype="string" displaytype="mask"/>
                       <Cell col="9" text="bind:STATUS" edittype="combo" combodataset="ds_status" combocodecol="status" combodatacol="statusName" combodisplaynulltext="변경 없음" displaytype="combotext" combodisplaynulltype="nulltext" textAlign="center"/>
                     </Band>
                   </Format>
                 </Formats>
               </Grid>
-              <Button id="Button00" taborder="2" text="삭제" left="430" top="75" width="150" height="60" font="24px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Button00_onclick"/>
-              <Button id="Button00_00" taborder="3" text="저장" left="595" top="75" width="150" height="60" font="24px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Button00_00_onclick"/>
-              <Button id="Button00_01" taborder="4" text="추가" left="265" top="75" width="150" height="60" font="24px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Button00_01_onclick"/>
+              <Button id="Button00" taborder="2" text="삭제" left="855" top="65" width="55" height="30" onclick="Div00_00_Button00_onclick"/>
+              <Button id="Button00_00" taborder="3" text="저장" left="920" top="65" width="55" height="30" onclick="Div00_00_Button00_00_onclick"/>
+              <Button id="Button00_01" taborder="4" text="추가" left="790" top="65" width="55" height="30" onclick="Div00_00_Button00_01_onclick"/>
             </Layout>
           </Layouts>
         </Div>
@@ -133,11 +133,16 @@ this.Div00_00_Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEven
    this.ds_baseWorkTime.deleteRow(this.ds_baseWorkTime.rowposition);
 };
 
+//저장
 this.Div00_00_Button00_00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
+	var count = this.ds_baseWorkTime.rowcount;
+	
+	
+
    var id = "sendBaseWorkTime";  
      var url = "svcFoudinfomgmt::putbasetime";
-     var reqDs = "ds_baseWorkTime=ds_baseWorkTime";
+     var reqDs = "ds_baseWorkTime=ds_baseWorkTime:u";
      var respDs = "";
      var args = "";
      var callback = "sent";
@@ -147,13 +152,23 @@ this.Div00_00_Button00_00_onclick = function(obj:nexacro.Button,e:nexacro.ClickE
 
 this.sent = function(id, code, message)
 {
-     if (code == 0) {
-          this.alert(this.ds_baseWorkTime.rowcount + " numbers of data have been sent.");
-          trace(this.ds_baseWorkTime.rowcount + " numbers of data have been sent.");
-     } else {
-          this.alert("Error["+code+"]:"+message);
-          trace("Error["+code+"]:"+message);
-     }
+//      if (code == 0) {
+//           this.alert(this.ds_baseWorkTime.rowcount + " numbers of data have been sent.");
+//           trace(this.ds_baseWorkTime.rowcount + " numbers of data have been sent.");
+// 		  
+//      } else {
+//           this.alert("Error["+code+"]:"+message);
+//           trace("Error["+code+"]:"+message);
+//      }
+
+	
+		if(id == "sendBaseWorkTime"){
+			if( code != 0 ){
+				alert("저장실패 : "+message+code);
+			}else{
+				alert("저장완료");
+			}this.reload();
+		}
 }]]></Script>
   </Form>
 </FDL>
