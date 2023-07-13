@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FDL version="2.1">
-  <Form id="Form_Top" width="1490" height="50" titletext="Form_Top">
+  <Form id="Form_Top" width="1500" height="70" titletext="Form_Top">
     <Layouts>
-      <Layout width="1490" height="50" screenid="Desktop_screen">
-        <Static id="Static00" taborder="0" text="HUMAN RESOURCE" left="7" top="2" width="193" height="44" font="21px/normal &quot;Bauhaus 93&quot;" textAlign="center"/>
-        <Menu id="topMenu" taborder="1" left="220" top="4" width="1250" height="40" innerdataset="gds_menu" levelcolumn="menu_lv" idcolumn="menu_id" captioncolumn="menu_nm" color="#000000" onmenuclick="topMenu_onmenuclick" userdatacolumn="menu_id" background="#D9E5FF"/>
-        <Button id="logOut" taborder="2" text="로그아웃" left="1380" top="10" width="80" height="28" onclick="logOut_onclick" background="#D9E5FF" border="0px none" font="bold  13px/normal  &quot;Gulim&quot;" color="white"/>
+      <Layout width="1500" height="60" screenid="Desktop_screen">
+        <Static id="Static00" taborder="0" text="HUMAN RESOURCE" left="0" top="0" width="230" height="70" font="22px/normal &quot;Bauhaus 93&quot;,&quot;Curlz MT&quot;" textAlign="center" background="#6092ff" color="white"/>
+        <Menu id="topMenu" taborder="1" left="220" top="0" width="1280" height="70" innerdataset="gds_menu" levelcolumn="menu_lv" idcolumn="menu_id" captioncolumn="menu_nm" color="#000000" onmenuclick="topMenu_onmenuclick" userdatacolumn="menu_id" background="#6092ff" font="normal/normal &quot;Arial&quot;"/>
+        <Button id="logOut" taborder="2" text="로그아웃" left="1380" top="20" width="80" height="28" onclick="logOut_onclick" background="#6092ff" border="0px none" font="bold  13px/normal  &quot;Gulim&quot;" color="white"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[
