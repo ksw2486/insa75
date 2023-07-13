@@ -3,7 +3,7 @@
   <Form id="empEval" width="1060" height="620" titletext="New Form">
     <Layouts>
       <Layout height="620" width="1060" stepcount="0">
-        <Div id="Div00_00" taborder="0" text="" left="0" top="5" width="1060" height="610" background="#D9E5FF" formscrolltype="none">
+        <Div id="Div00_00" taborder="0" text="" left="0" top="5" width="1060" height="610" background="whight" formscrolltype="none">
           <Layouts>
             <Layout>
               <Tab id="Tab00" taborder="0" tabindex="0" left="40" top="80" width="410" height="515" onchanged="Div00_00_Tab00_onchanged" border="0px none">

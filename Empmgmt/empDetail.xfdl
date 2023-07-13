@@ -3,7 +3,7 @@
   <Form id="empDetail" width="1060" height="620" titletext="New Form">
     <Layouts>
       <Layout height="620" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="0" top="0" width="1060" height="620" background="#D9E5FF">
+        <Div id="Div00_00" taborder="0" text="" left="0" top="0" width="1060" height="620" background="whight">
           <Layouts>
             <Layout>
               <Tab id="Tab00" taborder="0" tabindex="0" left="73" top="100" width="410" height="504" onchanged="Div00_00_Tab00_onchanged" border="0px none">
@@ -246,7 +246,7 @@
                   </Tabpage>
                 </Tabpages>
               </Tab>
-              <Static id="Static00" taborder="2" text="사원조회" left="6" top="6" width="188" height="49" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Static00_onclick"/>
+              <Static id="Static00" taborder="2" text="사원조회" left="13" top="54" width="188" height="49" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Static00_onclick"/>
             </Layout>
           </Layouts>
         </Div>
