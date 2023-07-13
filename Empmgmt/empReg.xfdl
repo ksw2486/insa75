@@ -43,6 +43,7 @@
               <Calendar id="birthCal" taborder="15" left="564" top="547" width="406" height="50" font="18pt &quot;나눔고딕&quot;"/>
               <Static id="Static00" taborder="36" text="근무지" left="59" top="602" width="109" height="51" font="18px/normal &quot;Gulim&quot;" onclick="Div_Static00_onclick" textAlign="left"/>
               <Edit id="WorkplaceCode" taborder="5" left="154" top="612" width="291" height="46"/>
+
             </Layout>
           </Layouts>
         </Div>
@@ -272,12 +273,6 @@ this.FileDialog_onclose = function(obj:nexacro.FileDialog,e:nexacro.FileDialogEv
 		var realPath = system.convertRealPath(vFile.fullpath);
 		this.Div.form.ImageViewer.set_image("file://"+realPath);
 		this.Div.form.ImageViewer.set_stretch("fit");
-};
-
-
-this.Div_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
-{
-	
 };
 ]]></Script>
     <Bind>

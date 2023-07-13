@@ -3,16 +3,17 @@
   <Form id="loginForm" width="400" height="500">
     <Layouts>
       <Layout height="500" mobileorientation="landscape" width="400">
-        <Div id="Div" taborder="0" text="Div00" left="0" top="0" right="0" bottom="0" background="url('Images::login.jpg')">
+        <Div id="Div" taborder="0" text="Div00" left="0" top="0" background="white" width="400" height="500">
           <Layouts>
             <Layout>
-              <Static id="TITLE" taborder="0" text="INSA" left="72" top="74" width="256" height="94" font="normal 700 75pt/normal &quot;Broadway&quot;" textAlign="center" color="darkgray"/>
-              <Static id="ID" taborder="1" text="ID" left="50" top="271" width="83" height="38" textAlign="center" font="14pt/normal &quot;Bauhaus 93&quot;" color="darkgray"/>
-              <Static id="PW" taborder="2" text="PW" left="50" top="342" width="83" height="38" textAlign="center" font="14pt/normal &quot;Bauhaus 93&quot;" color="darkgray"/>
-              <Edit id="empName" taborder="3" left="163" top="271" width="178" height="38" textAlign="center" borderRadius="18px 18px 0px"/>
-              <Edit id="empCode" taborder="4" left="163" top="342" width="178" height="38" textAlign="center" borderRadius="18px 18px 0px" password="true" imemode="none"/>
-              <Button id="loginBtn" taborder="5" text="LOGIN" left="111" top="418" width="86" height="30" font="normal 10pt/normal &quot;Bauhaus 93&quot;" boxShadow="4px 4px 10px gray" borderRadius="18px 18px 0px" onclick="Div_loginBtn_onclick"/>
-              <Button id="logoutBtn" taborder="6" text="LOGOUT" left="231" top="418" width="86" height="30" font="normal 10pt/normal &quot;Bauhaus 93&quot;" borderRadius="18px 18px 0px" boxShadow="4px 4px 10px gray" onclick="Div_logoutBtn_onclick"/>
+              <Static id="Static00" taborder="0" left="55" top="130" width="290" height="190" border="1px solid #d6d6d6" borderRadius="5px"/>
+              <Edit id="empName" taborder="3" left="85" top="150" width="230" height="35" textAlign="left" borderRadius="5px 5px 0px 0px" text="아이디" visible="true" onchanged="Div_empName_onchanged" displaynulltext="아이디"/>
+              <Edit id="empCode" taborder="4" left="85" top="184" width="230" height="35" textAlign="left" borderRadius="0px 0px 5px 5px" password="true" imemode="none" displaynulltext="비밀번호"/>
+              <Static id="TITLE" taborder="1" text="INSA75" left="72" top="34" width="256" height="120" font="normal 900 30pt/normal &quot;나눔고딕 ExtraBold&quot;" textAlign="center" color="#6092ff"/>
+              <Button id="loginBtn" taborder="5" text="로그인" left="85" top="270" width="230" height="32" font="normal 12pt/normal &quot;나눔고딕 ExtraBold&quot;" boxShadow="0" borderRadius="5px" onclick="Div_loginBtn_onclick" background="#6092ff" color="white"/>
+              <CheckBox id="CheckBox00" taborder="2" text="로그인 상태 유지" left="85" top="222" width="150" height="20" onclick="Div_CheckBox00_onclick" font="6pt/normal &quot;나눔고딕&quot;" color="#a3a3a3"/>
+              <Static id="TITLE00" taborder="6" text="INSA75" left="80" top="465" width="60" height="15" font="normal 10pt/normal &quot;나눔고딕&quot;" textAlign="left" color="#6092ff" letterSpacing="-1px"/>
+              <Static id="Static01" taborder="7" text="Copyright ⓒ INSA Corp. All Rights Reserved." left="130" top="462" width="200" height="20" onclick="Div_Static01_onclick" font="normal normal 7pt/normal &quot;Arial&quot;" color="#a3a3a3"/>
             </Layout>
           </Layouts>
         </Div>
@@ -59,7 +60,19 @@ this.login_callback = function (trID, errorCode, errorMsg)
 		nexa.mainframe.set_visible(true);
 		
 		this.close();
-};]]></Script>
+};
+this.Div_CheckBox00_onclick = function(obj:nexacro.CheckBox,e:nexacro.ClickEventInfo)
+{
+	
+};
+
+
+
+this.Div_Static01_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
     <Objects>
       <Dataset id="loginForm">
         <ColumnInfo>
