@@ -35,9 +35,9 @@
                   </Format>
                 </Formats>
               </Grid>
-              <Button id="btn_del" taborder="2" text="삭제" left="855" top="75" width="55" height="30" onclick="Div00_00_btn_del_onclick"/>
-              <Button id="btn_save" taborder="3" text="저장" left="920" top="75" width="55" height="30" onclick="Div00_00_btn_save_onclick"/>
-              <Button id="btn_add" taborder="4" text="추가" left="790" top="75" width="55" height="30" onclick="Div00_00_btn_add_onclick"/>
+              <Button id="btn_del" taborder="2" text="삭제" left="795" top="75" width="80" height="35" onclick="Div00_00_btn_del_onclick" background="#6092ff" borderRadius="5px" color="white" font="12px/normal &quot;나눔고딕 ExtraBold&quot;"/>
+              <Button id="btn_save" taborder="3" text="저장" left="890" top="75" width="80" height="35" onclick="Div00_00_btn_save_onclick" background="#6092ff" borderRadius="5px" color="white" font="12px/normal &quot;나눔고딕 ExtraBold&quot;"/>
+              <Button id="btn_add" taborder="4" text="추가" left="700" top="75" width="80" height="35" onclick="Div00_00_btn_add_onclick" background="#6092ff" borderRadius="5px" color="white" font="12px/normal &quot;나눔고딕 ExtraBold&quot;"/>
             </Layout>
           </Layouts>
           <InitValue>
