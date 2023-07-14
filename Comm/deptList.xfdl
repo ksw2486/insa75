@@ -32,9 +32,9 @@
                   </Format>
                 </Formats>
               </Grid>
-              <Button id="delBtn" taborder="2" text="삭제" left="525" top="75" width="55" height="30" onclick="Div00_00_delBtn_onclick"/>
-              <Button id="saveBtn" taborder="3" text="저장" left="590" top="75" width="55" height="30" onclick="Div00_00_saveBtn_onclick"/>
-              <Button id="addBtn" taborder="4" text="추가" left="460" top="75" width="55" height="30" onclick="Div00_00_addBtn_onclick"/>
+              <Button id="delBtn" taborder="2" text="삭제" left="475" top="75" width="80" height="35" onclick="Div00_00_delBtn_onclick" background="#6092ff" borderRadius="5px" color="white" font="12px/normal &quot;나눔고딕 ExtraBold&quot;"/>
+              <Button id="saveBtn" taborder="3" text="저장" left="570" top="75" width="80" height="35" onclick="Div00_00_saveBtn_onclick" background="#6092ff" borderRadius="5px" color="white" font="12px/normal &quot;나눔고딕 ExtraBold&quot;"/>
+              <Button id="addBtn" taborder="4" text="추가" left="380" top="75" width="80" height="35" onclick="Div00_00_addBtn_onclick" background="#6092ff" borderRadius="5px" color="white" font="12px/normal &quot;나눔고딕 ExtraBold&quot;"/>
             </Layout>
           </Layouts>
         </Div>
