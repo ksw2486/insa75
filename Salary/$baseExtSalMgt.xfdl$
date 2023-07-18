@@ -6,10 +6,10 @@
         <Div id="Div00" taborder="0" text="Div00" left="32" top="2" width="1248" height="48" border="0px none, 0px none, 2px solid black">
           <Layouts>
             <Layout>
-              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick"/>
-              <Static id="Static00" taborder="1" text="초과수당관리" left="11" top="10" width="142" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;Gulim&quot;"/>
-              <Button id="Button02" taborder="2" text="추가" left="58.25%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button03_onclick"/>
-              <Button id="Button03" taborder="3" text="삭제" left="65.46%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button02_onclick"/>
+              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
+              <Static id="Static00" taborder="1" text="초과수당관리" left="11" top="10" width="142" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;나눔고딕&quot;"/>
+              <Button id="Button02" taborder="2" text="추가" left="58.25%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button03_onclick" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
+              <Button id="Button03" taborder="3" text="삭제" left="65.46%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button02_onclick" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
             </Layout>
           </Layouts>
         </Div>
@@ -29,9 +29,9 @@
                       <Row size="32"/>
                     </Rows>
                     <Band id="head">
-                      <Cell text="초과수당코드" font="normal 700 12px/normal &quot;Gulim&quot;"/>
-                      <Cell col="1" text="초과수당명" font="normal 700 12px/normal &quot;Gulim&quot;"/>
-                      <Cell col="2" text="배율" font="normal 700 12px/normal &quot;Gulim&quot;"/>
+                      <Cell text="초과수당코드" font="normal 700 12px/normal &quot;Gulim&quot;" background="#6092ff" color="white"/>
+                      <Cell col="1" text="초과수당명" font="normal 700 12px/normal &quot;Gulim&quot;" background="#6092ff" color="white"/>
+                      <Cell col="2" text="배율" font="normal 700 12px/normal &quot;Gulim&quot;" background="#6092ff" color="white"/>
                     </Band>
                     <Band id="body">
                       <Cell text="bind:EXT_SAL_CODE" font="18px/normal &quot;나눔고딕&quot;" textAlign="center" edittype="text"/>

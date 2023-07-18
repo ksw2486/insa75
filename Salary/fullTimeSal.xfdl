@@ -6,13 +6,13 @@
         <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560">
           <Layouts>
             <Layout>
-              <Tab id="Tab00" taborder="0" tabindex="0" left="30" top="56" width="410" height="459" onchanged="Div00_00_Tab00_onchanged" border="0px none">
+              <Tab id="Tab00" taborder="0" tabindex="0" left="30" top="56" width="410" height="459" onchanged="Div00_00_Tab00_onchanged" border="0px none" font="12px/normal &quot;나눔고딕&quot;">
                 <Tabpages>
                   <Tabpage id="Tabpage1" text="부서명검색" border="0px groove" font="16px/normal &quot;맑은 고딕&quot;">
                     <Layouts>
                       <Layout>
-                        <Button id="Button00" taborder="0" text="사원 조회" left="185" top="26" width="90" height="40" font="normal 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage1_Button00_onclick"/>
-                        <Grid id="Grid00" taborder="1" left="16" top="78" width="364" height="343" oncelldblclick="Div00_00_Tab00_Tabpage1_Grid00_oncelldblclick" binddataset="ds_empList" onselectchanged="Div00_00_Tab00_Tabpage1_Grid00_onselectchanged" autofittype="col">
+                        <Button id="Button00" taborder="0" text="사원 조회" left="170" top="21" width="80" height="35" font="normal 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage1_Button00_onclick" background="#d0e3ed" borderRadius="5px"/>
+                        <Grid id="Grid00" taborder="1" left="0" top="79" width="364" height="343" oncelldblclick="Div00_00_Tab00_Tabpage1_Grid00_oncelldblclick" binddataset="ds_empList" onselectchanged="Div00_00_Tab00_Tabpage1_Grid00_onselectchanged" autofittype="col">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -26,10 +26,10 @@
                                 <Row size="24"/>
                               </Rows>
                               <Band id="head">
-                                <Cell text="사번"/>
-                                <Cell col="1" text="이름"/>
-                                <Cell col="2" text="부서"/>
-                                <Cell col="3" text="직급"/>
+                                <Cell text="사번" background="#6092ff" color="white"/>
+                                <Cell col="1" text="이름" background="#6092ff" color="white"/>
+                                <Cell col="2" text="부서" background="#6092ff" color="white"/>
+                                <Cell col="3" text="직급" background="#6092ff" color="white"/>
                               </Band>
                               <Band id="body">
                                 <Cell text="bind:EMP_CODE"/>
@@ -40,8 +40,8 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Edit id="Edit00" taborder="2" left="18" top="26" width="147" height="40" oneditclick="Div00_00_Tab00_Tabpage1_Edit00_oneditclick" onchanged="Div00_00_Tab00_Tabpage1_Edit00_onchanged" displaynulltext="클릭하여 부서 선택"/>
-                        <Button id="Button01" taborder="3" text="급여 조회" left="286" top="26" width="91" height="40" font="normal 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage1_Button01_onclick"/>
+                        <Edit id="Edit00" taborder="2" left="0" top="21" width="147" height="40" oneditclick="Div00_00_Tab00_Tabpage1_Edit00_oneditclick" onchanged="Div00_00_Tab00_Tabpage1_Edit00_onchanged" displaynulltext="클릭하여 부서 선택"/>
+                        <Button id="Button01" taborder="3" text="급여 조회" left="270" top="21" width="91" height="40" font="normal 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage1_Button01_onclick" background="#d0e3ed"/>
                       </Layout>
                     </Layouts>
                   </Tabpage>
@@ -84,7 +84,7 @@
                   </Tabpage>
                 </Tabpages>
               </Tab>
-              <Tab id="Tab00_00" taborder="1" tabindex="0" left="425" top="55" width="580" height="500" onchanged="Div00_00_Tab00_onchanged" border="0px none">
+              <Tab id="Tab00_00" taborder="1" tabindex="0" left="425" top="55" width="580" height="500" onchanged="Div00_00_Tab00_onchanged" border="0px none" font="12px/normal &quot;나눔고딕&quot;">
                 <Tabpages>
                   <Tabpage id="Tabpage4" text="급여조회">
                     <Layouts>
@@ -111,44 +111,44 @@
                                 <Row size="40" band="summ"/>
                               </Rows>
                               <Band id="head">
-                                <Cell text="지급항목"/>
-                                <Cell col="1" text="지급액"/>
-                                <Cell col="2" text="공제액"/>
-                                <Cell col="3" text="공제항목"/>
+                                <Cell text="지급항목" background="#6092ff" color="white"/>
+                                <Cell col="1" text="지급액" background="#6092ff" color="white"/>
+                                <Cell col="2" text="공제액" background="#6092ff" color="white"/>
+                                <Cell col="3" text="공제항목" background="#6092ff" color="white"/>
                               </Band>
                               <Band id="body">
-                                <Cell text="기본급" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center" verticalAlign="middle"/>
+                                <Cell text="기본급" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center" verticalAlign="middle"/>
                                 <Cell col="1" text="BIND:BASIC_SALARY" displaytype="currency"/>
                                 <Cell col="2" text="bind:NATIONAL_PENSION" displaytype="currency"/>
-                                <Cell col="3" text="국민연금" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
-                                <Cell row="1" text="직책수당" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center" verticalAlign="middle"/>
+                                <Cell col="3" text="국민연금" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="1" text="직책수당" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center" verticalAlign="middle"/>
                                 <Cell row="1" col="1" text="BIND:POSITION_SALARY" displaytype="currency"/>
                                 <Cell row="1" col="2" text="bind:HEALTH_INSURANCE" displaytype="currency"/>
-                                <Cell row="1" col="3" text="건강보험" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
-                                <Cell row="2" text="가족수당" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center" verticalAlign="middle"/>
+                                <Cell row="1" col="3" text="건강보험" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="2" text="가족수당" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center" verticalAlign="middle"/>
                                 <Cell row="2" col="1" text="BIND:FAMILY_SALARY" displaytype="currency"/>
                                 <Cell row="2" col="2" text="bind:LONG_TERM_INSURANCE" displaytype="currency"/>
-                                <Cell row="2" col="3" text="장기요양보험료" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
-                                <Cell row="3" text="식대" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center" verticalAlign="middle"/>
+                                <Cell row="2" col="3" text="장기요양보험료" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="3" text="식대" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center" verticalAlign="middle"/>
                                 <Cell row="3" col="1" text="BIND:FOOD_SALARY" displaytype="currency"/>
                                 <Cell row="3" col="2" text="bind:EMPLOYMENT_INSURANCE" displaytype="currency"/>
-                                <Cell row="3" col="3" text="고용보험" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
-                                <Cell row="4" text="초과근무수당" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center" verticalAlign="middle"/>
+                                <Cell row="3" col="3" text="고용보험" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="4" text="초과근무수당" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center" verticalAlign="middle"/>
                                 <Cell row="4" col="1" text="BIND:OVER_WORK_SALARY" displaytype="currency"/>
                                 <Cell row="4" col="2" text="bind:RELIGION_DONATION" displaytype="currency"/>
-                                <Cell row="4" col="3" text="기부금" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="4" col="3" text="기부금" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
                                 <Cell row="5" color="white" displaytype="none"/>
                                 <Cell row="5" col="1" displaytype="none" color="white"/>
                                 <Cell row="5" col="2" text="bind:INCOME_TAX" displaytype="currency"/>
-                                <Cell row="5" col="3" text="소득세" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="5" col="3" text="소득세" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
                                 <Cell row="6" color="white" displaytype="none"/>
                                 <Cell row="6" col="1" displaytype="none"/>
                                 <Cell row="6" col="2" text="bind:RESIDENT_TAX" displaytype="currency"/>
-                                <Cell row="6" col="3" text="주민세" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
-                                <Cell row="7" text="과세총액" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal bold 13px/normal &quot;Arial&quot;" textAlign="center"/>
+                                <Cell row="6" col="3" text="주민세" background="#6092ff" border="1px solid #cacaca" color="white" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
+                                <Cell row="7" text="과세총액" background="#6092ff" border="1px solid #cacaca" color="white" font="normal bold 13px/normal &quot;Arial&quot;" textAlign="center"/>
                                 <Cell row="7" col="1" text="expr:dataset.parent.fn_getTaxedIncome()" displaytype="currency" font="normal bold 13px/normal &quot;Arial&quot;"/>
                                 <Cell row="7" col="2" displaytype="currency" text="expr:dataset.parent.fn_getDeduction()" font="normal bold 13px/normal &quot;Arial&quot;"/>
-                                <Cell row="7" col="3" text="공제총액" background="linear-gradient(to top,#eff0f0,#f9fafa)" border="1px solid #cacaca" color="#2f2f2f" font="normal bold 13px/normal &quot;Arial&quot;" textAlign="center"/>
+                                <Cell row="7" col="3" text="공제총액" background="#6092ff" border="1px solid #cacaca" color="white" font="normal bold 13px/normal &quot;Arial&quot;" textAlign="center"/>
                               </Band>
                               <Band id="summary">
                                 <Cell text="차인지급액" font="normal 700 14px/normal &quot;Gulim&quot;"/>
@@ -174,12 +174,12 @@
                                 <Row size="24"/>
                               </Rows>
                               <Band id="head">
-                                <Cell text="사번"/>
-                                <Cell col="1" text="이름"/>
-                                <Cell col="2" text="적용년월"/>
-                                <Cell col="3" text="직급"/>
-                                <Cell col="4" text="이전 기본급"/>
-                                <Cell col="5" text="마감 여부"/>
+                                <Cell text="사번" color="white" background="#6092ff"/>
+                                <Cell col="1" text="이름" background="#6092ff" color="white"/>
+                                <Cell col="2" text="적용년월" background="#6092ff" color="white"/>
+                                <Cell col="3" text="직급" background="#6092ff" color="white"/>
+                                <Cell col="4" text="이전 기본급" background="#6092ff" color="white"/>
+                                <Cell col="5" text="마감 여부" background="#6092ff" color="white"/>
                               </Band>
                               <Band id="body">
                                 <Cell text="bind:EMP_CODE" textAlign="center"/>
@@ -204,8 +204,8 @@
                                 <Row size="30"/>
                               </Rows>
                               <Band id="head">
-                                <Cell text="회사부당금 항목"/>
-                                <Cell col="1" text="금액"/>
+                                <Cell text="회사부당금 항목" color="white" background="#6092ff"/>
+                                <Cell col="1" text="금액" background="#6092ff" color="white"/>
                               </Band>
                               <Band id="body">
                                 <Cell text="사회보험 사업자 부담금" textAlign="center" displaytype="text"/>
@@ -214,15 +214,15 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Button id="Button00" taborder="3" text="마감" left="345" top="361" width="90" height="40" font="normal 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage4_Button00_onclick"/>
-                        <Button id="Button01" taborder="4" text="마감 취소" left="455" top="361" width="90" height="40" font="normal 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage4_Button01_onclick"/>
+                        <Button id="Button00" taborder="3" text="마감" left="345" top="361" width="90" height="40" font="normal 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage4_Button00_onclick" background="#d0e3ed"/>
+                        <Button id="Button01" taborder="4" text="마감 취소" left="455" top="361" width="90" height="40" font="normal 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage4_Button01_onclick" background="#d0e3ed"/>
                       </Layout>
                     </Layouts>
                   </Tabpage>
                 </Tabpages>
               </Tab>
-              <Static id="Static00" taborder="2" text="◼ 급여 조회" left="8" top="0" width="188" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Calendar id="Calendar00" taborder="3" left="225" top="54" width="182" height="36" onchanged="Div00_00_Calendar00_onchanged" dateformat="yyyy-MM" editformat="yyyy-MM" displaynulltext="YYYY-MM"/>
+              <Static id="Static00" taborder="2" text="급여 조회" left="31" top="1" width="188" height="49" textAlign="left" font="bold 18px/normal &quot;Gulim&quot;"/>
+              <Calendar id="Calendar00" taborder="3" left="205" top="56" width="182" height="36" onchanged="Div00_00_Calendar00_onchanged" dateformat="yyyy-MM" editformat="yyyy-MM" displaynulltext="YYYY-MM"/>
             </Layout>
           </Layouts>
         </Div>
