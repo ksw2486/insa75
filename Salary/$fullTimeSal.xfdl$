@@ -214,8 +214,8 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Button id="Button00" taborder="3" text="마감" left="345" top="361" width="90" height="40" font="normal 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage4_Button00_onclick" background="#d0e3ed"/>
-                        <Button id="Button01" taborder="4" text="마감 취소" left="455" top="361" width="90" height="40" font="normal 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage4_Button01_onclick" background="#d0e3ed"/>
+                        <Button id="Button00" taborder="3" text="마감" left="345" top="361" width="90" height="40" font="bold 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage4_Button00_onclick" background="#d0e3ed" borderRadius="5px"/>
+                        <Button id="Button01" taborder="4" text="마감 취소" left="455" top="361" width="90" height="40" font="bold 16px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage4_Button01_onclick" background="#d0e3ed" borderRadius="5px"/>
                       </Layout>
                     </Layouts>
                   </Tabpage>
