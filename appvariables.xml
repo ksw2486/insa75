@@ -121,7 +121,7 @@
           <Col id="menu_nm">일근태등록</Col>
           <Col id="menu_lv">1</Col>
           <Col id="menu_st">1</Col>
-          <Col id="menu_url">Attd::dailyAttnd.xfdl</Col>
+          <Col id="menu_url">Attd::dailyAttnd_old.xfdl</Col>
         </Row>
         <Row>
           <Col id="menu_nm">일근태등록 수정본</Col>

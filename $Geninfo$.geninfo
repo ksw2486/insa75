@@ -12,8 +12,8 @@
     <Info project="C:\Users\USER\Desktop\75기 인사 project\Insa75(2차)\insa75\" generated="C:\Users\USER\Documents\TOBESOFT\Nexacro N\outputs\insa\">
       <File url="environment.xml" checksum="20230706163055" errormsg=""/>
       <File url="typedefinition.xml" checksum="20230706163055" errormsg=""/>
-      <File url="appvariables.xml" checksum="20230706163055" errormsg=""/>
-      <File url="_resource_\_theme_\default\theme.xcss" checksum="20230707160959" errormsg=""/>
+      <File url="appvariables.xml" checksum="20230713092807" errormsg=""/>
+      <File url="_resource_\_theme_\default\theme.xcss" checksum="20230715103439" errormsg=""/>
       <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\framework\Framework.json" checksum="20230228101658" errormsg=""/>
       <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\resources\Resource.json" checksum="20230228101658" errormsg=""/>
       <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\CompBase.json" checksum="20230228101654" errormsg=""/>
@@ -35,11 +35,11 @@
       <File url="Lib\commTrans.xjs" checksum="20230706163053" errormsg=""/>
       <File url="Lib\commUtility.xjs" checksum="20230706163053" errormsg=""/>
       <File url="Lib\popupModal.xjs" checksum="20230706163053" errormsg=""/>
-      <File url="FrameBase\Form_Left.xfdl" checksum="20230707141608" errormsg=""/>
+      <File url="FrameBase\Form_Left.xfdl" checksum="20230719090425" errormsg=""/>
       <File url="FrameBase\Form_Top.xfdl" checksum="20230706202005" errormsg=""/>
       <File url="FrameBase\Form_Work.xfdl" checksum="20230706194452" errormsg=""/>
       <File url="Base\dailyEmpPayDateModal.xfdl" checksum="20230706163053" errormsg=""/>
-      <File url="Base\loginForm.xfdl" checksum="20230706213838" errormsg=""/>
+      <File url="Base\loginForm.xfdl" checksum="20230713115744" errormsg=""/>
       <File url="Base\Modal.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="Base\Modal2.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="Base\postcodedaumapi_popup.xfdl" checksum="20230706163053" errormsg=""/>
@@ -51,11 +51,11 @@
       <File url="Attd\attndApproval_old.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="Attd\breakApplication.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="Attd\breakApplication_old.xfdl" checksum="20230706163053" errormsg=""/>
-      <File url="Attd\dailyAttnd.xfdl" checksum="20230706163053" errormsg=""/>
+      <File url="Attd\dailyAttnd.xfdl" checksum="20230713110107" errormsg=""/>
       <File url="Attd\dailyAttndMgt.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="Attd\dailyAttndMgt_old.xfdl" checksum="20230706163053" errormsg=""/>
-      <File url="Attd\dailyAttnd_old.xfdl" checksum="20230706163053" errormsg=""/>
-      <File url="Attd\excusedAttnd.xfdl" checksum="20230706163053" errormsg=""/>
+      <File url="Attd\dailyAttnd_old.xfdl" checksum="20230714211826" errormsg=""/>
+      <File url="Attd\excusedAttnd.xfdl" checksum="20230715103348" errormsg=""/>
       <File url="Attd\excusedAttnd_old.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="Attd\monthlyAttndMgt.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="Attd\monthlyAttndMgt_old.xfdl" checksum="20230706163053" errormsg=""/>
@@ -91,7 +91,7 @@
       <File url="NewEmp\documentmgmt\success.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="NewEmp\documentmgmt\workforcePlanning.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="NewEmp\newempinfomgmt\personalityinterview.xfdl" checksum="20230706163053" errormsg=""/>
-      <File url="Retirement\retirementMgt.xfdl" checksum="20230707172741" errormsg=""/>
+      <File url="Retirement\retirementMgt.xfdl" checksum="20230714210058" errormsg=""/>
       <File url="Retirement\retirementPay.xfdl" checksum="20230707172718" errormsg=""/>
       <File url="Retirement\retirementReceipt.xfdl" checksum="20230707174233" errormsg=""/>
       <File url="Retirement\rr_retReceiptApply.xfdl" checksum="20230707173746" errormsg=""/>
@@ -102,7 +102,7 @@
       <File url="DailyEmp\daylaborReg.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="DailyEmp\tab_additionalInfo.xfdl" checksum="20230706163053" errormsg=""/>
       <File url="DailyEmp\tab_basicInfo.xfdl" checksum="20230706163053" errormsg=""/>
-      <File url="_resource_\_theme_\blue\theme.xcss" checksum="20230707160513" errormsg=""/>
+      <File url="_resource_\_theme_\blue\theme.xcss" checksum="20230715103336" errormsg=""/>
       <File url="_resource_\_theme_\blue\" checksum="" errormsg=""/>
     </Info>
   </GenInfo>

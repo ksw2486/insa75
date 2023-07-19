@@ -19,8 +19,7 @@
         </Div>
       </Layout>
     </Layouts>
-    <Script type="xscript5.1"><![CDATA[
-nexa = nexacro.getApplication();
+    <Script type="xscript5.1"><![CDATA[nexa = nexacro.getApplication();
 
 this.Div_loginBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
@@ -55,23 +54,13 @@ this.login_callback = function (trID, errorCode, errorMsg)
 		nexa.g_deptName	= nexa.gds_emp.getColumn(0,"DEPT_NAME");  //부서
 		nexa.g_position	= nexa.gds_emp.getColumn(0,"POSITION"); //직급
 		nexa.g_workplaceCode = nexa.gds_emp.getColumn(0,"WORKPLACE_CODE"); //사업장
-
+		
 		
 		nexa.mainframe.set_visible(true);
 		
 		this.close();
 };
-this.Div_CheckBox00_onclick = function(obj:nexacro.CheckBox,e:nexacro.ClickEventInfo)
-{
-	
-};
 
-
-
-this.Div_Static01_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
-{
-	
-};
 ]]></Script>
     <Objects>
       <Dataset id="loginForm">
