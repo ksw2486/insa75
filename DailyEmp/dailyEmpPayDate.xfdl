@@ -2,47 +2,44 @@
 <FDL version="2.1">
   <Form id="dailyEmpPayDate" width="1280" height="720" titletext="New Form" onload="dailyEmpPayDate_onload">
     <Layouts>
-      <Layout height="720" width="1280">
-        <Static id="Static00" taborder="0" text="일용직급여지급일자등록" left="23" top="21" width="132" height="14"/>
-        <Div id="div_searchCondition" taborder="1" text="Div00" left="20" top="50" width="1240" height="65" background="#D9E5FF">
+      <Layout height="720" width="1280" stepcount="0">
+        <Static id="Static00" taborder="0" text="일용직급여지급일자등록" left="20" top="21" width="132" height="14"/>
+        <Div id="div_searchCondition" taborder="1" text="Div00" left="20" top="50" width="1240" height="65" background="#b4b4b4">
           <Layouts>
             <Layout>
               <Static id="Static00" taborder="0" text="귀속연월" left="42" top="10" width="50" height="14"/>
-              <Static id="Static01" taborder="1" text="지급일" left="356" top="10" width="50" height="14" onclick="div_searchCondition_Static01_onclick"/>
-              <Button id="btn_searchPaydate" taborder="2" left="458" top="7" width="20" height="20" text="" onclick="div_searchCondition_btn_searchDept_onclick"/>
-              <Static id="Static02" taborder="3" text="출결기간" left="670" top="10" width="50" height="14"/>
-              <Static id="Static03" taborder="4" text="프로젝트" left="42" top="40" width="50" height="14"/>
-              <Button id="btn_searchProject" taborder="5" left="216" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
-              <Static id="Static04" taborder="6" text="사업장" left="356" top="40" width="50" height="14"/>
-              <Edit id="edt_paytype" taborder="7" left="1012" top="7" width="116" height="20" readonly="true" onchanged="div_searchCondition_edt_paytype_onchanged"/>
-              <Static id="Static05" taborder="8" text="부서" left="692" top="40" width="50" height="14"/>
-              <Calendar id="calen_startdate" taborder="9" left="720" top="7" width="148" height="20" readonly="true" editformat="yyyy-MM-dd ddd"/>
-              <Calendar id="calen_enddate" taborder="10" left="870" top="7" width="140" height="20" readonly="true" editformat="yyyy-MM-dd ddd"/>
-              <Static id="Static06" taborder="11" text="~" left="836" top="-26" width="32" height="23"/>
-              <Calendar id="calen_date" taborder="12" left="94" top="7" width="116" height="20" background="#FFFFC5" dateformat="yyyy-MM" editformat="yyyy-MM" onchanged="div_searchCondition_calen_date_onchanged"/>
-              <Edit id="edit_paycode" taborder="13" left="407" top="7" width="41" height="20" background="#FFFFC5"/>
-              <Button id="btn_searchWorkplace" taborder="14" left="590" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
-              <Button id="btn_searchDept" taborder="15" left="844" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
-              <Static id="Static05_00" taborder="16" text="급여형태" left="894" top="39" width="50" height="14"/>
-              <Button id="btn_searchSalarytype" taborder="17" left="1067" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
-              <Button id="btn_search" taborder="18" text="조회" left="1133" top="10" width="94" height="41" onclick="div_searchCondition_btn_search_onclick"/>
-              <Calendar id="calen_paydate" taborder="19" left="480" top="7" width="130" height="20" readonly="true" editformat="yyyy-MM-dd ddd"/>
-              <Edit id="edit_project" taborder="20" left="94" top="37" width="116" height="20"/>
-              <Edit id="edit_workplace" taborder="21" left="407" top="37" width="178" height="20"/>
-              <Edit id="edit_dept" taborder="22" left="720" top="37" width="116" height="20"/>
-              <Edit id="edit_salarytype" taborder="23" left="946" top="37" width="116" height="20"/>
+              <Static id="Static01" taborder="1" text="지급일" left="364" top="10" width="50" height="14" onclick="div_searchCondition_Static01_onclick"/>
+              <Button id="btn_searchPaydate" taborder="2" left="454" top="7" width="20" height="20" text="" onclick="div_searchCondition_btn_searchDept_onclick" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
+              <Static id="Static02" taborder="3" text="출결기간" left="665" top="10" width="50" height="14"/>
+              <Static id="Static04" taborder="4" text="사업장" left="42" top="40" width="50" height="14"/>
+              <Edit id="edt_paytype" taborder="5" left="1012" top="7" width="116" height="20" readonly="true" onchanged="div_searchCondition_edt_paytype_onchanged"/>
+              <Static id="Static05" taborder="6" text="부서" left="364" top="40" width="50" height="14"/>
+              <Calendar id="calen_startdate" taborder="7" left="720" top="7" width="148" height="20" readonly="true" editformat="yyyy-MM-dd ddd"/>
+              <Calendar id="calen_enddate" taborder="8" left="870" top="7" width="140" height="20" readonly="true" editformat="yyyy-MM-dd ddd"/>
+              <Static id="Static06" taborder="9" text="~" left="836" top="-26" width="32" height="23"/>
+              <Calendar id="calen_date" taborder="10" left="94" top="7" width="178" height="20" background="#FFFFC5" dateformat="yyyy-MM-dd" editformat="yyyy-MM-dd" onchanged="div_searchCondition_calen_date_onchanged"/>
+              <Edit id="edit_paycode" taborder="11" left="407" top="7" width="41" height="20" background="#FFFFC5" onchanged="div_searchCondition_edit_paycode_onchanged"/>
+              <Button id="btn_searchWorkplace" taborder="12" left="252" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
+              <Button id="btn_searchDept" taborder="13" left="591" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
+              <Static id="Static05_00" taborder="14" text="급여형태" left="665" top="39" width="50" height="14"/>
+              <Button id="btn_searchSalarytype" taborder="15" left="849" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
+              <Button id="btn_search" taborder="16" text="조회" left="1143" top="16" width="80" height="35" onclick="div_searchCondition_btn_search_onclick" background="#6092ff" borderRadius="5PX" color="WHITE" font="12PX SOLID &quot;나눔고딕&quot; BOLD"/>
+              <Calendar id="calen_paydate" taborder="17" left="480" top="7" width="130" height="20" readonly="true" editformat="yyyy-MM-dd ddd"/>
+              <Edit id="edit_workplace" taborder="18" left="94" top="37" width="155" height="20"/>
+              <Edit id="edit_dept" taborder="19" left="407" top="37" width="178" height="20"/>
+              <Edit id="edit_salarytype" taborder="20" left="720" top="37" width="125" height="20"/>
             </Layout>
           </Layouts>
         </Div>
-        <Grid id="grd_DEmpPayDateList" taborder="2" left="20" top="127" width="535" height="587" binddataset="ds_dayPayList" oncellclick="grd_DEmpPayDateList_oncellclick" selecttype="multirow">
+        <Grid id="grd_DEmpPayDateList" taborder="2" left="20" top="127" width="540" height="587" binddataset="ds_dayPayList" oncellclick="grd_DEmpPayDateList_oncellclick" selecttype="multirow">
           <Formats>
             <Format id="default">
               <Columns>
                 <Column size="80"/>
-                <Column size="48"/>
+                <Column size="50"/>
                 <Column size="96"/>
-                <Column size="143"/>
-                <Column size="166"/>
+                <Column size="147"/>
+                <Column size="165"/>
               </Columns>
               <Rows>
                 <Row size="24" band="head"/>
@@ -68,23 +65,23 @@
             </Format>
           </Formats>
         </Grid>
-        <Div id="div_divide" taborder="3" text="Div01" left="580" top="127" width="120" height="587" background="#D9E5FF">
+        <Div id="div_divide" taborder="3" text="Div01" left="567" top="127" width="120" height="587">
           <Layouts>
             <Layout>
-              <Button id="btn_add" taborder="0" text="추가" left="25" top="193" width="70" height="50" onclick="div_divide_btn_add_onclick"/>
-              <Button id="btn_delete" taborder="1" text="삭제" left="25" top="268" width="70" height="50" onclick="div_divide_btn_delete_onclick"/>
+              <Button id="btn_add" taborder="0" text="추가" left="25" top="193" width="70" height="50" onclick="div_divide_btn_add_onclick" font="12PX SOLID &quot;나눔고딕&quot; BOLD" background="#6092ff" color="WHITE" borderRadius="5PX"/>
+              <Button id="btn_delete" taborder="1" text="삭제" left="25" top="298" width="70" height="50" onclick="div_divide_btn_delete_onclick" background="#6092ff" font="12PX SOLID &quot;나눔고딕&quot; BOLD" color="WHITE" borderRadius="5PX"/>
             </Layout>
           </Layouts>
         </Div>
-        <Grid id="grd_DEmpPayTarget" taborder="4" left="723" top="127" width="537" height="587" binddataset="ds_dayPayTarget" selecttype="multirow">
+        <Grid id="grd_DEmpPayTarget" taborder="4" left="690" top="127" width="559" height="587" binddataset="ds_dayPayTarget" selecttype="multirow">
           <Formats>
             <Format id="default">
               <Columns>
                 <Column size="80"/>
-                <Column size="47"/>
+                <Column size="57"/>
                 <Column size="107"/>
-                <Column size="129"/>
-                <Column size="172"/>
+                <Column size="137"/>
+                <Column size="176"/>
               </Columns>
               <Rows>
                 <Row size="24" band="head"/>
@@ -113,7 +110,6 @@
         <Edit id="edit_hidden_workplacecode" taborder="5" left="11" top="-71" width="105" height="31"/>
         <Edit id="edit_hidden_dept" taborder="6" left="149" top="-69" width="105" height="31"/>
         <Edit id="edit_hidden_salarytype" taborder="7" left="269" top="-69" width="105" height="31"/>
-        <Button id="Button00" taborder="8" text="Button00" left="295" top="39" width="34" height="37" onclick="Button00_onclick"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[include "Lib::commonOpen.xjs"; // 모달창 라이브러리
@@ -332,6 +328,26 @@ this.div_divide_btn_delete_onclick = function(obj:nexacro.Button,e:nexacro.Click
 
 
 this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	
+};
+
+this.div_searchCondition00_edit_paycode_onchanged = function(obj:nexacro.Edit,e:nexacro.ChangeEventInfo)
+{
+	
+};
+
+this.Combo00_01_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	
+};
+
+this.div_searchCondition_edit_paycode_onchanged = function(obj:nexacro.Edit,e:nexacro.ChangeEventInfo)
+{
+	
+};
+
+this.div_searchCondition_edit_project_onchanged = function(obj:nexacro.Edit,e:nexacro.ChangeEventInfo)
 {
 	
 };

@@ -6,7 +6,7 @@
         <Div id="Div00" taborder="1" text="Div00" left="32" top="2" width="1248" height="48" border="0px none, 0px none, 2px solid black">
           <Layouts>
             <Layout>
-              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick"/>
+              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
               <Static id="Static00" taborder="1" text="사회보험환경등록" left="11" top="10" width="155" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;나눔고딕&quot;"/>
             </Layout>
           </Layouts>
@@ -218,8 +218,8 @@
                           <Row size="24"/>
                         </Rows>
                         <Band id="head">
-                          <Cell colspan="2" text="구분"/>
-                          <Cell col="2" text="사업주"/>
+                          <Cell colspan="2" text="구분" background="#6092ff" color="white"/>
+                          <Cell col="2" text="사업주" background="#6092ff" color="white"/>
                         </Band>
                         <Band id="body">
                           <Cell colspan="2" text="시설관리 및 사업지원 서비스업" textAlign="center"/>
