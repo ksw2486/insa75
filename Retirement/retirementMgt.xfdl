@@ -87,7 +87,7 @@
                   </Rows>
                 </Dataset>
               </Radio>
-              <Button id="btn_retSetSave" taborder="9" text="저장" left="469" top="274" width="80" height="35" onclick="retireSetDiv_btn_retSetSave_onclick" borderRadius="5px" background="#6092ff" color="white" font="12px/normal &quot;나눔고딕 ExtraBold&quot;"/>
+              <Button id="btn_retSetSave" taborder="9" text="저장" left="469" top="274" width="80" height="35" onclick="retireSetDiv_btn_retSetSave_onclick" borderRadius="5px" background="#6092ff" color="white" font="bold 12px/normal &quot;나눔고딕&quot;"/>
             </Layout>
           </Layouts>
         </Div>
@@ -107,7 +107,11 @@
         </ColumnInfo>
       </Dataset>
     </Objects>
-    <Script type="xscript5.1"><![CDATA[
+    <Script type="xscript5.1"><![CDATA[var hh
+var mm
+var ss
+
+
 this.retirementMgt_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
 {
 	this.transaction("getRetMgtSet",
@@ -116,7 +120,31 @@ this.retirementMgt_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
 			 "ds_retMgtSet=gds_retirementSetMgmt",
 			 "",
 			 "fn_callback");
+	this.clock();
+	this.setTimer(1,1000);
 };
+
+this.retirementMgt_ontimer = function(obj:nexacro.Form,e:nexacro.TimerEventInfo) //setTimer() 메소드로 생성한 타이머의 시간 간격마다 발생하는 이벤트입니다.
+{
+	if(e.timerid == 1){
+		this.clock();
+	}
+};
+
+
+this.clock = function() // 시간구하기
+{
+	var objDate = new nexacro.Date();
+	hh = objDate.getHours()>=10?objDate.getHours():'0'+objDate.getHours();
+	mm = objDate.getMinutes()>=10?objDate.getMinutes():'0'+objDate.getMinutes();
+	ss = objDate.getSeconds()>=10?objDate.getSeconds():'0'+objDate.getSeconds();
+	var time = hh+":"+mm+":"+ss;
+	this.retireSetDiv.form.Static00.set_text(time); // id = timer 인 form에 나타내기
+};
+
+
+
+
 
 this.retireSetDiv_btn_retSetSave_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {	
@@ -162,7 +190,8 @@ this.retireSetDiv_radio_onitemchanged = function(obj:nexacro.Radio,e:nexacro.Ite
 	trace(obj.value);
 	trace(this.ds_retMgtSet.getColumn(0));
 	trace(this.ds_retMgtSet.lookup("MOEL_CHECK_CODE", "CHK000", "MOEL_CHECK_CODE"));
-};]]></Script>
+};
+]]></Script>
     <Bind>
       <BindItem id="item0" compid="retireSetDiv.form.moelStandard" propid="value" datasetid="ds_retMgtSet" columnid="MOEL_CHECK_CODE"/>
       <BindItem id="item1" compid="retireSetDiv.form.retDateRange" propid="value" datasetid="ds_retMgtSet" columnid="RETIREMENT_RANGE_CODE"/>
