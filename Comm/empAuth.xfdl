@@ -35,7 +35,7 @@
                   </Format>
                 </Formats>
               </Grid>
-              <Button id="Button00" taborder="2" text="권한저장" left="430" top="475" width="150" height="60" font="24px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Button00_onclick"/>
+              <Button id="Button00" taborder="2" text="권한저장" left="430" top="475" width="150" height="60" font="12PX SOLID &quot;나눔고딕&quot; BOLD" onclick="Div00_00_Button00_onclick" background="#6092ff" color="white" borderRadius="5px"/>
               <Grid id="Grid00_00" taborder="3" left="517" top="58" width="455" height="385" binddataset="ds_admin" autoenter="select" oncellclick="Div00_00_Grid00_00_oncellclick">
                 <Formats>
                   <Format id="default">

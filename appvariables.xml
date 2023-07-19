@@ -462,13 +462,6 @@
           <Col id="menu_st">1</Col>
           <Col id="menu_url">Comm::empAuth.xfdl</Col>
         </Row>
-        <Row>
-          <Col id="menu_id">currow</Col>
-          <Col id="menu_nm">코드조회</Col>
-          <Col id="menu_lv">1</Col>
-          <Col id="menu_st">1</Col>
-          <Col id="menu_url">Comm::codeList.xfdl</Col>
-        </Row>
       </Rows>
     </Dataset>
     <Dataset id="gds_dayattd">
