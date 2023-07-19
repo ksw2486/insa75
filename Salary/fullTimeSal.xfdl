@@ -3,7 +3,7 @@
   <Form id="fullTimeSal" width="1060" height="610" titletext="New Form">
     <Layouts>
       <Layout height="610" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560" background="#D9E5FF">
+        <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560">
           <Layouts>
             <Layout>
               <Tab id="Tab00" taborder="0" tabindex="0" left="30" top="56" width="410" height="459" onchanged="Div00_00_Tab00_onchanged" border="0px none">
@@ -658,10 +658,6 @@ this.sal_cancle_finalized = function(id, code, message)
           this.alert("Error["+code+"]:"+message);
           trace("Error["+code+"]:"+message);
      }
-}
-this.Div00_00_Tab00_Tabpage1_Edit00_onchanged = function(obj:nexacro.Edit,e:nexacro.ChangeEventInfo)
-{
-   
-};]]></Script>
+}]]></Script>
   </Form>
 </FDL>

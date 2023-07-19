@@ -12,11 +12,11 @@
                     <Layouts>
                       <Layout>
                         <Button id="Button00_00" taborder="0" text="취소" left="751" top="553" width="99" height="37" onclick="empEval_onload"/>
-                        <Button id="Button00" taborder="1" text="취소" left="124" top="321" width="99" height="37" onclick="empEval_onload"/>
-                        <Button id="Button01" taborder="2" text="문서번호 생성" left="65" top="261" width="94" height="34" onclick="regist"/>
-                        <Edit id="genratehosu" taborder="3" left="170" top="261" width="160" height="34" enable="false"/>
+                        <Button id="Button00" taborder="1" text="취소" left="124" top="321" width="99" height="37" onclick="empEval_onload" borderRadius="5px"/>
+                        <Button id="Button01" taborder="2" text="문서번호 생성" left="65" top="261" width="94" height="34" onclick="regist" borderRadius="5px"/>
+                        <Edit id="genratehosu" taborder="3" left="170" top="261" width="160" height="34" enable="false" borderRadius="5px"/>
                         <Static id="Static03" taborder="4" text="발령근거" left="100" top="216" width="82" height="25" font="15px/normal &quot;Gulim&quot;"/>
-                        <Combo id="reason" taborder="5" text="Combo00" left="170" top="211" width="160" height="34" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
+                        <Combo id="reason" taborder="5" text="Combo00" left="170" top="211" width="160" height="34" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" borderRadius="5px">
                           <Dataset id="innerdataset">
                             <ColumnInfo>
                               <Column id="codecolumn" size="256"/>
@@ -38,8 +38,8 @@
                             </Rows>
                           </Dataset>
                         </Combo>
-                        <Button id="Button02" taborder="6" text="등록" left="260" top="321" width="99" height="37" onclick="Button00_onclick"/>
-                        <Edit id="title" taborder="7" left="170" top="161" width="160" height="34"/>
+                        <Button id="Button02" taborder="6" text="등록" left="260" top="321" width="99" height="37" onclick="Button00_onclick" borderRadius="5px"/>
+                        <Edit id="title" taborder="7" left="170" top="161" width="160" height="34" borderRadius="5px"/>
                         <Static id="Static03_00" taborder="8" text="제목" left="120" top="166" width="82" height="25" font="15px/normal &quot;Gulim&quot;"/>
                         <Grid id="hosuGrid" taborder="9" left="450" top="81" width="490" height="389" binddataset="ds_appointmentinfolist" oncellclick="Div00_00_Tab00_Tabpage2_evalGrid_oncellclick">
                           <Formats>

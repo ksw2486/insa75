@@ -3,16 +3,16 @@
   <Form id="salaryAwards" width="1060" height="610" titletext="New Form">
     <Layouts>
       <Layout height="610" width="1060" stepcount="0">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560" background="#D9E5FF">
+        <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560">
           <Layouts>
             <Layout>
-              <Tab id="Tab00" taborder="0" tabindex="0" left="30" top="56" width="410" height="504" onchanged="Div00_00_Tab00_onchanged" border="0px none">
+              <Tab id="Tab00" taborder="0" tabindex="0" left="30" top="60" width="410" height="504" onchanged="Div00_00_Tab00_onchanged" border="0px none">
                 <Tabpages>
                   <Tabpage id="Tabpage1" text="부서명검색" border="0px groove" font="16px/normal &quot;맑은 고딕&quot;">
                     <Layouts>
                       <Layout>
-                        <Button id="Button00" taborder="0" text="검색" left="245" top="16" width="125" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage1_Button00_onclick"/>
-                        <Grid id="Grid00" taborder="1" left="6" top="68" width="364" height="353" binddataset="ds_empList" onclick="Div00_00_Tab00_Tabpage1_Grid00_onclick" oncelldblclick="Div00_00_Tab00_Tabpage1_Grid00_oncelldblclick">
+                        <Button id="Button00" taborder="0" text="검색" left="235" top="16" width="125" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage1_Button00_onclick"/>
+                        <Grid id="Grid00" taborder="1" left="0" top="65" width="364" height="353" binddataset="ds_empList" oncelldblclick="Div00_00_Tab00_Tabpage1_Grid00_oncelldblclick">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -40,16 +40,16 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Edit id="Edit00" taborder="2" left="6" top="16" width="219" height="40" oneditclick="Div00_00_Tab00_Tabpage1_Edit00_oneditclick"/>
+                        <Edit id="Edit00" taborder="2" left="0" top="16" width="219" height="40" oneditclick="Div00_00_Tab00_Tabpage1_Edit00_oneditclick" onchanged="Div00_00_Tab00_Tabpage1_Edit00_onchanged"/>
                       </Layout>
                     </Layouts>
                   </Tabpage>
                   <Tabpage id="Tabpage2" text="사원명검색" border="0px groove">
                     <Layouts>
                       <Layout>
-                        <Button id="Button00" taborder="0" text="검색" left="206" top="16" width="77" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage2_Button00_onclick"/>
-                        <Button id="Button00_00" taborder="1" text="삭제" left="293" top="16" width="77" height="40" font="20px/normal &quot;나눔고딕&quot;"/>
-                        <Grid id="Grid00" taborder="2" left="6" top="68" width="364" height="353" binddataset="ds_emp" oncelldblclick="Div00_00_Tab00_Tabpage2_Grid00_oncelldblclick">
+                        <Button id="Button00" taborder="0" text="검색" left="202" top="16" width="77" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage2_Button00_onclick"/>
+                        <Button id="Button00_00" taborder="1" text="삭제" left="289" top="16" width="77" height="40" font="20px/normal &quot;나눔고딕&quot;"/>
+                        <Grid id="Grid00" taborder="2" left="0" top="68" width="364" height="353" binddataset="ds_emp" oncelldblclick="Div00_00_Tab00_Tabpage2_Grid00_oncelldblclick">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -77,18 +77,18 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Edit id="Edit00" taborder="3" left="8" top="16" width="192" height="40"/>
+                        <Edit id="Edit00" taborder="3" left="0" top="16" width="192" height="40"/>
                       </Layout>
                     </Layouts>
                   </Tabpage>
                 </Tabpages>
               </Tab>
-              <Tab id="Tab00_00" taborder="1" tabindex="0" left="425" top="50" width="560" height="485" onchanged="Div00_00_Tab00_onchanged" border="0px none">
+              <Tab id="Tab00_00" taborder="1" tabindex="0" left="430" top="60" width="560" height="485" onchanged="Div00_00_Tab00_onchanged" border="0px none">
                 <Tabpages>
                   <Tabpage id="Tabpage3" text="상여금정보">
                     <Layouts>
                       <Layout>
-                        <Grid id="Grid00_00" taborder="0" left="40" top="24" width="492" height="405" binddataset="ds_empBonus">
+                        <Grid id="Grid00_00" taborder="0" left="0" top="15" width="492" height="405" binddataset="ds_empBonus">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -125,7 +125,7 @@
                   <Tabpage id="Tabpage4" text="성과급정보">
                     <Layouts>
                       <Layout>
-                        <Grid id="Grid00_00" taborder="0" left="38" top="26" width="492" height="400" binddataset="ds_empPerform">
+                        <Grid id="Grid00_00" taborder="0" left="0" top="15" width="492" height="400" binddataset="ds_empPerform">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -167,7 +167,14 @@
                   </Tabpage>
                 </Tabpages>
               </Tab>
-              <Static id="Static00" taborder="2" text="◼상여 및 성과급 조회" left="8" top="0" width="188" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div00" taborder="1" text="Div00" left="32" top="2" width="1248" height="48" border="0px none, 0px none, 2px solid black">
+          <Layouts>
+            <Layout>
+              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick"/>
+              <Static id="Static00" taborder="1" text="상여 및 성과금 조회" left="11" top="10" width="170" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;Gulim&quot;"/>
             </Layout>
           </Layouts>
         </Div>
@@ -360,6 +367,8 @@ this.fn_calPerformPay = function(GRADE, BASE_SALARY){
       }
    //trace("해당 사원의 성과급은 " + PerformPay + "입니다.");
    return PerformPay;
-}]]></Script>
+}
+
+]]></Script>
   </Form>
 </FDL>

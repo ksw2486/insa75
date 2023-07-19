@@ -14,8 +14,8 @@
         <Column id="EMAIL" type="STRING" size="256"/>
         <Column id="LAST_SCHOOL" type="STRING" size="256"/>
         <Column id="IMG_EXTEND" type="STRING" size="256"/>
-        <Column id="DEPT_NAME" type="STRING" size="256"/>
-        <Column id="POSITION" type="STRING" size="256"/>
+        <Column id="DEPT_CODE" type="STRING" size="256"/>
+        <Column id="POSITION_CODE" type="STRING" size="256"/>
         <Column id="WORKPLACE_CODE" type="STRING" size="256"/>
       </ColumnInfo>
     </Dataset>
@@ -359,6 +359,7 @@
           <Col id="menu_st">1</Col>
           <Col id="menu_lv">1</Col>
           <Col id="menu_nm">교육훈련진행관리</Col>
+          <Col id="menu_url">NewEmp::documentmgmt/eduPlan.xfdl</Col>
         </Row>
         <Row>
           <Col id="menu_id">currow</Col>

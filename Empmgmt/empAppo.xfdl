@@ -11,7 +11,7 @@
                   <Tabpage id="Tabpage1" text="부서명검색" border="0px groove" font="16px/normal &quot;맑은 고딕&quot;">
                     <Layouts>
                       <Layout>
-                        <Combo id="Combo00" taborder="0" text="" left="18" top="21" width="192" height="40" innerdataset="innerdataset" datacolumn="datacolumn" codecolumn="codecolumn" font="15px/normal &quot;나눔고딕&quot;" displaynulltext="부서를 선택 해주세요.">
+                        <Combo id="Combo00" taborder="0" text="" left="18" top="21" width="192" height="40" innerdataset="innerdataset" datacolumn="datacolumn" codecolumn="codecolumn" font="15px/normal &quot;나눔고딕&quot;" displaynulltext="부서를 선택 해주세요." borderRadius="5px">
                           <Dataset id="innerdataset">
                             <ColumnInfo>
                               <Column id="codecolumn" size="256"/>
@@ -41,7 +41,7 @@
                             </Rows>
                           </Dataset>
                         </Combo>
-                        <Button id="Button00" taborder="1" text="검색" left="224" top="21" width="77" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="search_btn_onclick"/>
+                        <Button id="Button00" taborder="1" text="검색" left="224" top="21" width="77" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="search_btn_onclick" borderRadius="5px"/>
                         <Grid id="Grid00" taborder="2" left="18" top="73" width="375" height="405" binddataset="ds_empList" scrollbartype="none" oncellclick="deptEmpGrid_oncellclick">
                           <Formats>
                             <Format id="default">
@@ -118,21 +118,21 @@
                       <Layout>
                         <ImageViewer id="ImageViewer00" taborder="0" text="" left="11" top="25" width="190" height="228"/>
                         <Static id="Static00" taborder="1" text="사원코드" left="211" top="23" width="75" height="46" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-                        <Edit id="Edit00" taborder="2" left="296" top="19" width="248" height="46" font="18px/normal &quot;나눔고딕&quot;" enable="false" onchanged="Div00_00_Tab00_00_Tabpage3_Edit00_onchanged"/>
+                        <Edit id="Edit00" taborder="2" left="296" top="19" width="248" height="46" font="18px/normal &quot;나눔고딕&quot;" enable="false" onchanged="Div00_00_Tab00_00_Tabpage3_Edit00_onchanged" borderRadius="5px"/>
                         <Static id="Static00_00" taborder="3" text="이름" left="211" top="84" width="75" height="46" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-                        <Edit id="Edit00_00" taborder="4" left="298" top="82" width="248" height="46" font="18px/normal &quot;나눔고딕&quot;" enable="false"/>
+                        <Edit id="Edit00_00" taborder="4" left="298" top="82" width="248" height="46" font="18px/normal &quot;나눔고딕&quot;" enable="false" borderRadius="5px"/>
                         <Static id="Static00_00_00" taborder="5" text="부서" left="211" top="145" width="75" height="46" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-                        <Edit id="Edit00_00_00" taborder="6" left="298" top="145" width="248" height="46" font="18px/normal &quot;나눔고딕&quot;" enable="false"/>
+                        <Edit id="Edit00_00_00" taborder="6" left="298" top="145" width="248" height="46" font="18px/normal &quot;나눔고딕&quot;" enable="false" borderRadius="5px"/>
                         <Static id="Static00_00_00_00" taborder="7" text="직급" left="211" top="206" width="75" height="46" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-                        <Edit id="Edit00_00_00_00" taborder="8" left="298" top="208" width="92" height="46" font="18px/normal &quot;나눔고딕&quot;" enable="false" onchanged="Div00_00_Tab00_00_Tabpage3_Edit00_00_00_00_onchanged"/>
+                        <Edit id="Edit00_00_00_00" taborder="8" left="298" top="208" width="92" height="46" font="18px/normal &quot;나눔고딕&quot;" enable="false" onchanged="Div00_00_Tab00_00_Tabpage3_Edit00_00_00_00_onchanged" borderRadius="5px"/>
                         <Static id="Static00_01" taborder="9" text="시행일자" left="-28" top="342" width="129" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage3_Static00_01_onclick"/>
                         <Static id="Static00_01_00" taborder="10" text="발령일자" left="-27" top="286" width="127" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage3_Static00_01_onclick"/>
-                        <Button id="Button00" taborder="11" text="등록" left="405" top="467" width="115" height="47" onclick="Div00_00_evalRegistBtn_onclick" font="15pt &quot;Arial&quot;"/>
+                        <Button id="Button00" taborder="11" text="등록" left="405" top="467" width="115" height="47" onclick="Div00_00_evalRegistBtn_onclick" font="15pt &quot;Arial&quot;" borderRadius="5px"/>
                         <Static id="Static00_01_02" taborder="12" text="호봉(발령후)" left="278" top="342" width="129" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage3_Static00_01_onclick" visible="false"/>
                         <Static id="Static00_01_02_00" taborder="13" text="발령호수" left="268" top="286" width="129" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage3_Static00_01_onclick"/>
                         <Static id="Static00_01_01_00" taborder="14" text="발령구분" left="-42" top="398" width="157" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage3_Static00_01_onclick"/>
-                        <Edit id="type" taborder="15" left="407" top="345" width="133" height="46" oneditclick="Div00_00_Tab00_00_Tabpage3_type_oneditclick" visible="false" onchanged="Div00_00_Tab00_00_Tabpage3_type_onchanged"/>
-                        <Combo id="Combo00" taborder="16" text="" left="81" top="400" width="201" height="46" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" onitemchanged="Div00_00_Tab00_00_Tabpage3_Combo00_onitemchanged">
+                        <Edit id="type" taborder="15" left="407" top="345" width="133" height="46" oneditclick="Div00_00_Tab00_00_Tabpage3_type_oneditclick" visible="false" onchanged="Div00_00_Tab00_00_Tabpage3_type_onchanged" borderRadius="5px"/>
+                        <Combo id="Combo00" taborder="16" text="" left="81" top="400" width="201" height="46" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" onitemchanged="Div00_00_Tab00_00_Tabpage3_Combo00_onitemchanged" borderRadius="5px">
                           <Dataset id="innerdataset">
                             <ColumnInfo>
                               <Column id="codecolumn" size="256"/>
@@ -166,13 +166,13 @@
                             </Rows>
                           </Dataset>
                         </Combo>
-                        <Edit id="Edit01" taborder="17" left="379" top="400" width="161" height="46"/>
+                        <Edit id="Edit01" taborder="17" left="379" top="400" width="161" height="46" borderRadius="5px"/>
                         <Static id="Static00_01_02_01" taborder="18" text="비고" left="268" top="398" width="129" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_00_Tabpage3_Static00_01_onclick"/>
                         <Static id="Static00_00_00_00_00" taborder="19" text="호봉" left="380" top="206" width="75" height="46" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-                        <Edit id="Edit00_00_00_00_00" taborder="20" left="454" top="208" width="92" height="46" font="18px/normal &quot;나눔고딕&quot;" enable="false" onchanged="Div00_00_Tab00_00_Tabpage3_Edit00_00_00_00_00_onchanged"/>
-                        <Edit id="hosu" taborder="21" left="379" top="289" width="161" height="46" oneditclick="selectHosu_oneditclick" enable="true" onchanged="Div00_00_Tab00_00_Tabpage3_hosu_onchanged"/>
-                        <Calendar id="Calendar01" taborder="22" left="81" top="345" width="201" height="46"/>
-                        <Calendar id="Calendar00" taborder="23" left="81" top="289" width="201" height="46"/>
+                        <Edit id="Edit00_00_00_00_00" taborder="20" left="454" top="208" width="92" height="46" font="18px/normal &quot;나눔고딕&quot;" enable="false" onchanged="Div00_00_Tab00_00_Tabpage3_Edit00_00_00_00_00_onchanged" borderRadius="5px"/>
+                        <Edit id="hosu" taborder="21" left="379" top="289" width="161" height="46" oneditclick="selectHosu_oneditclick" enable="true" onchanged="Div00_00_Tab00_00_Tabpage3_hosu_onchanged" borderRadius="5px"/>
+                        <Calendar id="Calendar01" taborder="22" left="81" top="345" width="201" height="46" borderRadius="5px"/>
+                        <Calendar id="Calendar00" taborder="23" left="81" top="289" width="201" height="46" borderRadius="5px"/>
                       </Layout>
                     </Layouts>
                   </Tabpage>

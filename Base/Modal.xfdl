@@ -42,6 +42,8 @@
 					 "code="+this.parent.code,
 					 "fn_callback"
 					);
+					
+					trace(this.ds_codeList.getColumn(1,1))
 
 }
 
