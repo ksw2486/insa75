@@ -1,8 +1,0 @@
-﻿{
-admin off
-}
-:4098
-{
-root "C:/Users/USER/Documents/TOBESOFT/Nexacro N/outputs/insa"
-file_server
-}
