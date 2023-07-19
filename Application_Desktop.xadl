@@ -2,14 +2,14 @@
 <ADL version="2.0">
   <Application id="Application_Desktop" screenid="Desktop_screen" onload="Application_onload">
     <Layout>
-      <MainFrame id="mainframe" showtitlebar="true" showstatusbar="true" left="0" top="0" width="1500" height="720" titletext="TopLeftFrame">
-        <VFrameSet id="VFrameSet00" separatesize="50,*">
+      <MainFrame id="mainframe" showtitlebar="true" showstatusbar="true" left="0" top="0" width="1500" height="1000" titletext="TopLeftFrame">
+        <VFrameSet id="VFrameSet00" separatesize="70,*" width="1500" height="1000">
           <Frames>
-            <ChildFrame id="TopFrame" showtitlebar="false" showstatusbar="false" formurl="FrameBase::Form_Top.xfdl"/>
-            <HFrameSet id="HFrameSet00" separatesize="200,*">
+            <ChildFrame id="TopFrame" showtitlebar="false" showstatusbar="false" formurl="FrameBase::Form_Top.xfdl" width="1500" height="70"/>
+            <HFrameSet id="HFrameSet00" separatesize="230,*">
               <Frames>
-                <ChildFrame id="LeftFrame" showtitlebar="false" showstatusbar="false" formurl="FrameBase::Form_Left.xfdl"/>
-                <ChildFrame id="WorkFrame" showtitlebar="false" showstatusbar="false" formurl="FrameBase::Form_Work.xfdl"/>
+                <ChildFrame id="LeftFrame" showtitlebar="false" showstatusbar="false" formurl="FrameBase::Form_Left.xfdl" width="230" height="930" top="70"/>
+                <ChildFrame id="WorkFrame" showtitlebar="false" showstatusbar="false" formurl="FrameBase::Form_Work.xfdl" width="1270" height="930" top="70"/>
               </Frames>
             </HFrameSet>
           </Frames>
