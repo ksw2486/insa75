@@ -11,10 +11,10 @@
                   <Div id="Div00" taborder="0" text="Div00" left="32" top="2" width="1248" height="48" border="0px none, 0px none, 2px solid black">
                     <Layouts>
                       <Layout>
-                        <Button id="Button01" taborder="0" text="일괄등록" left="68.11%" top="10" width="6.17%" height="62.50%" background="#d0e3ed" font="12px/normal &quot;나눔고딕&quot;"/>
-                        <Button id="Button02" taborder="1" text="일괄인상" left="76.28%" top="10" width="6.17%" height="62.50%" background="#d0e3ed" font="12px/normal &quot;나눔고딕&quot;"/>
-                        <Button id="Button03" taborder="2" text="호봉복사" left="84.38%" top="10" width="6.17%" height="62.50%" onclick="Div00_Button00_00_onclick" background="#d0e3ed" font="12px/normal &quot;나눔고딕&quot;"/>
-                        <Button id="Button04" taborder="3" text="코드설정" left="92.47%" top="10" width="6.17%" height="62.50%" background="#d0e3ed" font="12px/normal &quot;나눔고딕&quot;"/>
+                        <Button id="Button01" taborder="0" text="일괄등록" left="67.31%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
+                        <Button id="Button02" taborder="1" text="일괄인상" left="75.40%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" font="bold 12px/normal &quot;나눔고딕&quot;12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
+                        <Button id="Button03" taborder="2" text="호봉복사" left="83.57%" top="10" width="6.17%" height="60.87%" onclick="Div00_Button00_00_onclick" background="#d0e3ed" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
+                        <Button id="Button04" taborder="3" text="코드설정" left="91.67%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" font="bold 12px/normal &quot;나눔고딕&quot;"/>
                         <Static id="Static00" taborder="4" text="호봉테이블등록" left="21" top="10" width="142" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;나눔고딕&quot;"/>
                       </Layout>
                     </Layouts>
@@ -125,10 +125,10 @@
                   <Div id="Div00" taborder="0" text="Div00" left="32" top="2" width="1248" height="48" border="0px none, 0px none, 2px solid black">
                     <Layouts>
                       <Layout>
-                        <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick" font="12px/normal &quot;나눔고딕&quot;"/>
-                        <Static id="Static00" taborder="1" text="급여기준관리" left="11" top="10" width="142" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;Gulim&quot;"/>
-                        <Button id="Button02" taborder="2" text="추가" left="58.17%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button03_onclick" font="12px/normal &quot;나눔고딕&quot;"/>
-                        <Button id="Button03" taborder="3" text="삭제" left="65.38%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button02_onclick" font="12px/normal &quot;나눔고딕&quot;"/>
+                        <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
+                        <Static id="Static00" taborder="1" text="급여기준관리" left="11" top="10" width="142" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;나눔고딕&quot;"/>
+                        <Button id="Button02" taborder="2" text="추가" left="58.17%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button03_onclick" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
+                        <Button id="Button03" taborder="3" text="삭제" left="65.38%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button02_onclick" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
                       </Layout>
                     </Layouts>
                   </Div>
