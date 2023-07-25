@@ -1,50 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FDL version="2.1">
-  <Form id="empReg" width="1060" height="610" titletext="New Form">
+  <Form id="empReg" width="1060" height="700" titletext="New Form">
     <Layouts>
-      <Layout height="610" mobileorientation="landscape" width="1060">
-        <Div id="Div" taborder="1" text="" left="20" top="-5" width="1060" height="605" background="#D9E5FF">
+      <Layout height="700" mobileorientation="landscape" width="1060">
+        <Div id="Div" taborder="1" text="" left="59" top="5" width="1030" height="685" background="whight">
           <Layouts>
             <Layout>
-              <ImageViewer id="ImageViewer" taborder="24" left="59" top="55" width="200" height="222" onclick="Div_ImageViewer_onclick"/>
-              <Button id="imageBtn" taborder="25" text="사진찾기" left="277" top="55" width="160" height="57" font="18px/normal &quot;나눔고딕&quot;" onclick="imageBtn_onclick"/>
-              <Button id="registBtn" taborder="26" text="등록" left="277" top="137" width="160" height="57" font="18px/normal &quot;나눔고딕&quot;" onclick="Div_registBtn_onclick"/>
-              <Button id="cancelBtn" taborder="27" text="취소" left="277" top="219" width="160" height="57" font="18px/normal &quot;나눔고딕&quot;" onclick="Div_cancelBtn_onclick"/>
-              <Static id="empName" taborder="5" text="이름" left="37" top="299" width="109" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
+              <ImageViewer id="ImageViewer" taborder="32" left="59" top="55" width="200" height="222" onclick="Div_ImageViewer_onclick"/>
+              <Button id="imageBtn" taborder="33" text="사진찾기" left="277" top="55" width="160" height="57" font="18px/normal &quot;나눔고딕&quot;" onclick="imageBtn_onclick"/>
+              <Button id="registBtn" taborder="34" text="등록" left="277" top="137" width="160" height="57" font="18px/normal &quot;나눔고딕&quot;" onclick="Div_registBtn_onclick"/>
+              <Button id="cancelBtn" taborder="35" text="취소" left="277" top="219" width="160" height="57" font="18px/normal &quot;나눔고딕&quot;" onclick="Div_cancelBtn_onclick"/>
+              <Static id="empName" taborder="14" text="이름" left="59" top="299" width="109" height="51" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
               <Edit id="empNameEdit" taborder="0" left="154" top="295" width="283" height="53" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Static id="address" taborder="6" text="주소" left="37" top="360" width="109" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
+              <Static id="address" taborder="16" text="주소" left="59" top="360" width="109" height="51" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
               <Edit id="addressEdit" taborder="1" left="156" top="358" width="283" height="53" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Static id="detailedAddress" taborder="8" text="상세주소" left="37" top="421" width="109" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
+              <Static id="detailedAddress" taborder="17" text="상세주소" left="59" top="421" width="109" height="51" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
               <Edit id="detailedAddressEdit" taborder="2" left="156" top="421" width="283" height="53" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Static id="PostalCode" taborder="9" text="우편번호" left="37" top="482" width="109" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
+              <Static id="PostalCode" taborder="18" text="우편번호" left="59" top="482" width="109" height="51" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
               <Edit id="PostalCodeEdit" taborder="3" left="156" top="484" width="283" height="53" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Static id="PhoneNumber" taborder="10" text="전화번호" left="37" top="543" width="109" height="51" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <MaskEdit id="PhoneNumberEdit" taborder="7" left="156" top="545" width="283" height="53" format="###-####-####" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" type="string" onchanged="Div_PhoneNumberEdit_onchanged"/>
-              <Static id="empNumber" taborder="21" text="사원번호" left="459" top="28" width="108" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="empNumberEdit" taborder="22" left="564" top="25" width="202" height="50" font="18px/normal &quot;나눔고딕&quot;" readonly="true"/>
-              <Button id="empNumberBtn" taborder="23" text="사원번호생성" left="773" top="25" width="196" height="50" font="18px/normal &quot;나눔고딕&quot;" onclick="Div_empNumberBtn_onclick"/>
-              <Static id="email" taborder="12" text="이메일" left="456" top="86" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="emailEdit" taborder="11" left="564" top="83" width="406" height="50" font="18pt &quot;나눔고딕&quot;"/>
-              <Static id="position" taborder="13" text="직급" left="456" top="144" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="positionEdit" taborder="28" left="564" top="141" width="406" height="50" oneditclick="positionEdit_oneditclick" font="18pt &quot;나눔고딕&quot;" onchanged="Div_positionEdit_onchanged"/>
-              <Static id="gender" taborder="14" text="성별" left="458" top="202" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="genderEdit" taborder="29" left="564" top="199" width="406" height="50" oneditclick="genderEdit_oneditclick" font="18pt &quot;나눔고딕&quot;"/>
-              <Static id="finalAcademic" taborder="15" text="최종학력" left="458" top="260" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="finalAcademicEdit" taborder="30" left="564" top="257" width="406" height="50" oneditclick="finalAcademicEdit_oneditclick" font="18pt &quot;나눔고딕&quot;" onchanged="Div_finalAcademicEdit_onchanged"/>
-              <Static id="hobong" taborder="16" text="호봉" left="460" top="318" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="hobongEdit" taborder="31" left="564" top="315" width="406" height="50" oneditclick="hobongEdit_oneditclick" font="18pt &quot;나눔고딕&quot;" onchanged="Div_hobongEdit_onchanged"/>
-              <Static id="workType" taborder="17" text="근무형태" left="458" top="376" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="workTypeEdit" taborder="32" left="564" top="373" width="406" height="50" oneditclick="workTypeEdit_oneditclick" font="18pt &quot;나눔고딕&quot;" onchanged="Div_workTypeEdit_onchanged"/>
-              <Static id="employmentType" taborder="18" text="고용형태" left="458" top="434" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="employmentTypeEdit" taborder="33" left="564" top="431" width="406" height="50" oneditclick="employmentTypeEdit_oneditclick" font="18pt &quot;나눔고딕&quot;"/>
-              <Static id="dept" taborder="19" text="부서" left="458" top="492" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="deptEdit" taborder="34" left="564" top="489" width="406" height="50" oneditclick="deptEdit_oneditclick" font="18pt &quot;나눔고딕&quot;"/>
-              <Static id="birth" taborder="20" text="생년월일" left="458" top="550" width="109" height="50" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Calendar id="birthCal" taborder="4" left="564" top="547" width="406" height="50" font="18pt &quot;나눔고딕&quot;"/>
             </Layout>
           </Layouts>
         </Div>
-        <Static id="title" taborder="1" text="    사원등록" left="0" top="6" width="188" height="49" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
+        <Static id="title" taborder="1" text="    사원등록" left="59" top="6" width="188" height="49" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
       </Layout>
     </Layouts>
     <Objects>
@@ -67,6 +44,7 @@
           <Column id="DEPT_NAME" type="STRING" size="256"/>
           <Column id="BIRTHDATE" type="STRING" size="256"/>
           <Column id="IMG_EXTEND" type="STRING" size="256"/>
+          <Column id="WORKPLACE_CODE" type="STRING" size="256"/>
         </ColumnInfo>
         <Rows>
           <Row/>
@@ -197,6 +175,7 @@ this.Div_registBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInf
 	}if(this.Div.form.employmentTypeEdit.value==null){alert("고용형태를 선택해주세요."); return;
 	}if(this.Div.form.deptEdit.value==null){alert("부서를 선택해주세요."); return;
 	}if(this.Div.form.birthCal.value==null){alert("생일을 입력해주세요."); return;
+	}if(this.Div.form.WorkplaceCode==null){alert("근무지를 입력해주세요."); return;
 }else{
 	this.ds_empReg.setColumn(0,"EMP_CODE",this.Div.form.empNumberEdit.value);
 	this.ds_empReg.setColumn(0,"EMP_NAME",this.Div.form.empNameEdit.value);
@@ -209,12 +188,13 @@ this.Div_registBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInf
 	this.ds_empReg.setColumn(0,"EMAIL",this.Div.form.emailEdit.value);
 	this.ds_empReg.setColumn(0,"LAST_SCHOOL",this.Div.form.finalAcademicEdit.value.split(":")[0]);
 	this.ds_empReg.setColumn(0,"IMG_EXTEND","jpg");
-	this.ds_empReg.setColumn(0,"DEPT_CODE",this.Div.form.deptEdit.value.split(":")[1]);
-	this.ds_empReg.setColumn(0,"POSITION_CODE",this.Div.form.positionEdit.value.split(":")[1]);
+	this.ds_empReg.setColumn(0,"DEPT_NAME",this.Div.form.deptEdit.value.split(":")[1]);
+	this.ds_empReg.setColumn(0,"POSITION",this.Div.form.positionEdit.value.split(":")[1]);
 	this.ds_empReg.setColumn(0,"HOBONG",this.Div.form.hobongEdit.value.split(":")[0]);
 	this.ds_empReg.setColumn(0,"OCCUPATION",this.Div.form.workTypeEdit.value.split(":")[1]);
 	this.ds_empReg.setColumn(0,"EMPLOYMENT",this.Div.form.employmentTypeEdit.value.split(":")[1]);
-	trace("====="+this.Div.form.deptEdit.value.split(":")[1]);
+	this.ds_empReg.setColumn(0,"WorkplaceCode",this.Div.form.WorkplaceCode.value);
+	trace("====="+this.Div.form.deptEdit.value.split(":")[1]+this.Div.form.positionEdit.value.split(":")[1]);
 
 	/*this.ds_empReg.setColumn(0,"WORKPLACE_CODE",this.Div.form.empNumberEdit.value);*/
 	
@@ -268,6 +248,7 @@ this.FileDialog_onclose = function(obj:nexacro.FileDialog,e:nexacro.FileDialogEv
 		this.Div.form.ImageViewer.set_image("file://"+realPath);
 		this.Div.form.ImageViewer.set_stretch("fit");
 };
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
@@ -282,6 +263,11 @@ this.Div_PhoneNumberEdit_onchanged = function(obj:nexacro.MaskEdit,e:nexacro.Cha
 	
 };
 >>>>>>> 7bafc231fb2b4c3c0328c0e8be974dbf96544f38
+=======
+>>>>>>> 108ba70e8eb8fed3b15aec423402574920250798
 ]]></Script>
+    <Bind>
+      <BindItem id="item0" compid="Div.form.WorkplaceCode" propid="value" datasetid="ds_empReg" columnid="WORKPLACE_CODE"/>
+    </Bind>
   </Form>
 </FDL>

@@ -54,6 +54,7 @@
         <Static id="Static00" taborder="3" text=" 채용 이력서" left="41" top="40" width="219" height="60" onclick="Static00_onclick" font="bold 25px/normal &quot;나눔스퀘어&quot;"/>
         <Button id="Button00" taborder="4" text="조회" left="480" top="110" width="66" height="30" font="15px/normal &quot;나눔스퀘어&quot;" onclick="Button00_onclick"/>
         <Static id="Static01" taborder="5" text="년도" left="237" top="110" width="43" height="30" font="15px/normal &quot;나눔스퀘어&quot;" onclick="Static01_onclick"/>
+        <Button id="Button00_00" taborder="6" text="등록" left="556" top="110" width="66" height="30" font="15px/normal &quot;나눔스퀘어&quot;" onclick="Button00_00_onclick"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[include "Lib::commonOpen.xjs"
@@ -90,6 +91,13 @@ this.Grid00_oncelldblclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventI
 {
 	this.gfnOpen("modify", "Base::resumModal.xfdl", "", "");
 };
+
+
+this.Button00_00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{	
+	
+	this.gfnOpen("InsertResume", "Base::resume_InsertModal.xfdl", "", "");
+};
 ]]></Script>
     <Objects>
       <Dataset id="Dataset00">
@@ -105,6 +113,9 @@ this.Grid00_oncelldblclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventI
           </Row>
           <Row>
             <Col id="content">2022</Col>
+          </Row>
+          <Row>
+            <Col id="content">2023</Col>
           </Row>
         </Rows>
       </Dataset>

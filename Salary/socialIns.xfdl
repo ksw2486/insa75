@@ -6,8 +6,8 @@
         <Div id="Div00" taborder="1" text="Div00" left="32" top="2" width="1248" height="48" border="0px none, 0px none, 2px solid black">
           <Layouts>
             <Layout>
-              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick"/>
-              <Static id="Static00" taborder="1" text="사회보험환경등록" left="11" top="10" width="155" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;Gulim&quot;"/>
+              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
+              <Static id="Static00" taborder="1" text="사회보험환경등록" left="11" top="10" width="155" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;나눔고딕&quot;"/>
             </Layout>
           </Layouts>
         </Div>
@@ -32,9 +32,9 @@
                                 <Row size="24"/>
                               </Rows>
                               <Band id="head">
-                                <Cell text="적용기간"/>
-                                <Cell col="1" text="건강보험료율(%)"/>
-                                <Cell col="2" text="장기요양보험료율(%)"/>
+                                <Cell text="적용기간" background="#6092ff" color="white"/>
+                                <Cell col="1" text="건강보험료율(%)" background="#6092ff" color="white"/>
+                                <Cell col="2" text="장기요양보험료율(%)" background="#6092ff" color="white"/>
                               </Band>
                               <Band id="body">
                                 <Cell text="bind:ATTRIBUTION_YEAR" textAlign="center"/>
@@ -61,11 +61,11 @@
                                 <Row size="24"/>
                               </Rows>
                               <Band id="head">
-                                <Cell text="구분"/>
-                                <Cell col="1" text="계"/>
-                                <Cell col="2" text="가입자부담"/>
-                                <Cell col="3" text="사용자부담"/>
-                                <Cell col="4" text="국가부담"/>
+                                <Cell text="구분" background="#6092ff" color="white"/>
+                                <Cell col="1" text="계" background="#6092ff" color="white"/>
+                                <Cell col="2" text="가입자부담" background="#6092ff" color="white"/>
+                                <Cell col="3" text="사용자부담" background="#6092ff" color="white"/>
+                                <Cell col="4" text="국가부담" background="#6092ff" color="white"/>
                               </Band>
                               <Band id="body">
                                 <Cell text="근로자" textAlign="center"/>
@@ -87,8 +87,8 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Static id="Static00" taborder="2" text="&lt;연도별 보험료율&gt;" left="17" top="16" width="160" height="32" onclick="Tab00_Tabpage1_Div03_Static00_onclick" font="bold 20px/normal &quot;한컴 고딕&quot;"/>
-                        <Static id="Static00_00" taborder="3" text="&lt;보험료 부담비율&gt;" left="484" top="16" width="160" height="32" onclick="Tab00_Tabpage1_Div03_Static00_onclick" font="bold 20px/normal &quot;한컴 고딕&quot;"/>
+                        <Static id="Static00" taborder="2" text="&lt;연도별 보험료율&gt;" left="17" top="16" width="160" height="32" onclick="Tab00_Tabpage1_Div03_Static00_onclick" font="bold 20px/normal &quot;나눔고딕&quot;"/>
+                        <Static id="Static00_00" taborder="3" text="&lt;보험료 부담비율&gt;" left="484" top="16" width="160" height="32" onclick="Tab00_Tabpage1_Div03_Static00_onclick" font="bold 20px/normal &quot;나눔고딕&quot;"/>
                       </Layout>
                     </Layouts>
                     <InitValue>
@@ -119,9 +119,9 @@
                               </Rows>
                               <Band id="head">
                                 <Cell/>
-                                <Cell col="1" text="연금보험료(전체)"/>
-                                <Cell col="2" text="근로자"/>
-                                <Cell col="3" text="사업주"/>
+                                <Cell col="1" text="연금보험료(전체)" color="white" background="#6092ff"/>
+                                <Cell col="2" text="근로자" background="#6092ff" color="white"/>
+                                <Cell col="3" text="사업주" background="#6092ff" color="white"/>
                               </Band>
                               <Band id="body">
                                 <Cell textAlign="center" text="기준 소득월액" font="bold 12px/normal &quot;Gulim&quot;"/>
@@ -132,7 +132,7 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Static id="Static00" taborder="1" text="&lt;연도별 보험료율&gt;" left="17" top="16" width="160" height="32" onclick="Tab00_Tabpage1_Div03_Static00_onclick" font="bold 20px/normal &quot;한컴 고딕&quot;"/>
+                        <Static id="Static00" taborder="1" text="&lt;연도별 보험료율&gt;" left="17" top="16" width="160" height="32" onclick="Tab00_Tabpage1_Div03_Static00_onclick" font="bold 20px/normal &quot;나눔고딕&quot;"/>
                       </Layout>
                     </Layouts>
                     <InitValue>
@@ -166,9 +166,9 @@
                                 <Row size="24"/>
                               </Rows>
                               <Band id="head">
-                                <Cell colspan="2" text="구분"/>
-                                <Cell col="2" text="근로자"/>
-                                <Cell col="3" text="사업주"/>
+                                <Cell colspan="2" text="구분" background="#6092ff" color="white"/>
+                                <Cell col="2" text="근로자" background="#6092ff" color="white"/>
+                                <Cell col="3" text="사업주" background="#6092ff" color="white"/>
                               </Band>
                               <Band id="body">
                                 <Cell colspan="2" text="실업급여" font="normal 700 12px/normal &quot;Gulim&quot;" textAlign="center"/>
@@ -191,7 +191,7 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Combo id="Combo00" taborder="1" text="Combo00" left="17" top="14" width="120" height="29" onitemchanged="Tab00_Tabpage3_Div03_Combo00_onitemchanged" innerdataset="ds_employment_year" codecolumn="YEAR" datacolumn="YEAR"/>
+                        <Combo id="Combo00" taborder="1" text="" left="17" top="14" width="120" height="29" onitemchanged="Tab00_Tabpage3_Div03_Combo00_onitemchanged" innerdataset="ds_employment_year" codecolumn="YEAR" datacolumn="YEAR" value="" index="-1"/>
                       </Layout>
                     </Layouts>
                     <InitValue>
@@ -218,8 +218,8 @@
                           <Row size="24"/>
                         </Rows>
                         <Band id="head">
-                          <Cell colspan="2" text="구분"/>
-                          <Cell col="2" text="사업주"/>
+                          <Cell colspan="2" text="구분" background="#6092ff" color="white"/>
+                          <Cell col="2" text="사업주" background="#6092ff" color="white"/>
                         </Band>
                         <Band id="body">
                           <Cell colspan="2" text="시설관리 및 사업지원 서비스업" textAlign="center"/>

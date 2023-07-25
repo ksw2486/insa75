@@ -6,12 +6,12 @@
         <Div id="Div00_00" taborder="0" text="" left="25" top="25" width="1010" height="560">
           <Layouts>
             <Layout>
-              <Tab id="Tab00" taborder="0" tabindex="0" left="30" top="60" width="410" height="504" onchanged="Div00_00_Tab00_onchanged" border="0px none">
+              <Tab id="Tab00" taborder="0" tabindex="0" left="30" top="60" width="410" height="504" onchanged="Div00_00_Tab00_onchanged" border="0px none" font="12px/normal &quot;나눔고딕&quot;">
                 <Tabpages>
                   <Tabpage id="Tabpage1" text="부서명검색" border="0px groove" font="16px/normal &quot;맑은 고딕&quot;">
                     <Layouts>
                       <Layout>
-                        <Button id="Button00" taborder="0" text="검색" left="235" top="16" width="125" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage1_Button00_onclick"/>
+                        <Button id="Button00" taborder="0" text="검색" left="235" top="16" width="125" height="40" font="bold 20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Tab00_Tabpage1_Button00_onclick" background="#d0e3ed" borderRadius="5px"/>
                         <Grid id="Grid00" taborder="1" left="0" top="65" width="364" height="353" binddataset="ds_empList" oncelldblclick="Div00_00_Tab00_Tabpage1_Grid00_oncelldblclick">
                           <Formats>
                             <Format id="default">
@@ -26,10 +26,10 @@
                                 <Row size="24"/>
                               </Rows>
                               <Band id="head">
-                                <Cell text="사번"/>
-                                <Cell col="1" text="이름"/>
-                                <Cell col="2" text="부서"/>
-                                <Cell col="3" text="직급"/>
+                                <Cell text="사번" background="#6092ff" color="white"/>
+                                <Cell col="1" text="이름" background="#6092ff" color="white"/>
+                                <Cell col="2" text="부서" background="#6092ff" color="white"/>
+                                <Cell col="3" text="직급" background="#6092ff" color="white"/>
                               </Band>
                               <Band id="body">
                                 <Cell text="bind:EMP_CODE" textAlign="center"/>
@@ -83,7 +83,7 @@
                   </Tabpage>
                 </Tabpages>
               </Tab>
-              <Tab id="Tab00_00" taborder="1" tabindex="0" left="430" top="60" width="560" height="485" onchanged="Div00_00_Tab00_onchanged" border="0px none">
+              <Tab id="Tab00_00" taborder="1" tabindex="0" left="430" top="60" width="560" height="485" onchanged="Div00_00_Tab00_onchanged" border="0px none" font="12px/normal &quot;나눔고딕&quot;">
                 <Tabpages>
                   <Tabpage id="Tabpage3" text="상여금정보">
                     <Layouts>
@@ -103,11 +103,11 @@
                                 <Row size="24"/>
                               </Rows>
                               <Band id="head">
-                                <Cell text="사번"/>
-                                <Cell col="1" text="사원명"/>
-                                <Cell col="2" text="부서명"/>
-                                <Cell col="3" text="직급"/>
-                                <Cell col="4" text="상여금"/>
+                                <Cell text="사번" background="#6092ff" color="white"/>
+                                <Cell col="1" text="사원명" background="#6092ff" color="white"/>
+                                <Cell col="2" text="부서명" background="#6092ff" color="white"/>
+                                <Cell col="3" text="직급" background="#6092ff" color="white"/>
+                                <Cell col="4" text="상여금" background="#6092ff" color="white"/>
                               </Band>
                               <Band id="body">
                                 <Cell text="bind:EMP_CODE" textAlign="center"/>
@@ -173,7 +173,7 @@
         <Div id="Div00" taborder="1" text="Div00" left="32" top="2" width="1248" height="48" border="0px none, 0px none, 2px solid black">
           <Layouts>
             <Layout>
-              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick"/>
+              <Button id="Button01" taborder="0" text="수정완료" left="72.52%" top="10" width="6.17%" height="60.87%" background="#d0e3ed" onclick="Div00_Button01_onclick" font="bold 12px/normal &quot;나눔고딕&quot;" borderRadius="5px"/>
               <Static id="Static00" taborder="1" text="상여 및 성과금 조회" left="11" top="10" width="170" height="31" onclick="Div00_Static00_onclick" font="bold 18px/normal &quot;Gulim&quot;"/>
             </Layout>
           </Layouts>

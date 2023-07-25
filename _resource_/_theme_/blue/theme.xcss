@@ -1265,13 +1265,14 @@
 /* Tab */
 .Tab
 {
-	
 	/* No style applied */
 }
 
 .Tab .tabpage
 {
 	-nexa-border : 1px solid #cfcfcf, 0px none, 0px none, 0px none;
+	
+	
 }
 
 .Tab .tabbuttonitem
@@ -1296,7 +1297,7 @@
 .Tab .tabbuttonitem[userstatus=selected],.Tab .tabbuttonitem[status=focused][userstatus=selected]
 {
 	color : #dee4ef;
-	background : #1055a1;
+	background : #6092ff;
 	-nexa-border : 1px solid #1055a1;
 }
 
@@ -1349,7 +1350,6 @@
 {
 	-nexa-padding : 0px 0px 10px 8px;
 	-nexa-icon : URL('theme://images/btn_WF_Tabnext.png');
-	
 }
 
 .Tab .nextbutton[status=mouseover]

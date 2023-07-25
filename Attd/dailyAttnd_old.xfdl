@@ -3,47 +3,30 @@
   <Form id="dailyAttnd" width="1060" height="620" titletext="dailyAttnd" onload="dailyAttnd_onload" oninit="dailyAttnd_oninit" ontimer="dailyAttnd_ontimer">
     <Layouts>
       <Layout height="620" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="18" top="25" width="1025" height="570" background="#D9E5FF">
+        <Div id="Div00_00" taborder="0" text="" left="18" top="25" width="1025" height="570" background="white">
           <Layouts>
             <Layout>
-              <Static id="Static00" taborder="1" text="◼일근태 등록" left="8" top="0" width="214" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Div id="Div00" taborder="1" left="38" top="75" width="457" height="462" background="#e5edff" text="">
+              <Static id="Static00" taborder="0" text="◼ 일근태 조회" left="8" top="0" width="214" height="49" textAlign="left" font="bold 14px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Static00_onclick"/>
+              <Div id="Div00_00" taborder="1" left="8" top="45" width="898" height="462" background="white" text="">
                 <Layouts>
                   <Layout>
-                    <Static id="Static00" taborder="1" text="일근태기록" left="79" top="19" width="298" height="55" font="28px/normal &quot;나눔고딕&quot;" textAlign="center"/>
-                    <Static id="Static00_00" taborder="0" text="적용일자" left="42" top="151" width="109" height="40" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-                    <Static id="Static00_00_00" taborder="2" text="근태구분" left="42" top="206" width="109" height="40" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-                    <Edit id="attndEdit" taborder="3" left="158" top="204" width="259" height="40" font="18px/normal &quot;나눔고딕&quot;" oneditclick="attndEdit_oneditclick" onchanged="Div00_00_Div00_attndEdit_onchanged"/>
-                    <Static id="Static00_00_00_00" taborder="4" text="시간" left="42" top="261" width="109" height="40" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-                    <Button id="recordBtn" taborder="5" text="기록하기" left="80" top="331" width="296" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="recordBtn_onclick"/>
-                    <Button id="timeRecBtn" taborder="6" text="현시각기록" left="80" top="392" width="296" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Div00_timeRecBtn_onclick"/>
-                    <Calendar id="dateCal" taborder="7" left="158" top="149" width="259" height="40" onchanged="dateCal_onchanged"/>
-                    <Static id="timer" taborder="8" text="Static01" left="108" top="84" width="253" height="36" textAlign="center" font="16px/normal &quot;Gulim&quot;" onclick="Div00_00_Div00_timer_onclick"/>
-                    <MaskEdit id="time" taborder="9" left="158" top="261" width="259" height="40" format="##:##" type="string"/>
-                  </Layout>
-                </Layouts>
-              </Div>
-              <Div id="Div00_00" taborder="2" left="517" top="68" width="463" height="462" background="#e5edff">
-                <Layouts>
-                  <Layout>
-                    <Static id="Static00" taborder="0" text="일근태조회" left="82" top="19" width="298" height="55" font="28px/normal &quot;나눔고딕&quot;" textAlign="center"/>
-                    <Button id="deleteBtn" taborder="1" text="삭제하기" left="83" top="94" width="296" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Div00_00_deleteBtn_onclick"/>
-                    <Grid id="attndGrid" taborder="2" left="46" top="150" width="387" height="297" binddataset="ds_dayAttdList">
+                    <Button id="deleteBtn" taborder="0" text="삭제" left="520" top="45" width="120" height="35" font="bold 14px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Div00_00_deleteBtn_onclick" background="#6092ff" color="white" borderRadius="5px"/>
+                    <Grid id="attndGrid" taborder="1" left="38" top="107" width="602" height="340" binddataset="ds_dayAttdList" font="bold 14px/normal &quot;나눔고딕&quot;">
                       <Formats>
                         <Format id="default">
                           <Columns>
-                            <Column size="129"/>
-                            <Column size="129"/>
-                            <Column size="129"/>
+                            <Column size="200"/>
+                            <Column size="200"/>
+                            <Column size="200"/>
                           </Columns>
                           <Rows>
-                            <Row size="24" band="head"/>
-                            <Row size="24"/>
+                            <Row size="35" band="head"/>
+                            <Row size="35"/>
                           </Rows>
                           <Band id="head">
-                            <Cell text="적용일"/>
-                            <Cell col="1" text="근태구분명"/>
-                            <Cell col="2" text="시각"/>
+                            <Cell text="적용일" background="#6092ff" color="white" font="14px bold &quot;나눔고딕&quot;"/>
+                            <Cell col="1" text="근태구분명" background="#6092ff" color="white" font="14px bold &quot;나눔고딕&quot;"/>
+                            <Cell col="2" text="시간" background="#6092ff" color="white" font="14px bold &quot;나눔고딕&quot;"/>
                           </Band>
                           <Band id="body">
                             <Cell text="bind:APPLY_DAY"/>
@@ -53,6 +36,8 @@
                         </Format>
                       </Formats>
                     </Grid>
+                    <Calendar id="dateCal" taborder="2" left="138" top="45" width="200" height="35" onchanged="dateCal_onchanged" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                    <Static id="Static00_00" taborder="3" text="적용일자" left="51" top="42" width="77" height="40" textAlign="left" font="bold 14px/normal &quot;나눔고딕&quot;"/>
                   </Layout>
                 </Layouts>
               </Div>
@@ -115,19 +100,20 @@ this.dateCal_onchanged = function(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo
 {
 			this.dateCal();
 };
-this.dateCal = function(){
-			this.transaction("findDayAttdList",
+this.dateCal = function(){this.transaction("findDayAttdList",
 							 "svcAttdmgmt::daily-attnd2",
 							 "",
 							 "ds_dayAttdList=gds_dayAttd",
-							 "applyDay='"+this.Div00_00.form.Div00.form.dateCal.value+"' empCode='"+nexa.g_empCode+"'",
+							 "applyDay='"+this.Div00_00.form.Div00_00.form.dateCal.value+"' empCode='"+nexa.g_empCode+"'",
 							 "fn_callback" );	
+			
 							 trace("dateCal실행");
 							 //trace(nexa.g_empCode);
 }
 
 this.recordBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
+
 	var count=this.ds_dayAttdList.rowcount;
 	for(var i=0;i<count;i++){
 		var searchDeptList=this.ds_dayAttdList.getColumn(i,"ATTD_TYPE_CODE");
@@ -150,6 +136,8 @@ this.recordBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 		this.alert("먼저 출근처리해주세요.");
 		return
 	}
+	
+		
    this.transaction(
                "recordAttnd"
                ,"svcAttdmgmt::daily-attnd"
@@ -208,6 +196,8 @@ this.Div00_00_Div00_00_deleteBtn_onclick = function(obj:nexacro.Button,e:nexacro
 };
 
 
+
+
 ]]></Script>
     <Objects>
       <Dataset id="ds_dayAttd">
@@ -253,6 +243,8 @@ this.Div00_00_Div00_00_deleteBtn_onclick = function(obj:nexacro.Button,e:nexacro
       <BindItem id="item1" compid="Div00_00.form.Div00.form.dateCal" propid="value" datasetid="ds_dayAttd" columnid="APPLY_DAY"/>
       <BindItem id="item2" compid="Div00_00.form.Div00.form.attndEdit" propid="value" datasetid="ds_dayAttd" columnid="ATTD_TYPE_NAME"/>
       <BindItem id="item3" compid="Div00_00.form.Div00.form.time" propid="value" datasetid="ds_dayAttd" columnid="TIME"/>
+      <BindItem id="item0" compid="Div00_00.form.dateCal" propid="value" datasetid="ds_dayAttd" columnid="APPLY_DAY"/>
+      <BindItem id="item4" compid="Div00_00.form.Div00_00.form.dateCal" propid="value" datasetid="ds_dayAttd" columnid="APPLY_DAY"/>
     </Bind>
   </Form>
 </FDL>

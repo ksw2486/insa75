@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FDL version="2.1">
-  <Form id="dailyEmpmgmt" width="1280" height="720" titletext="New Form" onload="dailyEmpmgmt_onload">
+  <Form id="dailyEmpmgmt" width="1280" height="800" titletext="New Form" onload="dailyEmpmgmt_onload">
     <Layouts>
-      <Layout height="720" width="1280">
-        <Static id="Static00" taborder="0" text="일용직사원등록" left="48" top="16" width="84" height="14"/>
-        <Div id="div_searchCondition" taborder="1" text="Div00" left="20" top="39" width="1240" height="65" background="#D9E5FF">
+      <Layout height="800" width="1280" stepcount="0" stepindex="1">
+        <Static id="Static00" taborder="0" text="일용직사원등록" left="20" top="16" width="84" height="14"/>
+        <Div id="div_searchCondition" taborder="1" text="Div00" left="20" top="46" width="1240" height="65" background="#b4b4b4">
           <Layouts>
             <Layout>
-              <Static id="Static00" taborder="0" text="사업장" left="54" top="10" width="36" height="14"/>
-              <Static id="Static01" taborder="1" text="부서" left="380" top="10" width="24" height="14"/>
-              <Static id="Static02" taborder="2" text="고용형태" left="670" top="10" width="48" height="14"/>
-              <Static id="Static03" taborder="3" text="급여형태" left="42" top="40" width="48" height="14"/>
-              <Static id="Static04" taborder="4" text="조회조건" left="356" top="40" width="48" height="14"/>
-              <Static id="Static05" taborder="5" text="기준일" left="682" top="40" width="36" height="14"/>
-              <Static id="Static06" taborder="6" text="이전 퇴직자 제외" left="876" top="40" width="92" height="14"/>
-              <Combo id="cmb_workplace" taborder="7" left="94" top="7" width="200" height="20"/>
-              <Combo id="cmb_dept" taborder="8" left="407" top="7" width="200" height="20"/>
-              <Button id="btn_searchWorkplace" taborder="9" left="301" top="7" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
-              <Button id="btn_searchDept" taborder="10" left="614" top="7" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
-              <Combo id="cmb_empStat" taborder="11" left="722" top="7" width="200" height="20"/>
-              <Button id="btn_searchEmpStat" taborder="12" left="929" top="7" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
-              <Combo id="cmb_payStat" taborder="13" left="94" top="37" width="200" height="20"/>
-              <Button id="btn_searchPayStat" taborder="14" left="301" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick"/>
-              <Combo id="cmb_searchCondition" taborder="15" left="407" top="37" width="80" height="20" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
+              <Static id="Static00" taborder="0" text="사업장" left="59" top="10" width="36" height="14"/>
+              <Static id="Static01" taborder="1" text="부서" left="412" top="10" width="24" height="14"/>
+              <Static id="Static02" taborder="2" text="고용형태" left="766" top="10" width="48" height="14"/>
+              <Static id="Static03" taborder="3" text="급여형태" left="59" top="40" width="48" height="14"/>
+              <Static id="Static04" taborder="4" text="조회조건" left="412" top="40" width="48" height="14"/>
+              <Static id="Static05" taborder="5" text="기준일" left="766" top="40" width="36" height="14"/>
+              <Static id="Static06" taborder="6" text="이전 퇴직자 제외" left="952" top="40" width="92" height="14"/>
+              <Combo id="cmb_workplace" taborder="7" left="111" top="7" width="200" height="20" text="" innerdataset="gds_menu"/>
+              <Combo id="cmb_dept" taborder="8" left="463" top="7" width="200" height="20" text=""/>
+              <Button id="btn_searchWorkplace" taborder="9" left="318" top="7" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick" text="" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
+              <Button id="btn_searchDept" taborder="10" left="670" top="7" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
+              <Combo id="cmb_empStat" taborder="11" left="818" top="7" width="200" height="20"/>
+              <Button id="btn_searchEmpStat" taborder="12" left="1025" top="7" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
+              <Combo id="cmb_payStat" taborder="13" left="111" top="37" width="200" height="20"/>
+              <Button id="btn_searchPayStat" taborder="14" left="318" top="37" width="20" height="20" onclick="div_searchCondition_btn_searchWith_onclick" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
+              <Combo id="cmb_searchCondition" taborder="15" left="463" top="37" width="80" height="20" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
                 <Dataset id="innerdataset">
                   <ColumnInfo>
                     <Column id="codecolumn" size="256"/>
@@ -44,19 +44,20 @@
                   </Rows>
                 </Dataset>
               </Combo>
-              <Edit id="edt_searchCondition" taborder="16" left="497" top="37" width="137" height="20"/>
-              <Calendar id="calen_baseDate" taborder="17" left="722" top="37" width="150" height="20"/>
-              <Button id="btn_search" taborder="18" text="조회" left="1007" top="11" width="94" height="41" onclick="div_searchCondition_btn_search_onclick"/>
+              <Edit id="edt_searchCondition" taborder="16" left="553" top="37" width="137" height="20"/>
+              <Calendar id="calen_baseDate" taborder="17" left="818" top="37" width="128" height="20"/>
+              <Button id="btn_search" taborder="18" text="조회" left="1099" top="16" width="80" height="35" onclick="div_searchCondition_btn_search_onclick" background="#6092ff" color="WHITE" borderRadius="5PX" font="12PX SOLID &quot;나눔고딕&quot; BOLD"/>
             </Layout>
           </Layouts>
+          <InitValue/>
         </Div>
-        <Tab id="tab_empInfos" taborder="2" tabindex="0" left="460" top="126" width="800" height="560" background="#D9E5FF" enable="true" onchanged="tab_empInfos_onchanged" preload="true">
+        <Tab id="tab_empInfos" taborder="2" tabindex="0" left="580" top="146" width="670" height="560" enable="true" onchanged="tab_empInfos_onchanged" preload="true">
           <Tabpages>
             <Tabpage id="tp_basicInfo" text="기본정보" url="DailyEmp::tab_basicInfo.xfdl" enable="true"/>
             <Tabpage id="tp_additionalInfo" text="추가정보" url="DailyEmp::tab_additionalInfo.xfdl"/>
           </Tabpages>
         </Tab>
-        <Grid id="grd_dailyEmpList" taborder="3" left="20" top="160" width="430" height="526" autofittype="col" binddataset="ds_dailyEmp" oncellposchanged="grd_dailyEmpList_oncellposchanged">
+        <Grid id="grd_dailyEmpList" taborder="3" left="21" top="186" width="529" height="520" autofittype="col" binddataset="ds_dailyEmp" oncellposchanged="grd_dailyEmpList_oncellposchanged">
           <Formats>
             <Format id="default">
               <Columns>
@@ -65,8 +66,8 @@
                 <Column size="80"/>
               </Columns>
               <Rows>
-                <Row size="24" band="head"/>
-                <Row size="24"/>
+                <Row size="35" band="head"/>
+                <Row size="30"/>
               </Rows>
               <Band id="head">
                 <Cell text="No."/>
@@ -81,9 +82,9 @@
             </Format>
           </Formats>
         </Grid>
-        <Button id="btn_addEmp" taborder="4" text="추가" left="260" top="124" width="50" height="30" onclick="btn_addEmp_onclick"/>
-        <Button id="btn_delEmp" taborder="5" text="삭제" left="325" top="124" width="50" height="30" onclick="btn_delEmp_onclick"/>
-        <Button id="btn_saveEmpList" taborder="6" text="저장" left="390" top="124" width="50" height="30" onclick="btn_saveEmpList_onclick"/>
+        <Button id="btn_addEmp" taborder="4" text="추가" left="290" top="146" width="80" height="35" onclick="btn_addEmp_onclick" background="#6092ff" color="WHITE" borderRadius="5PX" font="12PX SOLID &quot;나눔고딕&quot; BOLD"/>
+        <Button id="btn_delEmp" taborder="5" text="삭제" left="380" top="146" width="80" height="35" onclick="btn_delEmp_onclick" background="#6092ff" color="WHITE" borderRadius="5PX" font="12PX SOLID &quot;나눔고딕&quot; BOLD"/>
+        <Button id="btn_saveEmpList" taborder="6" text="저장" left="470" top="146" width="80" height="35" onclick="btn_saveEmpList_onclick" background="#6092ff" color="WHITE" borderRadius="5PX" font="12PX SOLID &quot;나눔고딕&quot; BOLD"/>
       </Layout>
     </Layouts>
     <Objects>
@@ -266,6 +267,14 @@ this.btn_addEmp_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	this.fn_printCodeName(this.tab_empInfos.tp_basicInfo.form.components);
 	this.fn_printCodeName(this.tab_empInfos.tp_additionalInfo.form.components);
 };
+
+this.btn_addEmp00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.ds_dailyEmp.addRow();
+	this.fn_printCodeName(this.tab_empInfos.tp_basicInfo.form.components);
+	this.fn_printCodeName(this.tab_empInfos.tp_additionalInfo.form.components);
+};
+
 
 this.btn_delEmp_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
@@ -504,6 +513,33 @@ this.fn_createSearchCmbDataset = function(modalId, codeInfo, combo) {
 	combo.set_text(codeInfo[0]);
 	
 }
+
+this.Div00_cmb_workplace_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+
+	
+};
+
+this.Div01_MaskEdit00_onchanged = function(obj:nexacro.MaskEdit,e:nexacro.ChangeEventInfo)
+{
+	
+};
+
+this.Div01_TextArea00_onchanged = function(obj:nexacro.TextArea,e:nexacro.ChangeEventInfo)
+{
+	
+};
+
+this.Tab00_onchanged = function(obj:nexacro.Tab,e:nexacro.TabIndexChangeEventInfo)
+{
+	
+};
+
+
+this.Div00_cmb_searchCondition_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	
+};
 ]]></Script>
     <Bind>
       <BindItem id="item0" compid="tab_empInfos.tp_basicInfo.form.calen_joinDate" propid="value" datasetid="ds_dailyEmp" columnid="JOIN_DATE"/>
@@ -540,6 +576,7 @@ this.fn_createSearchCmbDataset = function(modalId, codeInfo, combo) {
       <BindItem id="item31" compid="tab_empInfos.tp_additionalInfo.form.edt_insImpose" propid="value" datasetid="ds_dailyEmp" columnid="INS_IMPOSE"/>
       <BindItem id="item32" compid="tab_empInfos.tp_additionalInfo.form.edt_insImposeReason" propid="value" datasetid="ds_dailyEmp" columnid="INS_IMPOSE_REASON"/>
       <BindItem id="item33" compid="tab_empInfos.tp_additionalInfo.form.cmb_isStableFund" propid="value" datasetid="ds_dailyEmp" columnid="IS_STABLE_FUND"/>
+      <BindItem id="item36" compid="div_searchCondition.form.cmb_workplace" propid="value" datasetid="gds_emp" columnid="WORKPLACE_CODE"/>
     </Bind>
   </Form>
 </FDL>

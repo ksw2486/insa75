@@ -3,23 +3,23 @@
   <Form id="attndApproval" width="1060" height="670" titletext="New Form">
     <Layouts>
       <Layout height="670" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="10" width="1010" height="560">
+        <Div id="Div00_00" taborder="0" text="" left="25" top="10" width="1010" height="560" font="bold 14px/normal &quot;나눔고딕&quot;">
           <Layouts>
             <Layout>
-              <Static id="Static00_01_00_00_00_00" taborder="0" text="조회일자" left="50" top="70" width="100" height="40" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Button id="btn_search" taborder="1" text="전체조회하기" left="560" top="70" width="150" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_search_onclick"/>
-              <Button id="btn_approval" taborder="2" text="승인" left="535" top="120" height="40" width="100" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_approval_onclick"/>
-              <Button id="btn_reject" taborder="3" text="반려" left="660" top="118" height="40" width="100" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_reject_onclick"/>
-              <Button id="btn_update" taborder="4" text="저장" left="795" top="120" height="40" width="100" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_update_onclick"/>
-              <Static id="Static00" taborder="5" text="◼근태 외 승인관리" left="8" top="0" width="188" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Calendar id="startDate" taborder="6" left="160" top="70" width="150" height="40" onchanged="Div00_00_startDate_onchanged" font="16px/normal &quot;나눔고딕&quot;"/>
-              <Calendar id="endDate" taborder="7" left="370" top="70" width="150" height="40" font="16px/normal &quot;나눔고딕&quot;"/>
-              <Static id="Static01" taborder="8" text="~" left="325" top="73" width="30" height="35" font="20px/normal &quot;나눔고딕&quot;" textAlign="center"/>
-              <Button id="btn_search00" taborder="9" text="사원조회하기" left="745" top="70" width="150" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_search00_onclick"/>
+              <Static id="Static00_01_00_00_00_00" taborder="0" text="조회일자" left="50" top="70" width="100" height="40" textAlign="center" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Button id="btn_search" taborder="1" text="전체조회하기" left="560" top="70" width="120" height="35" font="bold 14px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_search_onclick" background="#6092ff" color="white"/>
+              <Button id="btn_approval" taborder="2" text="승인" left="535" top="120" height="35" width="120" font="bold 14px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_approval_onclick" background="#6092ff" color="white"/>
+              <Button id="btn_reject" taborder="3" text="반려" left="660" top="118" height="35" width="120" font="bold 14px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_reject_onclick" background="#6092ff" color="white"/>
+              <Button id="btn_update" taborder="4" text="저장" left="795" top="120" height="35" width="120" font="bold 14px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_update_onclick" background="#6092ff" color="white"/>
+              <Static id="Static00" taborder="5" text="◼근태 외 승인관리" left="8" top="0" width="188" height="49" textAlign="left" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Calendar id="startDate" taborder="6" left="160" top="70" width="120" height="35" onchanged="Div00_00_startDate_onchanged" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Calendar id="endDate" taborder="7" left="370" top="70" width="120" height="35" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Static id="Static01" taborder="8" text="~" left="305" top="70" width="30" height="35" font="bold 14px/normal &quot;나눔고딕&quot;" textAlign="center"/>
+              <Button id="btn_search00" taborder="9" text="사원조회하기" left="745" top="70" width="120" height="35" font="bold 14px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_search00_onclick" background="#6092ff" color="white"/>
             </Layout>
           </Layouts>
         </Div>
-        <Grid id="Grid00" taborder="1" left="50" top="190" width="952" height="370" binddataset="ds_restAttdList" autofittype="col" oncellclick="Grid00_oncellclick">
+        <Grid id="Grid00" taborder="1" left="50" top="190" width="952" height="370" binddataset="ds_restAttdList" autofittype="col" oncellclick="Grid00_oncellclick" font="bold 14px/normal &quot;나눔고딕&quot;">
           <Formats>
             <Format id="default">
               <Columns>
@@ -41,20 +41,20 @@
                 <Row size="24" band="head"/>
                 <Row size="24"/>
               </Rows>
-              <Band id="head">
-                <Cell edittype="checkbox" displaytype="checkboxcontrol"/>
-                <Cell col="1" text="일련번호"/>
-                <Cell col="2" text="사원명"/>
-                <Cell col="3" text="신청일"/>
-                <Cell col="4" text="근태/연차 구분"/>
-                <Cell col="5" text="시작일"/>
-                <Cell col="6" text="종료일"/>
-                <Cell col="7" text="기간"/>
-                <Cell col="8" text="사유"/>
-                <Cell col="9" text="승인상태"/>
-                <Cell col="10" text="반려사유"/>
-                <Cell col="11" text="시작시간"/>
-                <Cell col="12" text="종료시간"/>
+              <Band id="head" background="#6092ff" color="white">
+                <Cell edittype="checkbox" displaytype="checkboxcontrol" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="1" text="일련번호" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="2" text="사원명" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="3" text="신청일" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="4" text="근태/연차 구분" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="5" text="시작일" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="6" text="종료일" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="7" text="기간" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="8" text="사유" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="9" text="승인상태" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="10" text="반려사유" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="11" text="시작시간" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                <Cell col="12" text="종료시간" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
               </Band>
               <Band id="body">
                 <Cell text="bind:STATUS" edittype="none" displaytype="checkboxcontrol"/>
