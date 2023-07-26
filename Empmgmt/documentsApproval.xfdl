@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FDL version="2.1">
-  <Form id="documentsApproval" width="1060" height="620" titletext="New Form" onload="documentsApproval_onload">
+  <Form id="documentsApproval" width="1270" height="930" titletext="New Form" onload="documentsApproval_onload">
     <Layouts>
-      <Layout height="620" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="30" width="1010" height="560">
+      <Layout height="930" width="1270">
+        <Div id="Div00_00" taborder="0" text="" left="0" top="0" width="1060" height="650">
           <Layouts>
             <Layout>
-              <Static id="Static00" taborder="1" text="   ◼ 서류승인관리" left="-15" top="-20" width="290" height="65" textAlign="left" font="bold 18px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Static00_onclick"/>
-              <Calendar id="applicationFromCal" taborder="0" left="103" top="60" width="162" height="35"/>
-              <Static id="Static00_00" taborder="2" text="~" left="281" top="60" width="15" height="30" textAlign="center" font="16pt/normal &quot;나눔고딕&quot;"/>
-              <Calendar id="applicationAfterCal" taborder="3" left="309" top="60" width="166" height="35"/>
-              <Static id="applicationFrom" taborder="4" text="신청일자" left="35" top="60" width="60" height="35" textAlign="center" font="15px/normal &quot;나눔고딕&quot;"/>
-              <Grid id="Grid00" taborder="5" left="35" top="110" width="947" height="430" binddataset="ds_documents_list" oncellclick="Grid00_oncellclick">
+              <Static id="Static00" taborder="1" text="서류승인관리" left="53" top="20" width="290" height="35" textAlign="left" font="bold 18px/normal &quot;나눔고딕&quot;" onclick="Div00_00_Static00_onclick"/>
+              <Calendar id="applicationFromCal" taborder="0" left="123" top="80" width="162" height="35"/>
+              <Static id="Static00_00" taborder="2" text="~" left="301" top="80" width="15" height="30" textAlign="center" font="16pt/normal &quot;나눔고딕&quot;"/>
+              <Calendar id="applicationAfterCal" taborder="3" left="329" top="80" width="166" height="35"/>
+              <Static id="applicationFrom" taborder="4" text="신청일자" left="55" top="80" width="60" height="35" textAlign="center" font="15px/normal &quot;나눔고딕&quot;"/>
+              <Grid id="Grid00" taborder="5" left="55" top="140" width="947" height="430" binddataset="ds_documents_list" oncellclick="Grid00_oncellclick">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -51,11 +51,11 @@
                   </Format>
                 </Formats>
               </Grid>
-              <Button id="approvalBtn" taborder="6" text="승인" left="632" top="60" height="35" width="80" onclick="Div00_00_approvalBtn_onclick" tabstop="false" background="#6092ff" font="12px/normal &quot;나눔고딕 ExtraBold&quot;" borderRadius="5px" color="white"/>
-              <Button id="approvalCancellationBtn" taborder="7" text="승인취소" left="722" top="60" height="35" width="80" onclick="Div00_00_approvalCancellationBtn_onclick" tabstop="false" background="#6092ff" font="12px/normal &quot;나눔고딕 ExtraBold&quot;" borderRadius="5px" color="white"/>
-              <Button id="companionBtn" taborder="8" text="반려" left="812" top="60" height="35" width="80" onclick="Div00_00_companionBtn_onclick" tabstop="false" background="#6092ff" font="12px/normal &quot;나눔고딕 ExtraBold&quot;" borderRadius="5px" color="white"/>
-              <Button id="confirmationBtn" taborder="9" text="확정" left="902" top="60" height="35" width="80" onclick="Div00_00_confirmationBtn_onclick" tabstop="false" background="#6092ff" font="12px/normal &quot;나눔고딕 ExtraBold&quot;" borderRadius="5px" color="white"/>
-              <Button id="inquiryBtn" taborder="10" text="조회" left="487" top="60" height="35" width="80" onclick="Div00_00_inquiryBtn_onclick" tabstop="false" background="#6092ff" font="12px/normal &quot;나눔고딕 ExtraBold&quot;" borderRadius="5px" color="white"/>
+              <Button id="approvalBtn" taborder="6" text="승인" left="652" top="80" height="35" width="80" onclick="Div00_00_approvalBtn_onclick" tabstop="false" background="#6092ff" font="12px/normal &quot;나눔고딕 ExtraBold&quot;" borderRadius="5px" color="white"/>
+              <Button id="approvalCancellationBtn" taborder="7" text="승인취소" left="742" top="80" height="35" width="80" onclick="Div00_00_approvalCancellationBtn_onclick" tabstop="false" background="#6092ff" font="12px/normal &quot;나눔고딕 ExtraBold&quot;" borderRadius="5px" color="white"/>
+              <Button id="companionBtn" taborder="8" text="반려" left="832" top="80" height="35" width="80" onclick="Div00_00_companionBtn_onclick" tabstop="false" background="#6092ff" font="12px/normal &quot;나눔고딕 ExtraBold&quot;" borderRadius="5px" color="white"/>
+              <Button id="confirmationBtn" taborder="9" text="확정" left="922" top="80" height="35" width="80" onclick="Div00_00_confirmationBtn_onclick" tabstop="false" background="#6092ff" font="12px/normal &quot;나눔고딕 ExtraBold&quot;" borderRadius="5px" color="white"/>
+              <Button id="inquiryBtn" taborder="10" text="조회" left="507" top="80" height="35" width="80" onclick="Div00_00_inquiryBtn_onclick" tabstop="false" background="#6092ff" font="12px/normal &quot;나눔고딕 ExtraBold&quot;" borderRadius="5px" color="white"/>
             </Layout>
           </Layouts>
         </Div>
