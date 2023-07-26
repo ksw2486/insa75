@@ -18,32 +18,6 @@
               <Edit id="detailedAddressEdit" taborder="2" left="156" top="421" width="283" height="53" font="18px/normal &quot;나눔고딕&quot;"/>
               <Static id="PostalCode" taborder="18" text="우편번호" left="59" top="482" width="109" height="51" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
               <Edit id="PostalCodeEdit" taborder="3" left="156" top="484" width="283" height="53" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Static id="PhoneNumber" taborder="19" text="전화번호" left="59" top="543" width="109" height="51" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <MaskEdit id="PhoneNumberEdit" taborder="4" left="156" top="545" width="283" height="53" format="###-####-####" textAlign="center" font="18px/normal &quot;나눔고딕&quot;" type="string"/>
-              <Static id="empNumber" taborder="29" text="사원번호" left="459" top="28" width="108" height="50" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="empNumberEdit" taborder="30" left="564" top="25" width="202" height="50" font="18px/normal &quot;나눔고딕&quot;" readonly="true"/>
-              <Button id="empNumberBtn" taborder="31" text="사원번호생성" left="773" top="25" width="196" height="50" font="18px/normal &quot;나눔고딕&quot;" onclick="Div_empNumberBtn_onclick"/>
-              <Static id="email" taborder="20" text="이메일" left="456" top="86" width="109" height="50" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="emailEdit" taborder="6" left="564" top="83" width="406" height="50" font="18pt &quot;나눔고딕&quot;"/>
-              <Static id="position" taborder="21" text="직급" left="456" top="144" width="109" height="50" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="positionEdit" taborder="7" left="564" top="141" width="406" height="50" oneditclick="positionEdit_oneditclick" font="18pt &quot;나눔고딕&quot;" onchanged="Div_positionEdit_onchanged"/>
-              <Static id="gender" taborder="22" text="성별" left="458" top="202" width="109" height="50" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="genderEdit" taborder="8" left="564" top="199" width="406" height="50" oneditclick="genderEdit_oneditclick" font="18pt &quot;나눔고딕&quot;"/>
-              <Static id="finalAcademic" taborder="23" text="최종학력" left="458" top="260" width="109" height="50" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="finalAcademicEdit" taborder="9" left="564" top="257" width="406" height="50" oneditclick="finalAcademicEdit_oneditclick" font="18pt &quot;나눔고딕&quot;" onchanged="Div_finalAcademicEdit_onchanged"/>
-              <Static id="hobong" taborder="24" text="호봉" left="460" top="318" width="109" height="50" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="hobongEdit" taborder="10" left="564" top="315" width="406" height="50" oneditclick="hobongEdit_oneditclick" font="18pt &quot;나눔고딕&quot;"/>
-              <Static id="workType" taborder="25" text="근무형태" left="458" top="376" width="109" height="50" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="workTypeEdit" taborder="11" left="564" top="373" width="406" height="50" oneditclick="workTypeEdit_oneditclick" font="18pt &quot;나눔고딕&quot;" onchanged="Div_workTypeEdit_onchanged"/>
-              <Static id="employmentType" taborder="26" text="고용형태" left="458" top="434" width="109" height="50" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="employmentTypeEdit" taborder="12" left="564" top="431" width="406" height="50" oneditclick="employmentTypeEdit_oneditclick" font="18pt &quot;나눔고딕&quot;"/>
-              <Static id="dept" taborder="27" text="부서" left="458" top="492" width="109" height="50" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Edit id="deptEdit" taborder="13" left="564" top="489" width="406" height="50" oneditclick="deptEdit_oneditclick" font="18pt &quot;나눔고딕&quot;"/>
-              <Static id="birth" taborder="28" text="생년월일" left="458" top="550" width="109" height="50" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Calendar id="birthCal" taborder="15" left="564" top="547" width="406" height="50" font="18pt &quot;나눔고딕&quot;"/>
-              <Static id="Static00" taborder="36" text="근무지" left="59" top="602" width="109" height="51" font="18px/normal &quot;Gulim&quot;" onclick="Div_Static00_onclick" textAlign="left"/>
-              <Edit id="WorkplaceCode" taborder="5" left="154" top="612" width="291" height="46"/>
-
             </Layout>
           </Layouts>
         </Div>
@@ -274,6 +248,23 @@ this.FileDialog_onclose = function(obj:nexacro.FileDialog,e:nexacro.FileDialogEv
 		this.Div.form.ImageViewer.set_image("file://"+realPath);
 		this.Div.form.ImageViewer.set_stretch("fit");
 };
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+
+this.Div_hobongEdit_onchanged = function(obj:nexacro.Edit,e:nexacro.ChangeEventInfo)
+{
+	
+};
+=======
+
+this.Div_PhoneNumberEdit_onchanged = function(obj:nexacro.MaskEdit,e:nexacro.ChangeEventInfo)
+{
+	
+};
+>>>>>>> 7bafc231fb2b4c3c0328c0e8be974dbf96544f38
+=======
+>>>>>>> 108ba70e8eb8fed3b15aec423402574920250798
 ]]></Script>
     <Bind>
       <BindItem id="item0" compid="Div.form.WorkplaceCode" propid="value" datasetid="ds_empReg" columnid="WORKPLACE_CODE"/>
