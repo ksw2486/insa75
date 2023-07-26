@@ -345,13 +345,6 @@
           <Col id="menu_id">currow</Col>
           <Col id="menu_st">1</Col>
           <Col id="menu_lv">1</Col>
-          <Col id="menu_nm">인성검사/면접결과</Col>
-          <Col id="menu_url">NewEmp::newempinfomgmt/personalityinterview.xfdl</Col>
-        </Row>
-        <Row>
-          <Col id="menu_id">currow</Col>
-          <Col id="menu_st">1</Col>
-          <Col id="menu_lv">1</Col>
           <Col id="menu_nm">선발결정</Col>
           <Col id="menu_url">NewEmp::documentmgmt/success.xfdl</Col>
         </Row>
