@@ -3,15 +3,15 @@
   <Form id="monthlyAttndMgt" width="1150" height="620" titletext="New Form" onload="monthlyAttndMgt_onload">
     <Layouts>
       <Layout height="620" width="1150">
-        <Div id="Div00_00" taborder="0" text="" left="20" top="30" width="1105" height="560">
+        <Div id="Div00_00" taborder="0" text="" left="20" top="30" width="1105" height="560" font="bold 14px/normal &quot;나눔고딕&quot;">
           <Layouts>
             <Layout>
-              <Static id="title" taborder="1" text="◼월근태관리" left="8" top="0" width="214" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Static id="inquiry" taborder="0" text="조회월" left="80" top="55" width="114" height="45" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Button id="deadlineBtn" taborder="2" text="전체마감하기" left="560" top="54" width="170" height="45" onclick="Div00_00_deadlineBtn_onclick"/>
-              <Button id="deadlineCancellationBtn" taborder="3" text="전체마감취소" left="750" top="54" width="170" height="45" onclick="Div00_00_deadlineCancellationBtn_onclick"/>
-              <Button id="inquiryBtn" taborder="4" text="조회하기" left="360" top="54" width="170" height="45" onclick="Div00_00_inquiryBtn_onclick"/>
-              <Grid id="Grid00" taborder="5" left="28" top="125" width="1062" height="370" binddataset="ds_monthAttenMng">
+              <Static id="title" taborder="1" text="◼월근태관리" left="8" top="0" width="214" height="49" textAlign="left" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Static id="inquiry" taborder="0" text="조회월" left="70" top="63" height="35" textAlign="center" font="bold 14px/normal &quot;나눔고딕&quot;" width="120"/>
+              <Button id="deadlineBtn" taborder="2" text="전체마감하기" left="680" top="63" height="35" onclick="Div00_00_deadlineBtn_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" width="120" background="#6092ff" color="white"/>
+              <Button id="deadlineCancellationBtn" taborder="3" text="전체마감취소" left="820" top="63" height="35" onclick="Div00_00_deadlineCancellationBtn_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" width="120" background="#6092ff" color="white"/>
+              <Button id="inquiryBtn" taborder="4" text="조회하기" left="350" top="63" height="35" onclick="Div00_00_inquiryBtn_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" width="120" background="#6092ff" color="white"/>
+              <Grid id="Grid00" taborder="5" left="28" top="125" width="1062" height="370" binddataset="ds_monthAttenMng" font="bold 14px/normal &quot;나눔고딕&quot;">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -36,21 +36,21 @@
                       <Row size="34"/>
                     </Rows>
                     <Band id="head">
-                      <Cell text="사원코드" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="1" text="사원명" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="2" text="적용연월" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="3" text="기준근무일수" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="4" text="평일근무일수" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="5" text="기준근무시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="6" text="실제근무시간" font="12px/normal &quot;나눔고딕&quot;" displaytype="normal"/>
-                      <Cell col="7" text="연장근무시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="8" text="심야근무시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="9" text="휴일근무일수" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="10" text="지각일수" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="11" text="결근일수" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="12" text="반차일수" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="13" text="휴가일수" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="14" text="마감여부" font="12px/normal &quot;나눔고딕&quot;"/>
+                      <Cell text="사원코드" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="1" text="사원명" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="2" text="적용연월" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="3" text="기준근무일수" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="4" text="평일근무일수" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="5" text="기준근무시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="6" text="실제근무시간" font="12px/normal &quot;나눔고딕&quot;" displaytype="normal" background="#6092ff" color="white"/>
+                      <Cell col="7" text="연장근무시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="8" text="심야근무시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="9" text="휴일근무일수" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="10" text="지각일수" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="11" text="결근일수" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="12" text="반차일수" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="13" text="휴가일수" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="14" text="마감여부" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
                     </Band>
                     <Band id="body">
                       <Cell text="bind:EMP_CODE" textAlign="center"/>
@@ -72,8 +72,8 @@
                   </Format>
                 </Formats>
               </Grid>
-              <Calendar id="Calendar00" taborder="6" left="197" top="49" width="133" height="55" editformat="yyyy-MM" dateformat="yyyy-MM"/>
-              <Button id="Button00" taborder="7" text="저장" left="940" top="57" width="124" height="43" onclick="Div00_00_Button00_onclick"/>
+              <Calendar id="Calendar00" taborder="6" left="200" top="63" height="35" editformat="yyyy-MM" dateformat="yyyy-MM" font="bold 14px/normal &quot;나눔고딕&quot;" width="120"/>
+              <Button id="Button00" taborder="7" text="저장" left="960" top="63" height="35" onclick="Div00_00_Button00_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" width="120" background="#6092ff" color="white"/>
             </Layout>
           </Layouts>
         </Div>
@@ -87,7 +87,7 @@ nexa = nexacro.getApplication();
 // 조회하기
 this.Div00_00_inquiryBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	//trace(this.Div00_00.form.Calendar00.value.substring(0,6))
+	trace(this.Div00_00.form.Calendar00.value.substring(0,6))
 	
 	var applyYearMonth = this.Div00_00.form.Calendar00.value.substring(0,6)
 	

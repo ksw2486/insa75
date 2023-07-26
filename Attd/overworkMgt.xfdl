@@ -3,17 +3,17 @@
   <Form id="overworkMgt" width="1280" height="720" titletext="New Form">
     <Layouts>
       <Layout height="720" width="1280">
-        <Div id="Div00" taborder="0" text="Div00" left="6" top="10" width="990" height="459">
+        <Div id="Div00" taborder="0" text="Div00" left="6" top="10" width="990" height="459" font="bold 14px/normal &quot;나눔고딕&quot;">
           <Layouts>
             <Layout>
-              <Static id="Static00" taborder="0" text="초과근무 관리" left="16" top="17" width="123" height="35"/>
-              <Calendar id="Calendar00" taborder="1" left="149" top="67" width="128" height="38"/>
-              <Static id="Static01" taborder="2" text="조회일자" left="77" top="65" width="50" height="40"/>
-              <Button id="Button00" taborder="3" text="조회하기" left="300" top="67" width="128" height="39" onclick="Div00_Button00_onclick"/>
-              <Button id="Button01" taborder="4" text="승인" left="450" top="69" width="76" height="41" onclick="Div00_Button01_onclick"/>
-              <Button id="Button02" taborder="5" text="반려" left="539" top="68" width="70" height="42" onclick="Div00_Button02_onclick"/>
-              <Button id="Button03" taborder="6" text="저장" left="620" top="67" width="84" height="46" onclick="Div00_Button03_onclick"/>
-              <Grid id="Grid00" taborder="7" left="28" top="148" width="844" height="284" binddataset="ds_overworkList" oncellclick="Div00_Grid00_oncellclick">
+              <Static id="Static00" taborder="0" text="초과근무 관리" left="16" top="17" width="123" height="35" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Calendar id="Calendar00" taborder="1" left="149" top="67" width="120" height="35" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Static id="Static01" taborder="2" text="조회일자" left="77" top="65" width="120" height="35" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Button id="Button00" taborder="3" text="조회하기" left="284" top="67" width="120" height="35" onclick="Div00_Button00_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+              <Button id="Button01" taborder="4" text="승인" left="464" top="69" width="120" height="35" onclick="Div00_Button01_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+              <Button id="Button02" taborder="5" text="반려" left="594" top="69" width="120" height="35" onclick="Div00_Button02_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+              <Button id="Button03" taborder="6" text="저장" left="734" top="67" width="120" height="35" onclick="Div00_Button03_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+              <Grid id="Grid00" taborder="7" left="34" top="120" width="844" height="284" binddataset="ds_overworkList" oncellclick="Div00_Grid00_oncellclick" font="bold 14px/normal &quot;나눔고딕&quot;">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -33,16 +33,16 @@
                       <Row size="24"/>
                     </Rows>
                     <Band id="head">
-                      <Cell text="일련번호"/>
-                      <Cell col="1" text="사원"/>
-                      <Cell col="2" text="사번"/>
-                      <Cell col="3" text="근무유형"/>
-                      <Cell col="4" text="신청일"/>
-                      <Cell col="5" text="사유"/>
-                      <Cell col="6" text="승인상태"/>
-                      <Cell col="7" text="반려사유"/>
-                      <Cell col="8" text="시작시간"/>
-                      <Cell col="9" text="종료시간"/>
+                      <Cell text="일련번호" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                      <Cell col="1" text="사원" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                      <Cell col="2" text="사번" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                      <Cell col="3" text="근무유형" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                      <Cell col="4" text="신청일" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                      <Cell col="5" text="사유" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                      <Cell col="6" text="승인상태" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                      <Cell col="7" text="반려사유" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                      <Cell col="8" text="시작시간" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                      <Cell col="9" text="종료시간" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
                     </Band>
                     <Band id="body">
                       <Cell text="bind:REST_ATTD_CODE"/>

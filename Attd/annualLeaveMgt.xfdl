@@ -3,13 +3,13 @@
   <Form id="anuualLeaveMgt" width="1060" height="620" titletext="New Form">
     <Layouts>
       <Layout height="620" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="30" width="1010" height="560">
+        <Div id="Div00_00" taborder="0" text="" left="25" top="30" width="1010" height="560" font="bold 14px/normal &quot;나눔고딕&quot;">
           <Layouts>
             <Layout>
-              <Button id="btn_search" taborder="0" text="조회하기" left="325" top="128" width="150" height="40" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_search_onclick"/>
-              <Button id="btn_finalize" taborder="1" text="전체마감하기" left="505" top="128" height="40" width="140" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_finalize_onclick"/>
-              <Button id="btn_cancel" taborder="2" text="전체마감취소" left="655" top="128" height="40" width="140" font="20px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_cancel_onclick"/>
-              <Grid id="Grid00" taborder="3" left="125" top="185" width="761" height="345" binddataset="ds_vacation">
+              <Button id="btn_search" taborder="0" text="조회하기" left="365" top="128" width="120" height="35" font="bold 14px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_search_onclick" background="#6092ff" color="white"/>
+              <Button id="btn_finalize" taborder="1" text="전체마감하기" left="495" top="128" height="35" width="120" font="bold 14px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_finalize_onclick" background="#6092ff" color="white"/>
+              <Button id="btn_cancel" taborder="2" text="전체마감취소" left="625" top="128" height="35" width="120" font="bold 14px/normal &quot;나눔고딕&quot;" onclick="Div00_00_btn_cancel_onclick" background="#6092ff" color="white"/>
+              <Grid id="Grid00" taborder="3" left="125" top="185" width="761" height="345" binddataset="ds_vacation" font="bold 14px/normal &quot;나눔고딕&quot;">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -26,13 +26,13 @@
                       <Row size="24"/>
                     </Rows>
                     <Band id="head">
-                      <Cell text="사원코드" font="16px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="1" text="직원이름" font="16px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="2" text="적용년월" font="16px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="3" text="반차사용개수" font="16px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="4" text="연차사용개수" font="16px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="5" text="남은연차" font="16px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="6" text="마감여부" font="16px/normal &quot;나눔고딕&quot;"/>
+                      <Cell text="사원코드" font="16px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="1" text="직원이름" font="16px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="2" text="적용년월" font="16px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="3" text="반차사용개수" font="16px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="4" text="연차사용개수" font="16px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="5" text="남은연차" font="16px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="6" text="마감여부" font="16px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
                     </Band>
                     <Band id="body">
                       <Cell text="bind:EMP_CODE"/>
@@ -46,9 +46,10 @@
                   </Format>
                 </Formats>
               </Grid>
-              <Static id="Static00" taborder="4" text="◼연차관리" left="8" top="0" width="188" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Calendar id="Calendar00" taborder="5" left="125" top="128" width="159" height="40" dateformat="yyyy-MM" editformat="yyyy-MM"/>
-              <Button id="Button00" taborder="6" text="저장" left="807" top="130" width="107" height="36" onclick="Div00_00_Button00_onclick"/>
+              <Static id="Static00" taborder="4" text="◼연차관리" left="8" top="0" width="188" height="49" textAlign="left" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Calendar id="Calendar00" taborder="5" left="195" top="125" width="159" height="40" dateformat="yyyy-MM" editformat="yyyy-MM" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Button id="Button00" taborder="6" text="저장" left="755" top="128" width="120" height="35" onclick="Div00_00_Button00_onclick" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Static id="Static01" taborder="7" text="적용일" left="125" top="128" width="120" height="35" onclick="Div00_00_Static01_onclick" font="bold 14px/normal &quot;나눔고딕&quot;"/>
             </Layout>
           </Layouts>
         </Div>
@@ -126,12 +127,14 @@ this.fn_callback = function(trID,ErrorCode,ErrorMsg){
 		alert("처리되었습니다.");
 	}
   }
+  
+  if(trID == "searchAnnual"){
+	
+	//this.reload();
+  }
 }
 
-this.annualLeaveUpdate = function()
-{
 
-}
 
 
 this.Div00_00_Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
@@ -144,6 +147,11 @@ this.Div00_00_Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEven
 					"",
 					""
 					);
+};
+
+this.Div00_00_Static01_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
 };
 ]]></Script>
   </Form>
