@@ -55,19 +55,19 @@
         <Edit id="edt_addrDetail" taborder="33" left="115" top="132" width="420" height="20"/>
         <Edit id="edt_email" taborder="34" left="115" top="157" width="420" height="20"/>
         <Edit id="edt_deptCode" taborder="37" left="115" top="237" width="120" height="20" background="#FFFFC5" canchange="edt_code_canchange"/>
-        <Edit id="edt_deptName" taborder="38" left="260" top="237" width="275" height="20" readonly="true"/>
+        <Edit id="edt_deptName" taborder="38" left="280" top="237" width="255" height="20" readonly="true"/>
         <Edit id="edt_pjtCode" taborder="39" left="115" top="262" width="120" height="20"/>
-        <Edit id="edt_pjtName" taborder="40" left="260" top="262" width="275" height="20" readonly="true"/>
+        <Edit id="edt_pjtName" taborder="40" left="280" top="262" width="255" height="20" readonly="true"/>
         <Edit id="edt_posCode" taborder="41" left="115" top="287" width="120" height="20"/>
-        <Edit id="edt_posName" taborder="42" left="260" top="287" width="275" height="20" readonly="true"/>
+        <Edit id="edt_posName" taborder="42" left="280" top="287" width="255" height="20" readonly="true"/>
         <Edit id="edt_empStatCode" taborder="43" left="115" top="312" width="120" height="20" background="#FFFFC5"/>
-        <Edit id="edt_empStatName" taborder="44" left="260" top="312" width="275" height="20" readonly="true"/>
+        <Edit id="edt_empStatName" taborder="44" left="280" top="312" width="255" height="20" readonly="true"/>
         <Edit id="edt_jobCode" taborder="45" left="115" top="337" width="120" height="20"/>
-        <Edit id="edt_jobName" taborder="46" left="260" top="337" width="275" height="20" readonly="true"/>
+        <Edit id="edt_jobName" taborder="46" left="280" top="337" width="255" height="20" readonly="true"/>
         <Edit id="edt_payStatCode" taborder="47" left="115" top="362" width="120" height="20" background="#FFFFC5" canchange="edt_payStatCode_canchange"/>
-        <Edit id="edt_payStatName" taborder="48" left="260" top="362" width="275" height="20" readonly="true"/>
+        <Edit id="edt_payStatName" taborder="48" left="280" top="362" width="255" height="20" readonly="true"/>
         <Edit id="edt_transAcCode" taborder="49" left="115" top="387" width="120" height="20"/>
-        <Edit id="edt_transAcName" taborder="50" left="260" top="387" width="275" height="20" readonly="true"/>
+        <Edit id="edt_transAcName" taborder="50" left="280" top="387" width="255" height="20" readonly="true"/>
         <Edit id="edt_accountNo" taborder="51" left="115" top="412" width="120" height="20"/>
         <Edit id="edt_depositor" taborder="52" left="115" top="437" width="120" height="20"/>
         <Calendar id="calen_retireDate" taborder="55" left="115" top="486" width="120" height="20" onchanged="calen_retireDate_onchanged"/>
@@ -148,6 +148,9 @@
         <MaskEdit id="medt_hourPrice" taborder="54" left="397" top="462" width="120" height="20" format="#,###" type="number"/>
         <MaskEdit id="medt_tel" taborder="35" left="115" top="182" width="120" height="20" type="string" format="###-###-####"/>
         <MaskEdit id="medt_phone" taborder="36" left="115" top="212" width="120" height="20" type="string" format="###-####-####"/>
+        <Button id="btn_searchDeptCode" taborder="60" left="248" top="237" width="20" height="20" onclick="btn_searchDeptCode_onclick" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
+        <Button id="btn_searchEmploymentStatCode" taborder="61" left="248" top="312" width="20" height="20" onclick="btn_searchEmploymentStatCode_onclick" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
+        <Button id="btn_searchPayStatCode" taborder="62" left="248" top="362" width="20" height="20" onclick="btn_searchPayStatCode_onclick" background="url('theme://images/btn_WF_Grdexpand.png') no-repeat center #ffffff"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[include "Lib::commonOpen.xjs"; // 모달창 라이브러리
@@ -412,6 +415,22 @@ this.cmb_isForeign_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChan
 {
 	
 };
+
+this.btn_searchZipCode_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	//popup 화면으로 전달할 값
+	var oArg = {
+				};
+	
+	//modal popup open call
+	this.gfn_showModal("popupPostcode", oArg, "Base::postcodedaumapi_popup.xfdl", "popupCallBack", this, 10, 58, 340, 310);
+};
+
+this.btn_searchDeptCode_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.gfnOpen("dept", modalUrl, modalEvent, {code:"CO-07"});
+};
+
 ]]></Script>
     <Objects/>
   </Form>
