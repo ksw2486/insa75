@@ -9,11 +9,11 @@
       <Script rule_version="1.02"/>
       <GeneratorInfo rule_version="1.2"/>
     </Rule>
-    <Info project="C:\Users\iclus\OneDrive\바탕 화면\2차프로젝트\깃 최종인가\insa75\" generated="C:\Users\iclus\OneDrive\문서\TOBESOFT\Nexacro N\outputs\insa\">
-      <File url="environment.xml" checksum="20230719172921" errormsg=""/>
-      <File url="typedefinition.xml" checksum="20230719172921" errormsg=""/>
-      <File url="appvariables.xml" checksum="20230719172921" errormsg=""/>
-      <File url="_resource_\_theme_\default\theme.xcss" checksum="20230719172921" errormsg=""/>
+    <Info project="C:\Users\USER\Desktop\75기 인사 project\Insa75(2차)\insa75\" generated="C:\Users\USER\Documents\TOBESOFT\Nexacro N\outputs\insa\">
+      <File url="environment.xml" checksum="20230719202236" errormsg=""/>
+      <File url="typedefinition.xml" checksum="20230719202236" errormsg=""/>
+      <File url="appvariables.xml" checksum="20230719202236" errormsg=""/>
+      <File url="_resource_\_theme_\default\theme.xcss" checksum="20230719202236" errormsg=""/>
       <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\framework\Framework.json" checksum="20230228101658" errormsg=""/>
       <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\resources\Resource.json" checksum="20230228101658" errormsg=""/>
       <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\CompBase.json" checksum="20230228101654" errormsg=""/>
@@ -21,7 +21,90 @@
       <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\Grid.json" checksum="20230228101656" errormsg=""/>
       <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ListView.json" checksum="20230228101700" errormsg=""/>
       <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\DeviceAPI.json" checksum="20230228101656" errormsg=""/>
-      <File url="_extlib_\Chart.json" checksum="20230719172920" errormsg=""/>
+      <File url="_extlib_\Chart.json" checksum="20230719202234" errormsg=""/>
+      <File url="Application_Desktop.xadl" checksum="20230725110008" errormsg=""/>
+      <File url="Lib\commDataset.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\commDate.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\commFile.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\commForm.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\commFrame.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\commGrid.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\commLib.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\commonOpen.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\commString.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\commTrans.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\commUtility.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="Lib\popupModal.xjs" checksum="20230719202234" errormsg=""/>
+      <File url="FrameBase\Form_Left.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="FrameBase\Form_Top.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="FrameBase\Form_Work.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Base\dailyEmpPayDateModal.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Base\loginForm.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Base\Modal.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Base\Modal2.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Base\postcodedaumapi_popup.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Base\rejectModal.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Base\resume_InsertModal.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Base\resumModal.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\annualLeaveMgt.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\annualLeaveMgt_old.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\attndApproval.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\attndApproval_old.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\breakApplication.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\breakApplication_old.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\dailyAttnd.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\dailyAttndMgt.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\dailyAttndMgt_old.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\dailyAttnd_old.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\excusedAttnd.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\excusedAttnd_old.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\monthlyAttndMgt.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\monthlyAttndMgt_old.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\overwork.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\overworkMgt.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Attd\travel.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Comm\baseWorkTime.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Comm\codeList.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Comm\deptList.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Comm\empAuth.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Comm\holidayList.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Comm\hosuList.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Comm\positionList.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Empmgmt\certificate.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Empmgmt\certificateApproval.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Empmgmt\documents.xfdl" checksum="20230725191104" errormsg=""/>
+      <File url="Empmgmt\documentsApproval.xfdl" checksum="20230725191353" errormsg=""/>
+      <File url="Empmgmt\empAppo.xfdl" checksum="20230725190432" errormsg=""/>
+      <File url="Empmgmt\empAppoApproval.xfdl" checksum="20230725200136" errormsg=""/>
+      <File url="Empmgmt\empDetail.xfdl" checksum="20230725124728" errormsg=""/>
+      <File url="Empmgmt\empEval.xfdl" checksum="20230725122832" errormsg=""/>
+      <File url="Empmgmt\empEvalApproval.xfdl" checksum="20230725142805" errormsg=""/>
+      <File url="Empmgmt\empReg.xfdl" checksum="20230725105347" errormsg=""/>
+      <File url="Empmgmt\proofApproval.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Empmgmt\receiptProof.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Salary\baseExtSalMgt.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Salary\baseSalMgt.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Salary\fullTimeSal.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Salary\retirementSal.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Salary\salaryAwards.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Salary\socialIns.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="NewEmp\documentmgmt\eduPlan.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="NewEmp\documentmgmt\final.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="NewEmp\documentmgmt\resumemgmt.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="NewEmp\documentmgmt\success.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="NewEmp\documentmgmt\workforcePlanning.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="NewEmp\newempinfomgmt\personalityinterview.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Retirement\retirementMgt.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Retirement\retirementPay.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Retirement\retirementReceipt.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Retirement\rr_retReceiptApply.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="Retirement\rr_retReceiptInqury.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="DailyEmp\dailyEmpmgmt.xfdl" checksum="20230725204414" errormsg=""/>
+      <File url="DailyEmp\dailyEmpPayCalc.xfdl" checksum="20230726140547" errormsg=""/>
+      <File url="DailyEmp\dailyEmpPayDate.xfdl" checksum="20230725211853" errormsg=""/>
+      <File url="DailyEmp\daylaborReg.xfdl" checksum="20230719202234" errormsg=""/>
+      <File url="DailyEmp\tab_additionalInfo.xfdl" checksum="20230725203755" errormsg=""/>
+      <File url="DailyEmp\tab_basicInfo.xfdl" checksum="20230725204145" errormsg=""/>
     </Info>
   </GenInfo>
 </root>
