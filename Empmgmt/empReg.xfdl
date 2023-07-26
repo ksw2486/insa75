@@ -6,7 +6,7 @@
         <Div id="Div" taborder="1" text="" left="50" top="15" width="1020" height="685" background="whight" font="14pt &quot;나눔고딕 ExtraBold&quot;">
           <Layouts>
             <Layout>
-              <ImageViewer id="ImageViewer" taborder="32" left="13" top="75" width="167" height="160" onclick="Div_ImageViewer_onclick" font="14pt &quot;나눔고딕 ExtraBold&quot;"/>
+             <ImageViewer id="ImageViewer" taborder="32" left="13" top="75" width="167" height="160" onclick="Div_ImageViewer_onclick" font="14pt &quot;나눔고딕 ExtraBold&quot;"/>
               <Button id="imageBtn" taborder="33" text="사진찾기" left="246" top="75" width="150" height="35" font="12pt &quot;나눔고딕 ExtraBold&quot;" onclick="imageBtn_onclick" borderRadius="5px" background="#6092ff" color="white"/>
               <Button id="registBtn" taborder="34" text="등록" left="246" top="120" width="150" height="35" font="12pt &quot;나눔고딕 ExtraBold&quot;" onclick="Div_registBtn_onclick" borderRadius="5px" background="#6092ff" color="white"/>
               <Button id="cancelBtn" taborder="35" text="취소" left="246" top="165" width="150" height="35" font="12pt &quot;나눔고딕 ExtraBold&quot;" onclick="Div_cancelBtn_onclick" borderRadius="5px" background="#6092ff" color="white"/>
@@ -272,11 +272,6 @@ this.FileDialog_onclose = function(obj:nexacro.FileDialog,e:nexacro.FileDialogEv
 		var realPath = system.convertRealPath(vFile.fullpath);
 		this.Div.form.ImageViewer.set_image("file://"+realPath);
 		this.Div.form.ImageViewer.set_stretch("fit");
-};
-
-this.Div_empName_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
-{
-	
 };
 ]]></Script>
     <Bind>

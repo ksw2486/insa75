@@ -3,16 +3,16 @@
   <Form id="dailyAttndMgt" width="1250" height="620" titletext="New Form" onload="dayAttendanceManage_onload">
     <Layouts>
       <Layout height="620" width="1250">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="40" width="1210" height="560">
+        <Div id="Div00_00" taborder="0" text="" left="25" top="40" width="1210" height="560" font="bold 14px/normal &quot;나눔고딕&quot;">
           <Layouts>
             <Layout>
-              <Static id="Static00" taborder="1" text="◼일근태관리" left="8" top="0" width="214" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Static id="inquiry" taborder="0" text="조회일자" left="25" top="105" width="114" height="40" textAlign="center" font="18px/normal &quot;나눔고딕&quot;"/>
-              <Button id="deadlineBtn" taborder="2" text="전체마감하기" left="605" top="110" width="170" height="40" onclick="Div00_00_deadlineBtn_onclick"/>
-              <Button id="deadlineCancellationBtn" taborder="3" text="전체마감취소" left="795" top="110" width="170" height="40" onclick="Div00_00_deadlineCancellationBtn_onclick"/>
-              <Button id="inquiryBtn" taborder="4" text="조회하기" left="295" top="105" width="170" height="40" onclick="Div00_00_inquiryBtn_onclick"/>
-              <Calendar id="inquiryCal" taborder="5" left="135" top="105" width="140" height="40"/>
-              <Grid id="Grid00" taborder="6" left="15" top="160" width="1185" height="370" binddataset="ds_dayAttenMng">
+              <Static id="Static00" taborder="1" text="◼일근태관리" left="8" top="0" width="214" height="49" textAlign="left" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Static id="inquiry" taborder="0" text="조회일자" left="25" top="105" width="114" height="40" textAlign="center" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Button id="deadlineBtn" taborder="2" text="전체마감하기" left="605" top="110" width="120" height="35" onclick="Div00_00_deadlineBtn_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+              <Button id="deadlineCancellationBtn" taborder="3" text="전체마감취소" left="795" top="110" width="120" height="35" onclick="Div00_00_deadlineCancellationBtn_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+              <Button id="inquiryBtn" taborder="4" text="조회하기" left="295" top="105" width="120" height="35" onclick="Div00_00_inquiryBtn_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+              <Calendar id="inquiryCal" taborder="5" left="135" top="105" width="120" height="35" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+              <Grid id="Grid00" taborder="6" left="15" top="160" width="1185" height="370" binddataset="ds_dayAttenMng" font="bold 14px/normal &quot;나눔고딕&quot;">
                 <Formats>
                   <Format id="default">
                     <Columns>
@@ -38,22 +38,22 @@
                       <Row size="34"/>
                     </Rows>
                     <Band id="head">
-                      <Cell text="사원코드" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="1" text="사원명" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="2" text="적용일" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="3" text="일근태구분코드" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="4" text="일근태구분명" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="5" text="출근시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="6" text="퇴근시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="7" text="지각여부" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="8" text="지각시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="9" text="총외출시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="10" text="공외출시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="11" text="사외출시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="12" text="정상근무시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="13" text="연장근무시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="14" text="심야근무시간" font="12px/normal &quot;나눔고딕&quot;"/>
-                      <Cell col="15" text="마감여부" font="12px/normal &quot;나눔고딕&quot;"/>
+                      <Cell text="사원코드" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="1" text="사원명" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="2" text="적용일" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="3" text="일근태구분코드" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="4" text="일근태구분명" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="5" text="출근시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="6" text="퇴근시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="7" text="지각여부" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="8" text="지각시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="9" text="총외출시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="10" text="공외출시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="11" text="사외출시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="12" text="정상근무시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="13" text="연장근무시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="14" text="심야근무시간" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                      <Cell col="15" text="마감여부" font="12px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
                     </Band>
                     <Band id="body">
                       <Cell text="bind:EMP_CODE" textAlign="center"/>
@@ -76,7 +76,7 @@
                   </Format>
                 </Formats>
               </Grid>
-              <Button id="Button00" taborder="7" text="저장" left="993" top="111" width="147" height="41" onclick="Div00_00_Button00_onclick"/>
+              <Button id="Button00" taborder="7" text="저장" left="993" top="111" height="35" onclick="Div00_00_Button00_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" width="120" background="#6092ff" color="white"/>
             </Layout>
           </Layouts>
         </Div>

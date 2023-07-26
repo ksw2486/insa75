@@ -3,36 +3,36 @@
   <Form id="breakApplication" width="1000" height="550" titletext="New Form" onload="breakApplication_onload">
     <Layouts>
       <Layout height="550" width="1000">
-        <Div id="Div00_00" taborder="0" text="" left="25" top="30" width="965" height="510">
+        <Div id="Div00_00" taborder="0" text="" left="25" top="30" width="965" height="510" font="bold 14px/normal &quot;나눔고딕&quot;">
           <Layouts>
             <Layout>
-              <Static id="Static00" taborder="1" text="◼연차신청" left="8" top="0" width="214" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
+              <Static id="Static00" taborder="1" text="◼연차신청" left="8" top="0" width="214" height="49" textAlign="left" font="bold 14px/normal &quot;나눔고딕&quot;"/>
             </Layout>
           </Layouts>
         </Div>
-        <Tab id="Tab00" taborder="1" tabindex="0" left="40" top="94" width="994" height="488" onchanged="Div00_00_Tab00_onchanged">
+        <Tab id="Tab00" taborder="1" tabindex="0" left="40" top="94" width="994" height="488" onchanged="Div00_00_Tab00_onchanged" font="bold 14px/normal &quot;나눔고딕&quot;">
           <Tabpages>
             <Tabpage id="Tabpage1" text="연차 신청">
               <Layouts>
                 <Layout>
-                  <Div id="Div00" taborder="0" text="Div00" left="1" top="17" width="960" height="386">
+                  <Div id="Div00" taborder="0" text="Div00" left="1" top="17" width="960" height="386" font="bold 14px/normal &quot;나눔고딕&quot;">
                     <Layouts>
                       <Layout>
-                        <Static id="Static00" taborder="0" text="연차 구분" left="23" top="11" width="52" height="22" onclick="Div00_Static00_onclick"/>
-                        <Static id="Static01" taborder="1" text="시작일" left="266" top="14" width="51" height="26" onclick="Div00_Static01_onclick"/>
-                        <Static id="Static02" taborder="2" text="종료일" left="504" top="9" width="65" height="27"/>
-                        <Combo id="Combo00" taborder="3" text="" left="109" top="4" width="90" height="39" innerdataset="ds_restType" codecolumn="DETAIL_CODE_NAME" datacolumn="DETAIL_CODE_NAME" onitemchanged="Tab00_Tabpage1_Div00_Combo00_onitemchanged"/>
-                        <Static id="Static03" taborder="4" text="사유" left="23" top="150" width="35" height="38" onclick="Div00_Static03_onclick"/>
-                        <Edit id="Edit00" taborder="5" left="74" top="123" width="775" height="95"/>
-                        <Button id="Button00" taborder="6" text="신청하기" left="739" top="251" width="101" height="39" onclick="Div00_Button00_onclick"/>
-                        <Calendar id="Calendar00" taborder="7" left="351" top="10" width="118" height="37" onchanged="day_onchanged"/>
-                        <Calendar id="Calendar01" taborder="8" left="599" top="5" width="140" height="37" onchanged="day_onchanged"/>
-                        <Static id="Static04" taborder="9" text="기간" left="29" top="62" width="50" height="26"/>
-                        <Edit id="Edit02" taborder="10" left="109" top="57" width="93" height="34" enable="false"/>
-                        <Static id="Static05" taborder="11" text="시작 시간" left="259" top="51" width="80" height="33" onclick="Tab00_Tabpage1_Div00_Static05_onclick"/>
-                        <Calendar id="Calendar03" taborder="12" left="332" top="53" width="139" height="35" dateformat="hh:mm" editformat="hh:mm" headformat="yyyy.MM" onchanged="Div00_00_Tab00_Tabpage1_Div00_Calendar00_onchanged"/>
-                        <Calendar id="Calendar04" taborder="13" left="590" top="57" width="139" height="35" dateformat="hh:mm" editformat="hh:mm" headformat="yyyy.MM" onchanged="Div00_00_Tab00_Tabpage1_Div00_Calendar00_onchanged"/>
-                        <Static id="Static06" taborder="14" text="종료 시간" left="495" top="58" width="78" height="34"/>
+                        <Static id="Static00" taborder="0" text="연차 구분" left="26" top="13" width="66" height="22" onclick="Div00_Static00_onclick" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Static id="Static01" taborder="1" text="시작일" left="259" top="11" width="51" height="26" onclick="Div00_Static01_onclick" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Static id="Static02" taborder="2" text="종료일" left="496" top="7" width="65" height="27" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Combo id="Combo00" taborder="3" text="" left="109" top="4" width="120" height="35" innerdataset="ds_restType" codecolumn="DETAIL_CODE_NAME" datacolumn="DETAIL_CODE_NAME" onitemchanged="Tab00_Tabpage1_Div00_Combo00_onitemchanged" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Static id="Static03" taborder="4" text="사유" left="23" top="150" width="35" height="38" onclick="Div00_Static03_onclick" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Edit id="Edit00" taborder="5" left="74" top="123" width="775" height="95" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Button id="Button00" taborder="6" text="신청하기" left="739" top="251" width="120" height="35" onclick="Div00_Button00_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                        <Calendar id="Calendar00" taborder="7" left="332" top="5" width="120" height="35" onchanged="day_onchanged" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Calendar id="Calendar01" taborder="8" left="589" top="7" width="120" height="35" onchanged="day_onchanged" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Static id="Static04" taborder="9" text="기간" left="29" top="62" width="50" height="26" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Edit id="Edit02" taborder="10" left="109" top="57" width="120" height="35" enable="false" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Static id="Static05" taborder="11" text="시작 시간" left="259" top="51" width="80" height="33" onclick="Tab00_Tabpage1_Div00_Static05_onclick" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Calendar id="Calendar03" taborder="12" left="332" top="53" width="120" height="35" dateformat="hh:mm" editformat="hh:mm" headformat="yyyy.MM" onchanged="Div00_00_Tab00_Tabpage1_Div00_Calendar00_onchanged" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Calendar id="Calendar04" taborder="13" left="590" top="57" width="120" height="35" dateformat="hh:mm" editformat="hh:mm" headformat="yyyy.MM" onchanged="Div00_00_Tab00_Tabpage1_Div00_Calendar00_onchanged" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                        <Static id="Static06" taborder="14" text="종료 시간" left="495" top="58" width="78" height="34" font="bold 14px/normal &quot;나눔고딕&quot;"/>
                       </Layout>
                     </Layouts>
                   </Div>
@@ -42,11 +42,11 @@
             <Tabpage id="Tabpage2" text="연차 신청 조회">
               <Layouts>
                 <Layout>
-                  <Static id="Static00" taborder="1" text="~" left="342" top="41" width="21" height="33"/>
-                  <Calendar id="Calendar00" taborder="0" left="200" top="33" width="128" height="46"/>
-                  <Calendar id="Calendar01" taborder="2" left="363" top="36" width="135" height="39"/>
-                  <Button id="Button00" taborder="3" text="조회" left="540" top="34" width="123" height="44" onclick="Tab00_Tabpage2_Button00_onclick"/>
-                  <Grid id="Grid00" taborder="4" left="24" top="123" width="886" height="254" binddataset="ds_restAttdList" oncellclick="Tab00_Tabpage2_Grid00_oncellclick">
+                  <Static id="Static00" taborder="1" text="~" left="342" top="41" width="21" height="33" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                  <Calendar id="Calendar00" taborder="0" left="200" top="33" width="120" height="35" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                  <Calendar id="Calendar01" taborder="2" left="363" top="36" width="120" height="35" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                  <Button id="Button00" taborder="3" text="조회" left="540" top="34" width="120" height="35" onclick="Tab00_Tabpage2_Button00_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
+                  <Grid id="Grid00" taborder="4" left="24" top="123" width="886" height="254" binddataset="ds_restAttdList" oncellclick="Tab00_Tabpage2_Grid00_oncellclick" font="bold 14px/normal &quot;나눔고딕&quot;">
                     <Formats>
                       <Format id="default">
                         <Columns>
@@ -67,17 +67,17 @@
                           <Row size="24"/>
                         </Rows>
                         <Band id="head">
-                          <Cell text="연차일련번호"/>
-                          <Cell col="1" text="연차명"/>
-                          <Cell col="2" text="신청일"/>
-                          <Cell col="3" text="시작일"/>
-                          <Cell col="4" text="종료일"/>
-                          <Cell col="5" text="사유"/>
-                          <Cell col="6" text="승인상태"/>
-                          <Cell col="7" text="반려사유"/>
-                          <Cell col="8" text="시작날짜"/>
-                          <Cell col="9" text="종료날짜"/>
-                          <Cell col="10" text="일수"/>
+                          <Cell text="연차일련번호" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                          <Cell col="1" text="연차명" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                          <Cell col="2" text="신청일" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                          <Cell col="3" text="시작일" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                          <Cell col="4" text="종료일" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                          <Cell col="5" text="사유" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                          <Cell col="6" text="승인상태" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                          <Cell col="7" text="반려사유" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                          <Cell col="8" text="시작날짜" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                          <Cell col="9" text="종료날짜" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                          <Cell col="10" text="일수" background="#6092ff" color="white" font="bold 14px/normal &quot;나눔고딕&quot;"/>
                         </Band>
                         <Band id="body">
                           <Cell text="bind:REST_ATTD_CODE"/>
@@ -95,8 +95,8 @@
                       </Format>
                     </Formats>
                   </Grid>
-                  <Static id="Static01" taborder="5" text="조회일자" left="125" top="37" width="60" height="38"/>
-                  <Button id="Button01" taborder="6" text="삭제" left="680" top="34" width="123" height="44" onclick="Tab00_Tabpage2_Button01_onclick"/>
+                  <Static id="Static01" taborder="5" text="조회일자" left="125" top="37" width="60" height="38" font="bold 14px/normal &quot;나눔고딕&quot;"/>
+                  <Button id="Button01" taborder="6" text="삭제" left="680" top="34" width="120" height="35" onclick="Tab00_Tabpage2_Button01_onclick" font="bold 14px/normal &quot;나눔고딕&quot;" background="#6092ff" color="white"/>
                 </Layout>
               </Layouts>
             </Tabpage>
