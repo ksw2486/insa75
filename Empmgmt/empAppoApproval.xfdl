@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FDL version="2.1">
-  <Form id="empEval" width="1060" height="620" titletext="New Form" onload="empEval_onload">
+  <Form id="empEval" width="1270" height="930" titletext="New Form" onload="empEval_onload">
     <Layouts>
-      <Layout height="620" width="1060">
-        <Div id="Div00_00" taborder="0" text="" left="0" top="5" width="1060" height="610" background="#D9E5FF" formscrolltype="none">
+      <Layout height="930" width="1270">
+        <Div id="Div00_00" taborder="0" text="" left="0" top="0" width="1240" height="610" formscrolltype="none">
           <Layouts>
             <Layout>
-              <Tab id="Tab00" taborder="3" tabindex="0" left="0" top="55" width="1060" height="650" canchange="Div00_00_Tab00_Tabpage2_onmove" onchanged="Div00_00_Tab00_onchanged">
+              <Tab id="Tab00" taborder="3" tabindex="0" left="53" top="80" width="1127" height="650" canchange="Div00_00_Tab00_Tabpage2_onmove" onchanged="Div00_00_Tab00_onchanged">
                 <Tabpages>
                   <Tabpage id="Tabpage1" text="호수등록">
                     <Layouts>
                       <Layout>
                         <Button id="Button00_00" taborder="0" text="취소" left="751" top="553" width="99" height="37" onclick="empEval_onload"/>
-                        <Button id="Button00" taborder="1" text="취소" left="124" top="321" width="99" height="37" onclick="empEval_onload"/>
-                        <Button id="Button01" taborder="2" text="문서번호 생성" left="65" top="261" width="94" height="34" onclick="regist"/>
-                        <Edit id="genratehosu" taborder="3" left="170" top="261" width="160" height="34" enable="false"/>
-                        <Static id="Static03" taborder="4" text="발령근거" left="100" top="216" width="82" height="25" font="15px/normal &quot;Gulim&quot;"/>
-                        <Combo id="reason" taborder="5" text="Combo00" left="170" top="211" width="160" height="34" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn">
+                        <Button id="Button00" taborder="1" text="취소" left="220" top="293" width="115" height="35" onclick="empEval_onload" font="14px &quot;나눔고딕&quot;" background="#6092ff" borderRadius="5px" color="white"/>
+                        <Button id="Button01" taborder="2" text="생성" left="260" top="206" width="75" height="35" onclick="regist" font="14px &quot;나눔고딕&quot;" background="#6092ff" borderRadius="5px" color="white"/>
+                        <Edit id="genratehosu" taborder="3" left="94" top="206" width="155" height="35" enable="false" font="14px &quot;나눔고딕&quot;"/>
+                        <Static id="Static03" taborder="4" text="발령근거" left="12" top="166" width="82" height="25" font="14px &quot;나눔고딕&quot;"/>
+                        <Combo id="reason" taborder="5" text="Combo00" left="95" top="161" width="240" height="35" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" font="14px &quot;나눔고딕&quot;">
                           <Dataset id="innerdataset">
                             <ColumnInfo>
                               <Column id="codecolumn" size="256"/>
@@ -38,10 +38,10 @@
                             </Rows>
                           </Dataset>
                         </Combo>
-                        <Button id="Button02" taborder="6" text="등록" left="260" top="321" width="99" height="37" onclick="Button00_onclick"/>
-                        <Edit id="title" taborder="7" left="170" top="161" width="160" height="34"/>
-                        <Static id="Static03_00" taborder="8" text="제목" left="120" top="166" width="82" height="25" font="15px/normal &quot;Gulim&quot;"/>
-                        <Grid id="hosuGrid" taborder="9" left="450" top="81" width="490" height="389" binddataset="ds_appointmentinfolist" oncellclick="Div00_00_Tab00_Tabpage2_evalGrid_oncellclick">
+                        <Button id="Button02" taborder="6" text="등록" left="96" top="293" width="115" height="35" onclick="Button00_onclick" font="14px &quot;나눔고딕&quot;" background="#6092ff" borderRadius="5px" color="white"/>
+                        <Edit id="title" taborder="7" left="95" top="116" width="240" height="35" font="14px &quot;나눔고딕&quot;"/>
+                        <Static id="Static03_00" taborder="8" text="제      목" left="12" top="121" width="82" height="25" font="14px &quot;나눔고딕&quot;"/>
+                        <Grid id="hosuGrid" taborder="9" left="402" top="37" width="491" height="340" binddataset="ds_appointmentinfolist" oncellclick="Div00_00_Tab00_Tabpage2_evalGrid_oncellclick">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -51,32 +51,33 @@
                                 <Column size="88"/>
                               </Columns>
                               <Rows>
-                                <Row size="24" band="head"/>
-                                <Row size="24"/>
+                                <Row size="30" band="head"/>
+                                <Row size="30"/>
                               </Rows>
                               <Band id="head">
-                                <Cell text="호수"/>
-                                <Cell col="1" text="제목"/>
-                                <Cell col="2" text="발령일"/>
-                                <Cell col="3" text="발령근거"/>
+                                <Cell text="호수" font="14px &quot;나눔고딕&quot;" textAlign="center"/>
+                                <Cell col="1" text="제목" font="14px &quot;나눔고딕&quot;" textAlign="center"/>
+                                <Cell col="2" text="발령일" font="14px &quot;나눔고딕&quot;" textAlign="center"/>
+                                <Cell col="3" text="발령근거" font="14px &quot;나눔고딕&quot;" textAlign="center"/>
                               </Band>
                               <Band id="body">
-                                <Cell text="bind:HOSU"/>
-                                <Cell col="1" text="bind:TITLE"/>
-                                <Cell col="2" text="bind:APPOINTMENT_DATE" calendardateformat="yyyy-MM-dd" displaytype="date" edittype="date"/>
-                                <Cell col="3" text="bind:APPOINTMENT_DETAIL"/>
+                                <Cell text="bind:HOSU" font="14px &quot;나눔고딕&quot;" textAlign="center"/>
+                                <Cell col="1" text="bind:TITLE" font="14px &quot;나눔고딕&quot;" textAlign="center"/>
+                                <Cell col="2" text="bind:APPOINTMENT_DATE" calendardateformat="yyyy-MM-dd" displaytype="date" edittype="date" font="14px &quot;나눔고딕&quot;" textAlign="center"/>
+                                <Cell col="3" text="bind:APPOINTMENT_DETAIL" font="14px &quot;나눔고딕&quot;" textAlign="center"/>
                               </Band>
                             </Format>
                           </Formats>
                         </Grid>
-                        <Static id="Static00" taborder="10" text="인사발령 호수등록" left="140" top="81" width="223" height="60" font="25px/normal &quot;Gulim&quot;"/>
+                        <Static id="Static00" taborder="10" text="인사발령 호수등록" left="57" top="31" width="223" height="60" font="18px/normal &quot;나눔고딕&quot;" textAlign="center"/>
+                        <Static id="Static03_01" taborder="11" text="문서번호" left="12" top="213" width="82" height="25" font="14px &quot;나눔고딕&quot;"/>
                       </Layout>
                     </Layouts>
                   </Tabpage>
                   <Tabpage id="Tabpage2" text="발령결재" onmove="Div00_00_Tab00_Tabpage2_onmove">
                     <Layouts>
                       <Layout>
-                        <Grid id="evalGrid" taborder="0" left="44" top="77" width="460" height="219" binddataset="ds_appointmentinfolist" oncellclick="empAppointCount_oncellclick">
+                        <Grid id="evalGrid" taborder="0" left="4" top="37" width="460" height="219" binddataset="ds_appointmentinfolist" oncellclick="empAppointCount_oncellclick">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -87,8 +88,8 @@
                                 <Column size="65"/>
                               </Columns>
                               <Rows>
-                                <Row size="24" band="head"/>
-                                <Row size="24"/>
+                                <Row size="30" band="head"/>
+                                <Row size="30"/>
                               </Rows>
                               <Band id="head">
                                 <Cell text="호수"/>
@@ -107,7 +108,7 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Grid id="evalGrid00" taborder="1" left="610" top="77" width="430" height="387" oncellclick="Div00_00_Tab00_Tabpage2_evalGrid_oncellclick" binddataset="ds_appointmentlist">
+                        <Grid id="evalGrid00" taborder="1" left="490" top="37" width="430" height="414" oncellclick="Div00_00_Tab00_Tabpage2_evalGrid_oncellclick" binddataset="ds_appointmentlist">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -132,8 +133,8 @@
                                 <Column size="427"/>
                               </Columns>
                               <Rows>
-                                <Row size="24" band="head"/>
-                                <Row size="24"/>
+                                <Row size="30" band="head"/>
+                                <Row size="30"/>
                               </Rows>
                               <Band id="head">
                                 <Cell text="호수"/>
@@ -180,8 +181,8 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Button id="Button00_00" taborder="2" text="등록" left="928" top="476" width="82" height="35" onclick="registempAppointmentlist"/>
-                        <Grid id="evalGrid01" taborder="3" left="44" top="316" width="460" height="175" oncellclick="Div00_00_Tab00_Tabpage2_evalGrid_oncellclick" binddataset="dept">
+                        <Button id="Button00_00" taborder="2" text="등록" left="838" top="466" width="75" height="35" onclick="registempAppointmentlist" borderRadius="5px" background="#6092ff" color="white"/>
+                        <Grid id="evalGrid01" taborder="3" left="4" top="281" width="460" height="215" oncellclick="Div00_00_Tab00_Tabpage2_evalGrid_oncellclick" binddataset="dept">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -190,8 +191,8 @@
                                 <Column size="107"/>
                               </Columns>
                               <Rows>
-                                <Row size="24" band="head"/>
-                                <Row size="24"/>
+                                <Row size="30" band="head"/>
+                                <Row size="30"/>
                               </Rows>
                               <Band id="head">
                                 <Cell text="호수"/>
@@ -212,7 +213,7 @@
                   <Tabpage id="Tabpage3" text="인사발령이력">
                     <Layouts>
                       <Layout>
-                        <Grid id="evalGrid00" taborder="0" left="600" top="77" width="430" height="387" binddataset="ds_appointmentlist">
+                        <Grid id="evalGrid00" taborder="0" left="482" top="38" width="479" height="458" binddataset="ds_appointmentlist">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -238,8 +239,8 @@
                                 <Column size="48"/>
                               </Columns>
                               <Rows>
-                                <Row size="24" band="head"/>
-                                <Row size="24"/>
+                                <Row size="30" band="head"/>
+                                <Row size="30"/>
                               </Rows>
                               <Band id="head">
                                 <Cell text="호수"/>
@@ -288,7 +289,7 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Grid id="evalGrid" taborder="1" left="44" top="77" width="460" height="219" binddataset="ds_appointmentinfolist2" oncellclick="empAppointCount_oncellclick2">
+                        <Grid id="evalGrid" taborder="1" left="4" top="37" width="460" height="230" binddataset="ds_appointmentinfolist2" oncellclick="empAppointCount_oncellclick2">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -299,8 +300,8 @@
                                 <Column size="65"/>
                               </Columns>
                               <Rows>
-                                <Row size="24" band="head"/>
-                                <Row size="24"/>
+                                <Row size="30" band="head"/>
+                                <Row size="30"/>
                               </Rows>
                               <Band id="head">
                                 <Cell text="호수"/>
@@ -319,7 +320,7 @@
                             </Format>
                           </Formats>
                         </Grid>
-                        <Grid id="evalGrid01" taborder="2" left="44" top="316" width="460" height="175" oncellclick="Div00_00_Tab00_Tabpage3_evalGrid_oncellclick" binddataset="dept">
+                        <Grid id="evalGrid01" taborder="2" left="4" top="281" width="460" height="215" oncellclick="Div00_00_Tab00_Tabpage3_evalGrid_oncellclick" binddataset="dept">
                           <Formats>
                             <Format id="default">
                               <Columns>
@@ -328,8 +329,8 @@
                                 <Column size="107"/>
                               </Columns>
                               <Rows>
-                                <Row size="24" band="head"/>
-                                <Row size="24"/>
+                                <Row size="30" band="head"/>
+                                <Row size="30"/>
                               </Rows>
                               <Band id="head">
                                 <Cell text="호수"/>
@@ -349,7 +350,7 @@
                   </Tabpage>
                 </Tabpages>
               </Tab>
-              <Static id="Static00" taborder="1" text="인사발령관리" left="16" top="3" width="188" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
+              <Static id="Static00" taborder="1" text="인사발령관리" left="53" top="20" width="188" height="49" textAlign="left" font="18px/normal &quot;나눔고딕&quot;"/>
             </Layout>
           </Layouts>
         </Div>
