@@ -398,7 +398,7 @@ this.Div00_00_Tab00_00_Tabpage4_Button00_00_onclick = function(obj:nexacro.Butto
 this.selectHosu_oneditclick = function(obj:nexacro.Edit,e:nexacro.EditClickEventInfo)
 {
 	var objChildFrame = new ChildFrame();
-    objChildFrame.init("호수선택", 0, 0, 200, 250, null, null, "comm::hosuList.xfdl");
+    objChildFrame.init("호수선택", 0, 0, 200, 250, null, null, "Comm::hosuList.xfdl");
     objChildFrame.set_openalign("center middle");
     objChildFrame.set_titletext("호수선택");
 	

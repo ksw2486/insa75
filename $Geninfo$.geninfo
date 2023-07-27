@@ -9,19 +9,6 @@
       <Script rule_version="1.02"/>
       <GeneratorInfo rule_version="1.2"/>
     </Rule>
-    <Info project="C:\Users\iclus\OneDrive\바탕 화면\2차프로젝트\깃 최종인가\insa75\" generated="C:\Users\iclus\OneDrive\문서\TOBESOFT\Nexacro N\outputs\insa\">
-      <File url="environment.xml" checksum="20230719172921" errormsg=""/>
-      <File url="typedefinition.xml" checksum="20230719172921" errormsg=""/>
-      <File url="appvariables.xml" checksum="20230719172921" errormsg=""/>
-      <File url="_resource_\_theme_\default\theme.xcss" checksum="20230719172921" errormsg=""/>
-      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\framework\Framework.json" checksum="20230228101658" errormsg=""/>
-      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\resources\Resource.json" checksum="20230228101658" errormsg=""/>
-      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\CompBase.json" checksum="20230228101654" errormsg=""/>
-      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ComComp.json" checksum="20230228101654" errormsg=""/>
-      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\Grid.json" checksum="20230228101656" errormsg=""/>
-      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ListView.json" checksum="20230228101700" errormsg=""/>
-      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\DeviceAPI.json" checksum="20230228101656" errormsg=""/>
-      <File url="_extlib_\Chart.json" checksum="20230719172920" errormsg=""/>
-    </Info>
+    <Info project="D:\인사75 --\insa75\insa75\" generated="C:\Users\lenovo\Documents\TOBESOFT\Nexacro N\outputs\insa\"><File url="environment.xml" checksum="20230719203806" errormsg=""/><File url="typedefinition.xml" checksum="20230719203806" errormsg=""/><File url="appvariables.xml" checksum="20230719203806" errormsg=""/><File url="_resource_\_theme_\default\theme.xcss" checksum="20230719203806" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\framework\Framework.json" checksum="20230228101658" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\resources\Resource.json" checksum="20230228101658" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\CompBase.json" checksum="20230228101654" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ComComp.json" checksum="20230228101654" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\Grid.json" checksum="20230228101656" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ListView.json" checksum="20230228101700" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\DeviceAPI.json" checksum="20230228101656" errormsg=""/><File url="_extlib_\Chart.json" checksum="20230719203804" errormsg=""/><File url="Application_Desktop.xadl" checksum="20230719203804" errormsg=""/><File url="Empmgmt\documentsApproval.xfdl" checksum="20230719203804" errormsg=""/><File url="Empmgmt\empEval.xfdl" checksum="20230725185225" errormsg=""/><File url="Empmgmt\empEvalApproval.xfdl" checksum="20230726174703" errormsg=""/><File url="Comm\hosuList.xfdl" checksum="20230719203804" errormsg=""/><File url="Empmgmt\empAppo.xfdl" checksum="20230727143339" errormsg=""/></Info>
   </GenInfo>
 </root>

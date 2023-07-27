@@ -391,7 +391,7 @@ this.transaction("searceCodeID",
 			this.Div00_00.form.Tab00_00.Tabpage3.form.ImageViewer00.set_image("URL('http://localhost/profile/"+this.ds_empList.getColumn(this.ds_empList.rowposition,"EMP_CODE")+".jpg')"); 
 			this.Div00_00.form.Tab00_00.Tabpage3.form.ImageViewer00.set_stretch("fit");
 			if(!(this.ds_empEval.getColumn(0,"ACHIEVEMENT")==null))
-				approvalStatus="승인대기"
+				approvalStatus="승인"
 };
 
 this.empEvalList_btn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
@@ -401,7 +401,7 @@ this.empEvalList_btn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventI
 						 "",
 						 "ds_empEvalList=gds_empEval",
 						 "",
-						 "fn_callback");	
+						 "fn_callback");
 };
 
 
